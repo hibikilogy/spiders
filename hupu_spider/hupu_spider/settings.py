@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for spiders project
+# Scrapy settings for hupu_spider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'spiders'
+BOT_NAME = 'hupu_spider'
 
-SPIDER_MODULES = ['spiders.spiders']
-NEWSPIDER_MODULE = 'spiders.spiders'
+SPIDER_MODULES = ['hupu_spider.spiders']
+NEWSPIDER_MODULE = 'hupu_spider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'spiders (+http://www.yourdomain.com)'
+#USER_AGENT = 'hupu_spider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'spiders.middlewares.SpidersSpiderMiddleware': 543,
+#    'hupu_spider.middlewares.HupuSpiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'spiders.middlewares.SpidersDownloaderMiddleware': 543,
+#    'hupu_spider.middlewares.HupuSpiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'spiders.pipelines.SpidersPipeline': 300,
+#    'hupu_spider.pipelines.HupuSpiderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
