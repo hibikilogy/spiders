@@ -35,6 +35,7 @@ def get_date(url):
     return parser(url).find_all(class_='tail-info')[2].text[:10]
 
 def generator(meta, posts, date):
+    print('正在爬取……')
     with open(f'{date}-{meta["title"]}.md', 'w', encoding='utf-8') as f:
         f.write('---\n')
         f.write('layout: post\n')
@@ -43,7 +44,7 @@ def generator(meta, posts, date):
         f.write(f'catalog: true\n')
         f.write('---\n')
         f.write(posts)
-    return meta
+    print(f'{date}={mata["title"]}.md已生成。')
 
 # FIXME
 def upload_img(posts):
@@ -55,5 +56,5 @@ def upload_img(posts):
     return r.data.url
 
 if __name__ == '__main__':
-    url = 'https://tieba.baidu.com/p/6476296121?see_lz=1'
+    url = 'https://tieba.baidu.com/p/' + input('请输入帖子 ID：') + '?see_lz=1'
     generator(get_meta(url), get_posts(url), get_date(url))
