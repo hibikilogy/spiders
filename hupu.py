@@ -25,13 +25,15 @@ def get_posts(url):
     return post
 
 def generator(meta, posts, date):
-    print('正在爬取……')
+    print('生成文件中……')
     with open(f'{date}-{meta["title"]}.md', 'w', encoding='utf-8') as f:
         f.write('---\n')
         f.write('layout: post\n')
         for key in meta:
             f.write(f'{key}: {meta[key]}\n')
         f.write(f'catalog: true\n')
+        f.write(f'tags:\n')
+        f.write(f'    - 虎扑\n')
         f.write('---\n')
         f.write(posts)
     print(f'{date}-{meta["title"]}.md已生成。')
