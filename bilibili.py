@@ -1,31 +1,13 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import requests
 import re
 import html2text
-from bs4 import BeautifulSoup
 import time
-from io import BytesIO
+from tools import parser
+from tools import upload_img
+from tools import generator
 
-def parser(url):
-    return BeautifulSoup(requests.get(url).content, 'html.parser')
-
-# sm.ms API v2
-def upload_img(url):
-    print('上传图片中……')
-    try:
-        requests.get('https://sm.ms')
-        img = BytesIO(requests.get(url).content)
-        body = {'smfile': img}
-        r = requests.post('https://sm.ms/api/v2/upload', data=None, files=body)
-        try:
-            print(f'图片上传成功，删除链接：{r.json()["data"]["delete"]}')
-            return r.json()['data']['url']
-        except KeyError:
-            print('图片已存在，无法得知删除链接。')
-            return r.json()['images']
-    except requests.exceptions.ConnectionError:
-        print('图床连接失败，已使用原链接。')
-        return url
 
 def get_meta(url):
     meta = {}
@@ -52,20 +34,6 @@ def get_posts(url):
     post = html2text.html2text(post)
     return post
 
-def generator(meta, posts, date):
-    print('生成文件中……')
-    with open(f'{date}-{meta["title"]}.md', 'w', encoding='utf-8') as f:
-        f.write('---\n')
-        f.write('layout: post\n')
-        for key in meta:
-            f.write(f'{key}: {meta[key]}\n')
-        f.write(f'catalog: true\n')
-        f.write(f'tags:\n')
-        f.write(f'    - bilibili\n')
-        f.write('---\n')
-        f.write(posts)
-    print(f'{date}-{meta["title"]}.md已生成。')
-
 if __name__ == '__main__':
     url = 'https://www.bilibili.com/read/cv' + input('请输入文章 cv 号：')
-    generator(get_meta(url), get_posts(url), get_date(url))
+    generator('bilibili', get_meta(url), get_posts(url), get_date(url))
