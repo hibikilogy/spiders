@@ -11,15 +11,20 @@ def parser(url):
 # sm.ms API v2
 def upload_img(url):
     print('上传图片中……')
-    img = BytesIO(requests.get(url).content)
-    body = {'smfile': img}
-    r = requests.post('https://sm.ms/api/v2/upload', data=None, files=body)
     try:
-        print(f'图片删除链接：{r.json()["data"]["delete"]}')
-        return r.json()['data']['url']
-    except KeyError as e:
-        print('图片已存在，无法得知删除链接。')
-        return r.json()['images']
+        requests.get('https://sm.ms')
+        img = BytesIO(requests.get(url).content)
+        body = {'smfile': img}
+        r = requests.post('https://sm.ms/api/v2/upload', data=None, files=body)
+        try:
+            print(f'图片上传成功，删除链接：{r.json()["data"]["delete"]}')
+            return r.json()['data']['url']
+        except KeyError:
+            print('图片已存在，无法得知删除链接。')
+            return r.json()['images']
+    except requests.exceptions.ConnectionError:
+        print('图床连接失败，已使用原链接。')
+        return url
 
 def get_posts(url):
     def get_post(page_url):
