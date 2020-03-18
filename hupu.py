@@ -26,10 +26,10 @@ def get_posts(url):
     for img in re.findall(img_src, post):
         try:
             i = img.index('?')
-            img = img[:i]
+            img_real = img[:i]
         except ValueError:
-            pass
-        new_img = upload_img(img)
+            img_real = img
+        new_img = upload_img(img_real)
         post = post.replace(img, new_img)
     post = html2text.html2text(post)
     return post

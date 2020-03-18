@@ -30,9 +30,9 @@ def get_posts(url):
         post = str(post)
         post = re.sub('<div[^>]*>', '<p>', post)
         post = re.sub('<\/div[^>]*>', '</p>', post)
-        # for img in re.findall(img_src, post):
-        #     new_img = upload_img(img)
-        #     post = post.replace(img, new_img)
+        for img in re.findall(img_src, post):
+            new_img = upload_img(img)
+            post = post.replace(img, new_img)
         content += html2text.html2text(post)
     return content
 

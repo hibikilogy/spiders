@@ -18,8 +18,8 @@ def upload_img(url):
         body = {'smfile': img}
         r = requests.post('https://sm.ms/api/v2/upload', data=None, files=body, timeout=10)
         try:
-            with open('img.txt', 'b') as f:
-                f.write(f'r.json()["data"]["url"]，删除：r.json()["data"]["delete"]\n')
+            with open('img.txt', 'a') as f:
+                f.write(f'{r.json()["data"]["url"]}，删除：{r.json()["data"]["delete"]}\n')
             print('图片上传成功，地址和删除链接已写入 img.txt。')
             return r.json()['data']['url']
         except KeyError:
@@ -42,3 +42,4 @@ def generator(tag, meta, posts, date):
         f.write('---\n')
         f.write(posts)
     print(f'{date}={meta["title"]}.md已生成。')
+
