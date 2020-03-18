@@ -5,9 +5,9 @@ import re
 import random
 import html2text
 import bbcode
-from tools import parser
-from tools import upload_img
-from tools import generator
+from utils import parser
+from utils import upload_img
+from utils import generator
 
 def get_headers():
     user_agents = [

@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import requests
 import re
 import html2text
-from bs4 import BeautifulSoup
-from tools import parser
-from tools import upload_img
-from tools import generator
+from utils import parser
+from utils import upload_img
+from utils import generator
 
 
 def lz_only(url):
@@ -22,17 +20,19 @@ def get_posts(url):
     #    posts += [x for x in get_post(url[:-8] + str(i) + '-1.html')]
     content = ''
     posts = get_post(url)
-    # FIXME
-    pstatus = r'<i class="pstatus">.+?<\/i>'
     img_src = r"""\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?""" 
     for post in posts:
+        try:
+            post.find(class_='pstatus').clear()  # 移除 本贴最后……
+            post.find(class_='tip').clear()  # 移除 附件：……
+        except AttributeError:
+            pass
         post = str(post)
         post = re.sub('<div[^>]*>', '<p>', post)
         post = re.sub('<\/div[^>]*>', '</p>', post)
-        re.sub(pstatus, '', post)
-        for img in re.findall(img_src, post):
-            new_img = upload_img(img)
-            post = post.replace(img, new_img)
+        # for img in re.findall(img_src, post):
+        #     new_img = upload_img(img)
+        #     post = post.replace(img, new_img)
         content += html2text.html2text(post)
     return content
 

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import requests
 import re
 import html2text
 import time
-from tools import parser
-from tools import upload_img
-from tools import generator
+from utils import parser
+from utils import upload_img
+from utils import generator
 
 
 def get_meta(url):
