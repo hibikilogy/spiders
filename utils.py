@@ -7,8 +7,10 @@ import requests
 from io import BytesIO
 from bs4 import BeautifulSoup
 
-def parser(url):
-    return BeautifulSoup(requests.get(url, timeout=10).content, 'html.parser')
+
+def parser(url, headers=None):
+    return BeautifulSoup(requests.get(url, headers=headers, timeout=10).content, 'html.parser')
+
 
 # sm.ms API v2
 def upload_img(url):
@@ -28,6 +30,7 @@ def upload_img(url):
     except requests.exceptions.ConnectionError:
         print('上传失败，已使用原链接。')
         return url
+
 
 def generator(tag, meta, posts, date):
     print('生成文件中……')

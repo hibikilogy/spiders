@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import requests
-import re
-import random
+from selenium import webdriver
+# import random
 import html2text
-import bbcode
-from utils import parser
-from utils import upload_img
+from time import sleep
+from bs4 import BeautifulSoup
+# from utils import upload_img
 from utils import generator
 
+
+""" 使用 selenium 无需用 headers
 def get_headers():
     user_agents = [
         'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20130406 Firefox/23.0',
@@ -37,35 +38,46 @@ def get_headers():
         'cookie': 'UM_distinctid=165d243d684e9-0111554226bb1c-3c604504-13edd4-165d243d68516f; taihe=aebe409faefff51e20f2dde377f1cea6; ngacn0comUserInfo=%25B0%25EB%25CF%25C4%25A8q%25A5%25A1%258EU%259B%25F6%09%25E5%258D%258A%25E5%25A4%258F%25E2%2595%25AD%25E3%2582%25A1%25E5%25B6%25B6%25E6%25B6%25BC%0939%0939%09%0910%090%090%090%090%09; ngaPassportUid=43320220; ngaPassportUrlencodedUname=%25B0%25EB%25CF%25C4%25A8q%25A5%25A1%258EU%259B%25F6; ngaPassportCid=Z8ltrcjgo616kor6sbbpgr0thdnbrsr96ge8kte5; ngacn0comUserInfoCheck=10d5d900ae3f241cd4bc9d2e144794f3; ngacn0comInfoCheckTime=1537976770; taihe_session=6444150154287a3254e70831f46a8868; CNZZDATA30043604=cnzz_eid%3D364786080-1536830942-%26ntime%3D1537976642; CNZZDATA30039253=cnzz_eid%3D943882560-1536826159-%26ntime%3D1537971608; Hm_lvt_5adc78329e14807f050ce131992ae69b=1536830988,1536839697,1537976774; lastvisit=1537976828; lastpath=/read.php?tid=12689996&page=2; bbsmisccookies=%7B%22insad_refreshid%22%3A%7B0%3A%22/153794231025962%22%2C1%3A1538581572%7D%2C%22pv_count_for_insad%22%3A%7B0%3A-46%2C1%3A1537981224%7D%2C%22insad_views%22%3A%7B0%3A1%2C1%3A1537981224%7D%7D; Hm_lpvt_5adc78329e14807f050ce131992ae69b=1537976834'
         }
     return headers
+"""
 
-# FIXME
-def bb2md(str):
-    bbcode.Parser().add_simple_formatter('img', '<img src="%(value)s" />')
-    return html2text.html2text(bbcode.Parser().format(str))
-
-def get_meta(url):
+def get_meta(html):
+    r = BeautifulSoup(html, 'html.parser')
     meta = {}
-    r = parser(url)
     meta['title'] = r.find(id='postsubject0').text
     meta['author'] = r.find(id='postauthor0').text
     meta['original'] = url
     return meta
 
-def get_date(url):
-    date = parser(url).find(id='postdate0').text[:10]
+def get_date(html):
+    r = BeautifulSoup(html, 'html.parser')
+    date = r.find(id='postdate0').text[:10]
     return date
 
-def get_posts(url):
-    r = parser(url)
+def get_posts(html):
+    r = BeautifulSoup(html, 'html.parser')
     post = str(r.find(id='postcontent0'))
-    post = post.replace('data-src', 'src')
+    post = post.replace('src', 'fake')
+    post = post.replace('data-fakelazy', 'src')
+    # NGA 图床可以外部引用，无需图床
     # img_src = r"""\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?"""
     # for img in re.findall(img_src, post):
     #     new_img = upload_img(img)
     #     post = post.replace(img, new_img)
-    post = bb2md(post)
+    post = html2text.html2text(post)
     return post
 
 if __name__ == '__main__':
     url = 'https://bbs.nga.cn/read.php?tid=' + input('请输入帖子 ID：')
-    generator(get_meta(url), get_posts(url), get_date(url))
+    try:
+        options = webdriver.FirefoxOptions()
+        options.add_argument('-headless')
+        browser = webdriver.Firefox(options=options)
+    except WebDriverException:
+        options = webdriver.chrome.options()
+        options.add_argument('-headless')
+        browser = webdriver.Chrome(options=options)
+    browser.get(url)
+    sleep(10)
+    content = browser.execute_script('return document.querySelector("html").innerHTML;')
+    browser.close()
+    generator('NGA', get_meta(content), get_posts(content), get_date(content))

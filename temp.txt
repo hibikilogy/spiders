@@ -1,0 +1,882 @@
+<head><script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=30043604&amp;t=q"></script><script src="https://bdtj.tagtic.cn/bi-sdk.1.2.1.js?635574" type="text/javascript"></script><script src="https://w.cnzz.com/c.php?id=30043604" type="text/javascript"></script><script src="https://img4.nga.178.com/common_res/js_pnglib.js" type="text/javascript"></script><script src="https://g1.tagtic.cn/v1/xingyou/c/778.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="apple-itunes-app" content="app-id=836485862">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge; IE=11; IE=10; IE=9; IE=8">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="NGA动漫论坛 动漫爱好者的聚集地 新番 动画 手办 模型全资讯 如果你是宅文化爱好者 二次元国家地理将会是你的不二之选">
+<meta name="keywords" content="动漫NGA论坛,NG2,二次元NGA论坛,动漫,动画,新番,轻小说,舰娘,舰队collection,宅文化,基友,漫友,动漫论坛,动画论坛"><title>[讨论] 摒弃吹学史观，用青学的视角来解构《利兹与青鸟》 NGA玩家社区</title>
+<script type="text/javascript">
+//loadscriptstart
+var __CURRENT_UID = parseInt('',10),
+__CURRENT_AVATAR = null,
+__NOW = 1584679564,
+__CURRENT_UNAME = '',
+__CACHE_PATH = './data/bbscache',
+__MISC_COOKIE_NAME = 'bbsmisccookies',
+__CHARSET = 'GBK'
+
+var __GP = {
+_b:{//lib_core::_GB~
+admin : 1,
+'super' : 2,
+greater : 4,
+superlesser : 8,
+lesser : 16,
+normal : 32,
+topic : 64,
+reply : 128,
+vote : 256,
+comment : 512,
+search : 524288,
+voteBet : 1048576
+},
+_ub:{
+ubSecAct:1024,
+ubSecView:8,
+ubSecViewS:2048,
+ubStaff:16,
+ubMod:4,
+ubExA:128,
+ubExASucc:256
+},
+_n:null,
+init:function(gbit,adck,rvrc,act,ubit,llog){
+	this._n = {
+		_bit:gbit,
+		admincheck:adck,
+		rvrc:rvrc,
+		active:act,
+		userBit:ubit
+		}
+	this.loginlog = llog
+	for(var k in this._n){
+		this[k] = this._n[k]|0
+		if(!this[k])this[k]=0
+		}
+	for(var k in this._b)
+		this[k] = this._b[k]&this._bit ? 1 : 0
+	for(var k in this._ub)
+		this[k] = this._ub[k]&this.userBit ? 1 : 0
+	}
+}//ce
+
+__GP.init('','','','0','0','')
+//loadscriptend
+var ngaAds=[],
+_NotLoad178NavAll=1
+
+var __IMG_BASE = 'http://img4.nga.178.com',
+__IMGPATH = 'http://img4.nga.178.com/ngabbs',
+__IMG_STYLE = 'http://img4.nga.178.com/ngabbs/nga_classic',
+__COMMONRES_PATH = 'http://img4.nga.178.com/common_res',
+__BBSURL = location.protocol+'//bbs.nga.cn',
+__CKDOMAIN = 'bbs.nga.cn',
+__LASTDOMAIN = '3030',
+__ATTACH_BASE = 'https://img7.nga.178.com:8081',
+__ATTACH_BASE_UPLOAD = 'img7.nga.178.com:8080',
+__ATTACH_BASE_UPLOAD_SEC = 'img7.nga.178.com:8081',
+__ATTACH_BASE_VIEW = 'img.nga.178.com',
+__ATTACH_BASE_VIEW_SEC = 'img.nga.178.com',
+__RES_BASE = 'img4.nga.178.com',
+__RES_BASE_SEC = 'img4.nga.178.com',
+__DSBASE = 'http://g1.tagtic.cn/v1/xingyou/c'
+if(location.protocol=='https:'){
+	;(function(){var i=0,a=arguments
+		for(;i<a.length;i++)
+			this[a[i]]=this[a[i]].replace(/^https?:\/\/[^\/]+/,'https://img4.nga.178.com')
+		})('__IMG_BASE','__IMGPATH','__IMG_STYLE','__COMMONRES_PATH');
+	__DSBASE = __DSBASE.replace(/^http:/,'https:')
+	}
+var __STYLE = [
+['default', __IMG_STYLE+'/css_default.css?7864806', __IMG_STYLE+'/js_color.js?7864806'],
+['teal', __IMG_STYLE+'/css_default1.css?7864806', __IMG_STYLE+'/js_color1.js?7864806'],
+['purp', __IMG_STYLE+'/css_default2.css?7864806', __IMG_STYLE+'/js_color2.js?7864806'],
+['dark', __IMG_STYLE+'/css_default3.css?7864806', __IMG_STYLE+'/js_color3.js?7864806']
+],
+__SCRIPTS={
+lib:__COMMONRES_PATH+'/js_commonLib.js?120867',
+common:__COMMONRES_PATH+'/js_commonui.js?5880972',
+forum:__COMMONRES_PATH+'/js_forum.js?3034081',
+commonSpec:__IMG_STYLE+'/js_default.js?9943874',
+bbscode:__COMMONRES_PATH+'/js_bbscode_core.js?1303190',
+bbscodeSpec:__IMG_STYLE+'/js_bbscode_smiles.js?2935331',
+post:__COMMONRES_PATH+'/js_postfunc_v2.js?3034081',
+mainMenu:__COMMONRES_PATH+'/js_mainMenu.js?110863',
+customBg:__IMG_STYLE+'/js_customBg.js?111112',
+dsList:__IMG_STYLE+'/js_dslist_default.js?120479',
+dsCommon:__COMMONRES_PATH+'/js_dscommon.js?1204485',
+dsid_bbs_ads24:__DSBASE+'/715.js',
+dsid_bbs_ads22:__DSBASE+'/718.js',
+dsid_bbs_ads12:__DSBASE+'/778.js',
+dsid_bbs_ads1:__DSBASE+'/714.js',
+combine:__IMG_BASE+'/proxy/cache_attach/js_combine_data.js?'+Math.floor(__NOW/300),
+//dsid_bbs_ads44:__DSBASE+'/6001.js',
+dsid_bbs_ads45:__DSBASE+'/6002.js',
+dsid_bbs_ads46:__DSBASE+'/200810.js',
+dsid_bbs_ads47:__DSBASE+'/200811.js',
+dsid_bbs_ads49:__DSBASE+'/200809.js',
+dsid_bbs_ads50:__DSBASE+'/200808.js',
+dsid_bbs_ads51:__DSBASE+'/200807.js',
+jsDebug:'http://127.0.0.1/jsDebug.js',
+notification:__COMMONRES_PATH+'/js_notification.js?8683865',
+md5:__COMMONRES_PATH+'/js_md5.js?140333',
+admin:__COMMONRES_PATH+'/js_admin.js?8683865',
+d3ItemSelect:__COMMONRES_PATH+'/js_d3_item_select.js?120648',
+iframeRead2:__COMMONRES_PATH+'/js_iframeRead.js?130141',
+loaderRead:__COMMONRES_PATH+'/js_box.js?8683865',
+userItem:__COMMONRES_PATH+'/js_userItem.js?131054',
+highlighter:__COMMONRES_PATH+'/js_highlighter.js?140331',
+armory:__IMG_STYLE+'/js_armory.js?120684',
+read:__COMMONRES_PATH+'/js_read.js?3516708',
+message:__COMMONRES_PATH+'/js_message.js?121094',
+userScript:__IMG_STYLE+'/js_userScript.js?131025',
+quoteTo:__COMMONRES_PATH+'/js_quote_to.js?432462',
+ucp:__COMMONRES_PATH+'/js_ucp.js?121157',
+imgEdit:__COMMONRES_PATH+'/js_imageEdit.js?121015',
+bbscodeMd:__COMMONRES_PATH+'/js_bbscode_md.js?120438',
+stat:'https://bdtj.tagtic.cn/bi-sdk.1.2.1.js?635574',
+dsCommonG:'https://g1.tagtic.cn/g.js',
+service:'/js_service.js?778546'
+}
+;(function(){
+var T=__SCRIPTS,ev,h,tor=function(f){setTimeout(f)}
+T.lg={}
+T.loading=0
+T.lo={}
+T.cl=[]
+T.load = function(s,f,c,y){
+var x = (!(y&1)||!h)?document.createElement('script'):''
+if(!h){ev=('readyState' in x)?'onreadystatechange':'onload'
+	h=document.getElementsByTagName('head')[0]}
+if(s.charAt(0)=='/'||s.substr(0,4)=='http'){
+	var k='s_'+Math.random()
+	this[k] = s
+	s=k}
+else if(!this[s]||this.src(s))
+	return
+if(f)this.cl[s]=f
+if((y&2)==0){
+	this.loading++
+	this.lg[this[s]]=(this.lg[this[s]]|0)+1
+	}
+if(y&1)
+	document.write('<script src="'+this[s]+'" type="text/javascr'+'ipt" '+ev+'="__SCRIPTS.ol(this,\''+s+'\')" onerror="__SCRIPTS.oe(this,event)" '+(c?'charset="'+c+'"':'')+'></scr'+'ipt>')
+else{x.src=this[s]
+	x.type='text/javascript'
+	if(c)x.charset=c
+	x[ev]=function(){__SCRIPTS.ol(this,s)}
+	x.onerror=function(e){__SCRIPTS.oe(this,e)}
+	h.insertBefore(x,h.firstChild)}
+}//
+T.src = function(s){}//
+T.asyncLoad = function(){var a=arguments, x=a.length,y
+if(typeof a[x-1]=='number')y=a[--x]
+for(var i=0;i<x;i++){if(a[i]){this.load(a[i],typeof a[i+1]=='function'?a[++i]:0,0,y)}}
+}//
+T.el=function(e){console.log(e)}//
+T.syncLoad = function(){var a=arguments;a[a.length]=(a[a.length]|0)|1;a.length++;T.asyncLoad.apply(this,a)}//
+T.oe=function(o,e){this.el(o.src+' load error');if(this.loading>0){
+	this.loading--
+	//this.lg[o.src]--
+	}
+}//
+T.ol=function(o,n){
+if(ev!='onload'){var r=o.readyState
+	if (r && r!='loaded' && r!='complete')return}
+this.lo[n]=1
+if(this.loading>0){
+	this.loading--
+	this.lg[o.src]--
+	}
+if(this.cl[n])tor(this.cl[n])
+if(this.loading<1){while(this.cl.length)tor(this.cl.shift())}
+}//
+T.wload=function(f){if(this.loading<1)return f();this.cl.push(f)}//
+})();
+
+
+</script>
+<script type="text/javascript">
+var tmp = 0
+tmp |= (__GP.lesser||__GP.ubMod)?1:0
+tmp |= (window.__DEBUG || (window.__CURRENT_UID&3)==3)?2:0
+if(tmp && window.localStorage)
+	ngaAds.wait=[]
+__SCRIPTS.syncLoad('lib','dsList','combine','dsCommon','md5','common','forum', (tmp&1)?'admin':'' , (tmp&3)? 'loaderRead':'', (tmp&3)?function(){commonui.aE(window,'bodyInit',function(){_LOADERREAD.init()})}:'')
+</script><script src="https://img4.nga.178.com/common_res/js_commonLib.js?120867" type="text/javascript" onload="__SCRIPTS.ol(this,'lib')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_dslist_default.js?120479" type="text/javascript" onload="__SCRIPTS.ol(this,'dsList')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/proxy/cache_attach/js_combine_data.js?5282265" type="text/javascript" onload="__SCRIPTS.ol(this,'combine')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_dscommon.js?1204485" type="text/javascript" onload="__SCRIPTS.ol(this,'dsCommon')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://g1.tagtic.cn/v1/xingyou/c/714.js" type="text/javascript" onload="__SCRIPTS.ol(this,'dsid_bbs_ads1')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://g1.tagtic.cn/g.js" type="text/javascript" onload="__SCRIPTS.ol(this,'dsCommonG')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://g1.tagtic.cn/v1/xingyou/c/715.js" type="text/javascript" onload="__SCRIPTS.ol(this,'dsid_bbs_ads24')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://g1.tagtic.cn/v1/xingyou/c/6002.js" type="text/javascript" onload="__SCRIPTS.ol(this,'dsid_bbs_ads45')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://g1.tagtic.cn/v1/xingyou/c/200809.js" type="text/javascript" onload="__SCRIPTS.ol(this,'dsid_bbs_ads49')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_md5.js?140333" type="text/javascript" onload="__SCRIPTS.ol(this,'md5')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_commonui.js?5880972" type="text/javascript" onload="__SCRIPTS.ol(this,'common')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_forum.js?3034081" type="text/javascript" onload="__SCRIPTS.ol(this,'forum')" onerror="__SCRIPTS.oe(this,event)"></script>
+<script type="text/javascript">
+__COOKIE.init(__CKDOMAIN,'/','bbsmisccookies')
+__SETTING.init(0)
+</script><link rel="stylesheet" href="https://img4.nga.178.com/ngabbs/nga_classic/css_default.css?7864806" type="text/css"><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_color.js?7864806" type="text/javascript" onload="__SETTING.applyThemeColor()"></script><style type="text/css">
+body, textarea, select, input, button {font-family:Verdana, Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif}
+button, .block_txt {line-height:1.4em;padding-top:0.1em;padding-bottom:0} 
+ .small_colored_text_btn {line-height:1.5em;padding-top:0;padding-bottom:0} 
+ .vertmod{vertical-align:0.083em}</style><meta name="theme-color" content="#BD7E6D">
+<script type="text/javascript">
+__SCRIPTS.syncLoad('commonSpec','bbscode','bbscodeSpec','mainMenu','customBg','post')
+</script><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_default.js?9943874" type="text/javascript" onload="__SCRIPTS.ol(this,'commonSpec')" onerror="__SCRIPTS.oe(this,event)"></script><style type="text/css">#toppedtopic, .topicrowsnone {display:none}</style><script src="https://img4.nga.178.com/common_res/js_bbscode_core.js?1303190" type="text/javascript" onload="__SCRIPTS.ol(this,'bbscode')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_bbscode_smiles.js?2935331" type="text/javascript" onload="__SCRIPTS.ol(this,'bbscodeSpec')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_mainMenu.js?110863" type="text/javascript" onload="__SCRIPTS.ol(this,'mainMenu')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_customBg.js?111112" type="text/javascript" onload="__SCRIPTS.ol(this,'customBg')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_postfunc_v2.js?3034081" type="text/javascript" onload="__SCRIPTS.ol(this,'post')" onerror="__SCRIPTS.oe(this,event)"></script>
+<script src="https://g1.tagtic.cn/don/wn?encode_nyg=cmVxaWQ9WEUtWHlodmVjMlNRQ2duam9yMTkwJmNvbz0zODU3YjY4NDYyODIwY2UzMmFhYTZjMmQ2Y2Y1OTEwMGQxNWQ3Y2UyMmUxZmMyZWUyNGQ5MmIzNzNjMDRjYTliJm9zPTMmcmVmPWh0dHBzJTNBJTJGJTJGYmJzLm5nYS5jbiUyRnJlYWQucGhwJTNGdGlkJTNEMjA2NjQ5MTIlMjZyYW5kJTNENjU0JmFkdmVydXNlcmlkPTYzNCZvcmRlcmlkPTU4MzQmYWlkPTY5MjEmcHJvdmluY2VJZD0xNyZwYXltZW50PWNwdCZhZF9mcm9tPTAmbWlkPTY5MjExJmdyb3VwX2lkPTY5MjExJnBvc2l0aW9uPTgxNyZ3PTEyMCZoPTYwMCZjb3N0PTEwMCZjb2VmZmljaWVudD0xJnNsb3RCaW5kaW5nPXNpbmdsZSZpc1VuaW9uPTE&amp;v_y=7a99e6b9114e7df28aa157a60d91315ffd63c4137b987a151f75960e14c4b13e&amp;"></script></head>
+<body class=" haveCustomBackground">
+<div class="clear minWidthSpacer" id="minWidthSpacer"></div>
+<div id="mmc"><div id="custombg" style="height: 190px; margin-top: 55px; margin-bottom: -245px;"><div style="height: 190px; overflow: hidden;"><div style="height: 190px; margin: 0px 0px -190px; overflow: hidden; background: rgba(0, 0, 0, 0) url(&quot;https://img4.nga.178.com/ngabbs/head/20190322_2.jpg&quot;) repeat scroll left bottom;"></div><div class=" logo" style="margin-bottom: -157px; padding-top: 100px; text-align: left;"><div style="margin: auto auto auto 70px; width: 451px; height: 57px; background: rgba(0, 0, 0, 0) url(&quot;https://img4.nga.178.com/ngabbs/nga_classic/logoshadow6.png&quot;) repeat scroll 0% 0%;"></div></div><div class=" overlay" style="height: 191px; box-shadow: black 0px 0px 1.5em 0px inset; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAC/CAMAAAAIC0a+AAADAFBMVEUAAAD//O7//O4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC02DAuAAABAHRSTlMAADIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgA3PAAAAYlJREFUeNoBfgGB/gABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAEAAgABAAIAAQACAAHW4AEf3zHuuwAAAABJRU5ErkJggg==&quot;) repeat scroll 0% 0%;"></div></div></div>
+<script type="text/javascript">
+commonui.ifuserscript()
+commonui.initAfterBody()
+</script>
+
+<div id="mc">
+<div id="mainmenu"><div class=" stdbtn" style="border-radius: 0px;"><div class=" innerbg"><div class=" right"><div class=" td"><a class="mmdefault invert gray" href="javascript:void(0)" style="white-space: nowrap;" title="点此打开主菜单">开始</a></div><div class=" td"><a class="mmdefault " href="/nuke.php?__lib=login&amp;__act=account&amp;login" style="white-space: nowrap;" title="">登录</a></div><div class=" td"><a class="mmdefault " href="/nuke.php?__lib=login&amp;__act=account&amp;register" style="white-space: nowrap;" title="">注册</a></div><div class=" td"><a class="mmdefault  gray" href="javascript:void(0)" style="white-space: nowrap;" title="我的 - 消息">消息</a></div></div><div><div class=" td"><a class="mmdefault " style="padding: 0.2em 0.5em; white-space: nowrap;" href="/" title=""><svg xmlns="http://www.w3.org/2000/svg" style="height:50px;fill:#591804" viewBox="129.22 30.208 1120.58 411.795"><path fill-rule="evenodd" d="M1192.47 335.038L1165.6 219.78l-8.62-2.889 7.7 118.147h-59V82.75l5.75-5.853 46.75-5.5L1188.6 189.6l8.78 2.567L1189.93 83l3.33-5.884 56.54-5.449v263.371h-57.33zm-234.661-.538l-10.352-8.734-9.16-57.937.053-11.09 9.291-167.1 9.631-9.9 92.158-13.713 28.49 34.508 5.5 40.053v30.233h-53.2l-11.51-55.48-17.86 3.149-5.1 149.449 5.1 23.035 22.05-3.722 6.73-52.221 53.79.011v73l-19.46 26.438zM898.5 288.715h34.044V335H898.5v-46.285zm-75.236-.39h-25.438l-4.276 46.713h-62.614l30.132-248.484 10.408-9.636 81.144-9.271 36.232 267.391h-61.771zm-10.229-158.973L807.128 133 796.92 242.254h24.48zM669.371 316.417l-16.115 18.059-64.447.019-10.352-8.734-9.16-57.937.053-11.09 9.291-167.1 9.631-9.9 92.156-13.713 28.5 34.508 5.491 40.053v30.238h-53.2l-11.5-55.48-17.861 3.149-5.1 149.449 5.1 23.035 22.047-3.722 3.07-21.4 3.667-30.821h-19.488v-39.489h73.261v139.5H675.15zm-122.9 18.621h-57.337L462.271 219.78l-8.629-2.889 7.7 118.147h-58.993V82.75l5.751-5.85 46.75-5.5 30.414 118.2 8.787 2.567L486.593 83l3.336-5.884 62.208-7.468L546.47 101v234.038zm-142.462 30.815h-13.692v6.678h-11.5v-6.678H359.4v6.678h-11.3v-6.678h-14.093v-8.071H348.1v-6.795h11.3v6.795h19.408v-6.795h11.5v6.795H404v8.071zm-234.822-79.74l-39.967-2.864V30.208h225.066l-3.241 45.227 27.772 1.99v257.637H165.681zm29.651-207.861l-11.5 3.113-10.947 19.082 17.7 12.294 18.836-5.649.721-2.125-2.778-23.806 3.658-26.774zm44.005 3.472l-10.358 17.594 5.886 19.985 8.53-4.207 8.773-3.079 4.846-23.094L264.7 51.8zm41.569 6.755L269.1 112.263l4.08 15.258 18.785-4.063 3.972-16.213 2.875-14.007 3.659-26.774zm32.2 19.806l-15.772 23.489 4.1 11.71 15.617-4.165 9.09-21.65 5.375-27.933zm37.24 34.067l-.822-9.27 1.881-14.973-13.04 19.749-13.62 3.757 5.87 16.816 14.175.083zM261.48 302.875l27.273 10.638 19.234-35.658-12.241-31.208-50.99-7.719-2.656 34.283zm-58.357-137.367l31.5 1.976 68.321 52.41 12.569 3.58 20.868-11.174-2.187-24.364-76.618-50.41-71.294-8.139-34.841 33.519-3.041 27.824s11.908 24.2 20.466 36.516c11.464.276 40.155 1.029 40.155 1.029l-11.2-54.534zm-31.088 190.144l2.528 18.455-6.16-.328L166.2 356.4zm17.6 18.455l2.92-18.455 4.43.743-3.28 17.712h-4.07zm-22.264 16.526v-8.926h9.51v-30.674h9.846v30.654h8.295v8.925h-8.445l11.585 24.528-4.428 6.715-2.972-7.967-3.631-8.1-.383 36.212h-9.883v-.02l.219-36.193-4.218 11.253-4.146 10.139-5.72-8.493 13.676-28.053h-9.306zm48.164-12.764h-12.589v-5.7h12.591v-8.023h-13.413v-6.463h13.413v-6.653h11.284v6.653h13.416v6.463h-13.416v8.023H239.3v5.7h-12.479v8.242h15.246v7.3h-40.86v-7.3h14.33v-8.242zm23.765 64.093h-9.744l1.019-2.1V429.1h-18.904v12.865h-8.725v-41.524H239.3v41.521zm-20.7-34.279h-6.931v14.663h6.931v-14.663zm11.975 0h-6.725v14.663h6.725v-14.663zm-1.028 34.279h.009l-.009.018v-.018zm112.912-58.531H362.9v-8.48h12.4v8.48h20.436v20.362h7.352v9.35h-22.676l3.2 3.638a83.019 83.019 0 0 0 19.446 16.241l-7.2 8.964a102.793 102.793 0 0 1-24.7-23.443l-1.581-2.09-1.856 1.741c-2.756 3.544-12.461 15.428-25.067 23.792l-7.316-9.022a88.52 88.52 0 0 0 19.352-16.183l3.27-3.638h-23.053v-9.35h7.554v-20.362zm32.841 20.362h10.75V391.1H375.3v12.7zm-23.158 0H362.9V391.1h-10.756v12.7zm154.719-9.99h-6.031v-11.515h6.031v-18.44h-6.776v-11.717H525.5v11.739h-6.224v18.44h5.262v11.512h-5.262v22l7.854-.556v11.944l-28.869 2.058V417.3l8.6-.575V393.8zM572.519 351v11.164h-37.257V351h37.257zm5.048 36.737h-7.426V430.5h8.23l.924-.761v11.245h-21v-53.267h-8.329l-3.634 54.254-11.782-.721 3.555-53.514h-6.933V376.8h46.39v10.934zm120.066-36.749h14.28v7.472h28.62v20.007h-10.527V367h-50.464v11.464h-10.529v-20.005h28.62v-7.472zm4.76 56.974l-.342-3.379-28.037 16.129-4.174-6.221 31.019-16.937-1.753-6.97-24.326 13.1-4.193-6.758 23.536-11.792-1.048-4.05h-5.931v-6.761h35.276v6.761h-14.1l1.372 2.993a79.408 79.408 0 0 1 3.427 9.237l.906 2.88 16.319-11.232 5.83 7.641-16.923 11.139L741 428.468l-8.187 7.144-16.665-20.512-.564 5.377a64.2 64.2 0 0 1-6.294 21.526l-13.471-2.8.381-.212.283-.673a76.951 76.951 0 0 0 3.974-11.348l1.271-5.069-26.885 15.975-4.741-6.7 32.413-18.3v-1.228a34.229 34.229 0 0 0-.122-3.687zm158.148-54.115l-5.289 11.553v75.63H844.87L845 387l-4.024 9.42-2.476 5.38-6.816-8.076 20.046-42.668zm6.174 1.359h36.763v56.57h6.136v9.163h-48.135v-9.163h5.236v-56.57zm10.088 56.57h16.479v-7.959H876.8v7.959zm0-13.823h16.479V389.9H876.8v8.056zm0-13.3h16.479V376.7H876.8v7.959zm0-13.609h16.479v-8.056H876.8v8.056zm4.352 59.775l-11.849 11.161-6.705-7.454 12.05-11.065zm29.581 3.727l-6.56 7.434-11.924-11.16 6.394-7.358zm113.7-18.671l-15.67 21.9-7.5-7.324 15.66-21zm6.89-13.681h-28.57v-10.31h5.93v-35.441L1061.64 351l1.16 9.087-42.62 4.439v27.362h11.14v-20.58h13.82v20.58h26.28V402.2h-26.28V442h-16.42l2.61-3.313V402.2zm44.2 28.233l-7.59 7.324-15.58-21.779 7.51-6.434zm98.44-61.071h-3.86v-8.624h13.53v-9.684h11.27v9.684h14.16v8.624h-4.68v17.619h5.72v9.606h-42.18v-9.606h6.04v-17.618zm9.81 17.619h11.02v-17.618h-11.02v17.619zM1207.51 442h-35.63v-35.2h35.63V442zm-10.22-25.3h-14.86v15.694h14.86V416.7zm42.26-26.851l.46.748a46.807 46.807 0 0 1 6.55 23.472c0 10.293-4.02 21.372-12.86 21.372h-7.22v6.459h-10.25V353H1247zm-13.11-26.616v24.79h.02l4.2.413 4.64-25.2h-8.86zm4.01 28.9l-3.99 1.061v30.6h2.94c3.96 0 6.5-4.576 6.5-11.667 0-5.841-2.18-13.876-5.45-20.003z" data-name="Color Fill 5"></path></svg></a></div><div class=" td"><a class="mmdefault " href="http://nga.cn" target="_blank" style="white-space: nowrap;" title="首页">首页</a></div><div class=" td"><a class="mmdefault active" href="/" style="white-space: nowrap;" title="论坛">论坛</a></div><div class=" td"><a class="mmdefault " href="http://game.nga.cn/" target="_blank" style="white-space: nowrap;" title="评分">评分</a></div><div class=" td"><a class="mmdefault " href="http://app.nga.cn/" target="_blank" style="white-space: nowrap;" title="移动端">移动端</a></div></div><div class=" clear"></div></div></div></div>
+<script type="text/javascript">commonui.mainMenu.init(__CURRENT_UNAME,'',__CURRENT_AVATAR,'',__CURRENT_UID);</script>
+
+<script type="text/javascript">
+//loadscriptstart
+__SCRIPTS.syncLoad('read','armory','quoteTo')//loadscriptend
+__CURRENT_FID=parseInt('-447601')
+__CURRENT_F_BIT=parseInt('8424')
+__CURRENT_F_ALLOWREPLY='+p1095,+u1,+w,+r-447601_-500'
+__CURRENT_TID=20664912
+</script><script src="https://img4.nga.178.com/common_res/js_read.js?3516708" type="text/javascript" onload="__SCRIPTS.ol(this,'read')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/ngabbs/nga_classic/js_armory.js?120684" type="text/javascript" onload="__SCRIPTS.ol(this,'armory')" onerror="__SCRIPTS.oe(this,event)"></script><script src="https://img4.nga.178.com/common_res/js_quote_to.js?432462" type="text/javascript" onload="__SCRIPTS.ol(this,'quoteTo')" onerror="__SCRIPTS.oe(this,event)"></script>
+<script type="text/javascript">
+//userinfostart
+commonui.userInfo.setAll(   {"60534847":{"uid":60534847,"username":"UID:60534847","credit":1048576,"medal":null,"reputation":"61_4","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1559650708,"mute_time":null,"postnum":747,"rvrc":10,"money":300,"thisvisit":1584614699,"signature":null,"nickname":null,"bit_data":1048576 },"150823":{"uid":150823,"username":"UID:150823","credit":1048576,"medal":null,"reputation":"91_30,61_2,22_30","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1124020212,"mute_time":null,"postnum":1919,"rvrc":10,"money":17897,"thisvisit":1584672317,"signature":null,"nickname":null,"bit_data":1048576 },"38966267":{"uid":38966267,"username":"UID:38966267","credit":34603008,"medal":"385,260,377","reputation":"91_60,61_63,128_30","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":" 1567530942 月入一蛆的黑手空洞骑士","regdate":1473118615,"mute_time":null,"postnum":600,"rvrc":15,"money":47700,"thisvisit":1584658849,"signature":null,"nickname":null,"bit_data":34603008 },"42781671":{"uid":42781671,"username":"UID:42781671","credit":34734080,"medal":null,"reputation":"50_-450,61_49","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":" 1567530942 被守尸的枯法者DPS","regdate":1522150393,"mute_time":null,"postnum":3621,"rvrc":10,"money":19400,"thisvisit":1584597165,"signature":null,"nickname":null,"bit_data":34734080 },"42707402":{"uid":42707402,"username":"UID:42707402","credit":1048576,"medal":null,"reputation":null,"groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1520169864,"mute_time":null,"postnum":8,"rvrc":10,"money":0,"thisvisit":1584670090,"signature":null,"nickname":null,"bit_data":1048576 },"43271895":{"uid":43271895,"username":"UID:43271895","credit":34603008,"medal":null,"reputation":"19_135,91_30,85_15,128_-285,133_30,48_15","groupid":-1,"memberid":42,"avatar":null,"yz":4,"site":null,"honor":" 1567530942 被羊的玛格汉铲屎官","regdate":1535946456,"mute_time":null,"postnum":2873,"rvrc":-9,"money":26500,"thisvisit":1584667994,"signature":null,"nickname":null,"bit_data":34603008 },"10417353":{"uid":10417353,"username":"UID:10417353","credit":34607106,"medal":"377,347,321,174,175,176,260,66,262,261","reputation":"6_-135,65_150,30_15,47_135,41_15,13_15,14_45,50_75,72_165,9_30,75_45,39_45,11_15,71_30,82_501,91_45,69_30,57_15,85_45,61_60,78_15,109_45","groupid":-1,"memberid":73,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1298721978,"mute_time":null,"postnum":6840,"rvrc":43,"money":77222,"thisvisit":1584613422,"signature":null,"nickname":null,"bit_data":34607106 },"40670080":{"uid":40670080,"username":"UID:40670080","credit":1179648,"medal":null,"reputation":"137_15","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1487906564,"mute_time":null,"postnum":91,"rvrc":10,"money":7900,"thisvisit":1584610572,"signature":null,"nickname":null,"bit_data":1179648 },"40720953":{"uid":40720953,"username":"UID:40720953","credit":1179648,"medal":null,"reputation":"19_105,134_30","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1488430506,"mute_time":null,"postnum":91,"rvrc":10,"money":0,"thisvisit":1584619578,"signature":null,"nickname":null,"bit_data":1179648 },"41702354":{"uid":41702354,"username":"UID:41702354","credit":34734080,"medal":null,"reputation":"61_12","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1501303200,"mute_time":null,"postnum":355,"rvrc":10,"money":1900,"thisvisit":1584605960,"signature":null,"nickname":null,"bit_data":34734080 },"60254380":{"uid":60254380,"username":"UID:60254380","credit":34865152,"medal":"385,273","reputation":"61_64,82_90","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":" 1567530942 稀有度UR的 黑铁矮人汪星人","regdate":1550623916,"mute_time":null,"postnum":320,"rvrc":11,"money":35900,"thisvisit":1584629959,"signature":null,"nickname":null,"bit_data":34865152 },"9948353":{"uid":9948353,"username":"UID:9948353","credit":1048576,"medal":"207","reputation":"82_360,61_3","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1295451401,"mute_time":null,"postnum":362,"rvrc":10,"money":35999,"thisvisit":1584607230,"signature":null,"nickname":null,"bit_data":1048576 },"20412030":{"uid":20412030,"username":"UID:20412030","credit":34603008,"medal":"207","reputation":"39_-300,61_17,85_15,131_30","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1354712678,"mute_time":null,"postnum":3281,"rvrc":10,"money":31407,"thisvisit":1584659201,"signature":null,"nickname":null,"bit_data":34603008 },"61248191":{"uid":61248191,"username":"UID:61248191","credit":1048576,"medal":null,"reputation":null,"groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1572501193,"mute_time":null,"postnum":64,"rvrc":10,"money":0,"thisvisit":1584666169,"signature":null,"nickname":null,"bit_data":1048576 },"38731302":{"uid":38731302,"username":"UID:38731302","credit":1179648,"medal":null,"reputation":"61_1","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1469618474,"mute_time":null,"postnum":1034,"rvrc":10,"money":100,"thisvisit":1584671598,"signature":null,"nickname":null,"bit_data":1179648 },"40747113":{"uid":40747113,"username":"UID:40747113","credit":1048576,"medal":null,"reputation":"22_30,61_70,102_45","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1488796674,"mute_time":null,"postnum":1362,"rvrc":10,"money":45121,"thisvisit":1584634074,"signature":null,"nickname":null,"bit_data":1048576 },"35237063":{"uid":35237063,"username":"UID:35237063","credit":1048576,"medal":null,"reputation":"61_2","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1429488815,"mute_time":null,"postnum":719,"rvrc":10,"money":3667,"thisvisit":1584631069,"signature":null,"nickname":null,"bit_data":1048576 },"34841524":{"uid":34841524,"username":"UID:34841524","credit":1048576,"medal":null,"reputation":"97_45,109_15","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1425266917,"mute_time":null,"postnum":1094,"rvrc":13,"money":40937,"thisvisit":1584632854,"signature":null,"nickname":null,"bit_data":1048576 },"42511859":{"uid":42511859,"username":"UID:42511859","credit":1179648,"medal":null,"reputation":"128_-150,61_2","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1514624033,"mute_time":null,"postnum":62,"rvrc":10,"money":200,"thisvisit":1584663020,"signature":null,"nickname":null,"bit_data":1179648 },"60834008":{"uid":60834008,"username":"UID:60834008","credit":1048576,"medal":null,"reputation":"61_7","groupid":-1,"memberid":39,"avatar":null,"yz":4,"site":null,"honor":null,"regdate":1567075371,"mute_time":null,"postnum":93,"rvrc":10,"money":600,"thisvisit":1584661719,"signature":null,"nickname":null,"bit_data":1048576 },"__GROUPS":{"39":{"0":"学徒","1":622816,"2":39 },"42":{"0":"警告等级1","1":622816,"2":42 },"73":{"0":"学徒","1":1016032,"2":73 } },"__MEDALS":{"385":{"0":"385.gif","1":"猪年大吉","2":"猪年大吉","3":385 },"260":{"0":"260.gif","1":"一周年","2":"连续签到一年","3":260 },"377":{"0":"377.gif","1":"狗年大吉","2":"狗年大吉","3":377 },"347":{"0":"347.gif","1":"企鹅帽","2":"企鹅帽","3":347 },"321":{"0":"321.gif","1":"鸡年大吉","2":"鸡年大吉","3":321 },"174":{"0":"174.gif","1":"(堕落的)猴子","2":"猴子是人类的朋友，你是猴子的朋友","3":174 },"175":{"0":"175.gif","1":"(堕落的)猴子-","2":"猴子是人类的朋友，你是猴子的朋友","3":175 },"176":{"0":"176.gif","1":"(堕落的)猴子--","2":"猴子是人类的朋友，你是猴子的朋友","3":176 },"66":{"0":"66.gif","1":"心之所在","2":"参与召集战友活动的纪念","3":66 },"262":{"0":"262.gif","1":"猴年大吉","2":"猴年大吉","3":262 },"261":{"0":"261.gif","1":"神秘礼盒","2":"(空的)","3":261 },"273":{"0":"273.gif","1":"咸鱼","2":"不拿第一和咸鱼有什么区别~","3":273 },"207":{"0":"207.gif","1":"爆竹声中旧岁除","2":"一支红杏出墙来","3":207 } },"__REPUTATIONS":{"-447601":{"60534847":"150","150823":"0","38966267":"0","42781671":"-300","42707402":"0","43271895":"165","10417353":"18650","40670080":"0","40720953":"60","41702354":"0","60254380":"0","9948353":"0","20412030":"0","61248191":"0","38731302":"0","40747113":"15","35237063":"0","34841524":"20","42511859":"0","60834008":"0","0":"用户墮落的猴子(447601)的声望" } } } )
+//userinfoend
+__CUSTOM_LEVEL=[{r:-21000,n:"京阿尼加油"},{r:1,n:"全金属狂潮"},{r:50,n:"AIR"},{r:100,n:"凉宫春日的忧郁"},{r:150,n:"Kanon"},{r:200,n:"幸运星"},{r:250,n:"CLANNAD"},{r:300,n:"MUNTO"},{r:400,n:"K-ON"},{r:500,n:"日常"},{r:600,n:"冰果"},{r:700,n:"中二病也想谈恋爱"},{r:800,n:"玉子市场"},{r:900,n:"Free"},{r:1000,n:"境界的彼方"},{r:1500,n:"甘城光辉游乐园"},{r:2000,n:"吹响吧！上低音号"},{r:3000,n:"无彩限的怪灵世界"},{r:4000,n:"声之形"},{r:5000,n:"小林家的龙女仆"},{r:7500,n:"紫罗兰永恒花园"},{r:10000,n:"弦音"}]
+__AUTO_TRANS_FID=-447601
+__SELECTED_FORUM='-447601'
+commonui.postArg.setDefault(-447601,'',20664912,'60534847','4','','',',13838394,481303,1522091,722290,8979963,396191,5076687,25804252,1169037,5287743,37550969,41736856,1591103488t,41235201,1591103488t,34508964,1591103488t,38616215,1591853056t,5456663,','')
+commonui.aE(document,'mouseup',function(e){commonui.quoteTo.hideWindow(e)})
+</script>
+
+<div style="position: absolute; float: left; background: rgb(255, 248, 231) none repeat scroll 0% 0%; border: 0.0769em solid rgb(189, 126, 109); padding: 0px 0.3em; text-align: left; margin-top: 0px; font-size: 1.083em; line-height: 1.8em; z-index: 1; display: none;"></div><div id="m_nav" class="module_wrap">
+<div class="nav"><div class=" nav_root_c"><a href="/" class="nav_root">N&nbsp;G&nbsp;A</a></div><span class="nav_spr"> <span>»</span></span><a href="/thread.php?fid=-447601" class="nav_link" data-fb="8424">二次元国家地理</a><span class="nav_spr"> <span>»</span></span><a href="/read.php?tid=20664912" class="nav_link" data-fb="">[讨论] 摒弃吹学史观，用青学的视角来解构《利兹与青鸟》</a><div class="clear"></div><a id="topNavAnchor"></a>
+<div class=" clear"></div></div>
+</div><script type="text/javascript">commonui.advNav($('m_nav'))</script>
+
+<div id="m_pbtntop" class="module_wrap">
+<div class="w100">
+<div class="right_" id="postbtop"></div><div class="left" name="pageball" id="pagebtop"><table class=" stdbtn" cellspacing="0"><tbody><tr><td><a href="/read.php?tid=20664912&amp;page=2" title="下一页" class=" uitxt1">后页</a></td><td><a href="/read.php?tid=20664912" class=" invert" title="">&nbsp;1&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=2" class=" uitxt1" title="">&nbsp;2&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=3" class=" uitxt1" title="">&nbsp;3&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=4" class=" uitxt1" title="">&nbsp;4&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=5" class=" uitxt1" title="最后页">&nbsp;5.</a></td><td><a href="javascript:void(0)" name="topage" title="到指定的页数" class=" uitxt1">到</a></td></tr></tbody></table></div><div class="clear"></div>
+</div>
+</div>
+
+<h1 class="x">[讨论] 摒弃吹学史观，用青学的视角来解构《利兹与青鸟》</h1>
+<div id="m_posts" class="module_wrap">
+<div class="w100" id="m_posts_c">
+<!--postliststart-->
+
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow0" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo0" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><a href="nuke.php?func=ucp&amp;uid=60534847" id="postauthor0" class="author b nobr">UID:6053<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#6a1c2b;color:#ffffff">4847</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,60534847)">60534847</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  150"><table class="blue" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:15%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">Kanon</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">150(lv4)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2019-06-04 20:18 
+ 最后登陆: 2020-03-19 18:44 ">注册: <span class="numeric silver" name="regdate">19-06-04</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer0"><a id="pid0Anchor"></a><a name="l0"></a>
+			<div class="postBtnPos" id="postBtnPos0"></div>
+			<div class="postInfo" id="postInfo0" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate0" style="margin-left: 0.7em;" class=" stxt">2020-03-05 03:34</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject0" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">194</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject0" style="line-height: inherit; vertical-align: -0.15em;">[讨论] 摒弃吹学史观，用青学的视角来解构《利兹与青鸟》</h3></div>
+				<br>
+				<p id="postcontent0" class="postcontent ubbcode">我接触京吹这个系列比较晚，也很少和别人讨论过这个系列的作品。在接触了吹学以后，发现很多人都通过中国的特色文化对京吹这部作品做出了不同的解读，我看的也十分开心。<br>但是京吹毕竟是一个描述高中青春社团生活的作品，高中生之间的人际关系，真的有吹学视角下描绘那么的复杂吗？回想我高中自己在乐团的亲身经历(姑且我还曾算个声部长)，曾想过什么乐团是部长集权制，还是声部议会制吗？曾想过大赛不利问责于谁吗？<br>全部从吹学角度出发来解读虽然有趣，但是也未必能正确解读作品。也会丧失原作中很多其他的细节和乐趣。现在nga对于京吹的讨论大多都是吹学，我想作为一个百合厨/曾是高中乐团成员的角度，从作品本身出发，来说一说自己发现的利兹与青鸟中的一些细节和个人的观点。<br>这些想法有部分是受到推特和pixiv的太太们启发，还有很多可能是被人提过的过时之谈，请大家多包容。<br><br><br><span style="font-size:150%;line-height:183%">3和5</span><br><br>很多人可能没有察觉，但是3和5可能是利兹与青鸟这部电影除了青鸟以外最重要的意象。<br>其中<span style="font-size:130%;line-height:183%"><span style="text-decoration:underline"><span style="font-weight:bold">3代表伞 5代表霙</span></span></span><br>在影片的前半段中，剧中的角色和观众都会认为伞哥哥代表着随时会飞走的青鸟。而影片前半段的童话故事中，利兹给青鸟女孩带上了头饰，上面正是<span style="font-weight:bold">3个果实</span>。<br>而在新山老师的谈话后，所有人都醒悟到霙才是真正的青鸟时，此时紧接着的童话故事里，被利兹放走的青鸟女孩头上的果实，很清楚的变成了<span style="font-weight:bold">5个果实</span>。<br><img style="max-width:903px;min-width:783px;min-height:436px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-imxiZ16T3cSlr-c4.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:705px;min-height:425px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-6f6gZ1dT3cSjl-bt.png" alt="" onerror="ubbcode.imgError(this)"><br><br><br>如果只是一个头饰的变化，这么说也许会显得牵强，那么再请看这个画面。<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-3855XiZ4xT3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br>给霙发了进路调查表的老师开始上数学课，黑板上写着<br><span style="font-size:130%;line-height:183%"><span style="font-weight:bold">“3和5互为素数”</span></span><br>同时老师也在讲解3和5这一对数字<br>“像2和34和5这样，彼此之间不存在1以外的公因数的关系，就成为互质数”<br>专门用一段课堂的画面来讲解这一数字，想必3和5并不是一个简单的巧合。<br><span style="font-weight:bold">这一段话也很符合伞与霙这一对。二人性格迥异，除了同在乐团这一公因数以外，二人并不存在其他的关系了。这也是为什么伞的退社给霙带来了那么大的伤害。因为她们之间唯一的公因数消失了。</span><br><br>这段数学课在影片结尾也有呼应。<br>在希美决定考取一般大学后，她在图书馆做的题目，暂停来看<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-f6lpZpT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br>“如果2个自然数x,y对应x，y互为素数，求x+y和xy互为素数”<br>伞哥哥写到“假设x+y和xy有共同的素因数PE…”<br><br>我的数学已经有好多年没碰过了，日常的加减乘除都靠siri计算，但是如果我没想错的话<br>3+5=8， 3*5=15而8和15应该也是互质的吧 那么<br><span style="font-size:130%;line-height:183%"><span style="font-weight:bold">3和5正是这道题的答案</span></span><br>(之一，原谅我的小学数学水平)<br>但是伞哥哥做到一半把接下来写的擦掉了。是不是说明伞哥哥还是不能完美的做出互为素数的这道题呢？(加油啊 伞哥哥！)<br><br><br><br>再请看这个画面<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-fawxZrT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br>影片开始，进入学校的霙打开鞋柜，请注意鞋柜上的数字。20835。把这几个数字的顺序调整一下，2358，很明显，这是斐波那契数列，又叫做黄金分割数列。<br>3/5=0.6<br>5/8=0.625<br>…<br>55/89=0.61797<br>也就是说 随着数字的变化，这个数列前后项的比值会越来越接近黄金比例；<br>也暗示着，<span style="font-weight:bold">随着时间的变化，两个人的关系会越来越完美。</span><br><br><br>3和5在影片中还不止这些。<br>霙在理科室喂的河豚的数量，大家猜是多少？不多不少，正是对应伞的3只。<br>这也在暗示，<span style="font-weight:bold">并非是霙单方面的依恋伞，伞对霙的依恋也很重</span>。<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-aytlZcT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br>在影片的结尾，霙跑到理科室找希美的时候，镜头给了这组试剂管一个特写。(新山老师找霙谈话前也有一个不同的特写。同一个物品给了两个不同的特写，想必是有意为之)<br>其中一个试管贴着F。 <span style="font-weight:bold">F在16进制中表示15，15=3x5，试剂管和15这个数字都在表示着此刻互为质数的两人之间终于在这里开始相互交流，沟通，融合，发生着微妙的化学反应。从disjoint变成joint</span><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-3fciZiT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-kxntZtT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><br><span style="font-size:150%;line-height:183%">希美的独占欲</span><br><br>霙在和新山老师的谈话中说，自己无法理解把青鸟从笼子里放出的利兹的心情，却不知自己可能已经被关进了笼子里。虽然伞哥哥一直给人大大咧咧的印象，实际上仔细观察的话，伞哥哥对霙可能独占欲非常之强。<br>请看这个画面：优子催部费的名场面<br>在结束了一整讨论后，希美邀请霙，优子，夏纪三人去夏日祭，但是最后她问霙有没有想叫别人一起去。但是仔细想一想这其实非常反常。霙除了自己一个人的时候以及乐队排练的时候，其他的时间不都是和希美在一起吗？可以说霙的人际圈，就只有希美，优子，夏纪这四人。就算不考虑内向的霙是否会主动向别人发出邀请，即使霙会反常地邀请别人，此时也无人可邀(梨梨花现在还没有刷够好感度)，可以说伞哥哥这一问题完全是白问。可是她为什么要问呢？因为她紧张，害怕了。此时的霙已经被新山老师推荐入学音乐大学了，而自己还不知道进路。青鸟仿佛就快不留在自己身边，远走高飞了。<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-j28rXhZ4rT3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-7489XfZ42T3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-laawXfZ43T3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-djt7XfZ44T3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-675uXfZ42T3cS1hc-u0.png" alt="" onerror="ubbcode.imgError(this)"><br><br>可以看到，当霙回答没有的时候，伞哥哥紧抓着桌边的手收了回来。心中紧张的情绪得到了缓解。<br><br><br><br>但是一段时间后，当伞哥哥放松警惕的时候，事情发生了变化。乐队选拔过后，伞再次邀请霙出去玩，这时被梨梨花刷够了好感度的霙提出：“可以邀请别人一起去吗”伞先是吃惊，一个部员走过挡住画面后，希美很快就变脸，恢复正常，并问到“咦怎么了？霙很少会这种要求的啊”因为这个对比十分强烈，我想大家肯定都注意到了。<br>我想说的是下面的画面。<span style="font-weight:bold">这个场景里，希美站立在窗边，而霙却一直用一种不舒服的姿势蹲在格子画风的地摊上。谈话结束后闪过了霙经常在的通往天台，有栅栏的楼梯的画面。这两个画面给我一种不安的感觉。当我把两个画面叠加到一起，我发现这两个画面竟然惊人的吻合。看起来仿佛就是霙被关在铁牢中一样。当然，这稍许有些勉强，或许只是我的牵强附会吧。</span><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-exq5ZwT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-jxdxZnT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:515.7535816618911px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-kg5kZ1tT3cSt3-gm.png" alt="" onerror="ubbcode.imgError(this)"><br><br>而影片的结尾，<span style="font-weight:bold">希美站在校门栅栏的边上等霙一起放学，仿佛就像是亲手打开了笼子，放飞了青鸟。</span><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-5mmfZrT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-auq9Z1aT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><br>同样的表情变化也出现在梨梨花和霙开始了二重奏的时候(吹奏乐比大家想象中的吵很多，而且非常有穿透力，所以真的可以一整栋楼都听得清清楚楚)<br><br>听到了乐声的夏纪，露出了欣慰的笑容<br><br>而正在长笛组和学妹们聊天摸鱼的希美听到这个声音是什么反应呢？(人家练琴你聊天 难怪你不行啊！这里也可以看出学长学姐对于乐团水平的影响是很大的。)<br><br>先是吃惊，然后是一瞬但是很明显的悲伤的表情，然后很快恢复了笑容，继续和长笛组聊天，但是镜头一转已经看不见她的表情了。这一串的反应很快，也不如在大教室那次来的明显，可能很多人没有注意到。<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-938yZmT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-63d1ZhT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-cst5ZjT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-j0z3ZiT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-4l4pZfT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><span style="font-size:150%;line-height:183%">突兀的篮球课</span><br><br>在之前提到的 3和5的数学课之后紧接着的是一节体育课。但是这节体育课除了夏纪帮霙上场以外，好像并没有什么其他的剧情了，那为什么还要安排这样一节课呢？我觉得在于台词的暗示。<br>老师：はい、<span style="font-weight:bold">交代</span>(好，<span style="font-weight:bold">替换</span>！)<br>夏纪：みぞれ <span style="font-weight:bold">交代だよ</span>(霙，<span style="font-weight:bold">换人</span>了哦)<br>霙：うん(嗯)<br>夏纪：しないの？(不想吗？)<br>あー、仕方ないな(啊，没办法啊)<br><br>看过这段台词，我们先不分析，先来看看这节课之后发生了什么。<br>这节课过后，紧接着就是经典的reflexion,allegretto,you<br>也就是笛子反光照射到理科室小憩的霙的身上的环节。我认为，<span style="font-weight:bold">这是最后一段“霙是利兹，希美是青鸟“的片段。</span>在反光过后还有一小段剧情。两个长笛后辈夸希美吹的好，认为首席一定是希美。此时的希美也是信心满满，甚至对霙比了一个fight的姿势。<br>但是画面一转，紧接开始了童话故事。<br>青鸟开始在利兹睡着的夜晚，飞出窗外。而桌上放着<span style="font-weight:bold">5个果实</span>的画面，也表明了青鸟的角色开始了由希美(3)向霙(5)转变转变。<br>童话故事一结束，就是新山老师向霙推荐音乐大学被希美看见，这也是现实故事中，霙向青鸟转变的开始。<br><br>所以我们再回头看这节体育课。<span style="font-weight:bold">体育老师吹着哨子说的“はい、交代“就像是为青鸟的角色的替换吹响的前哨。而霙对于自己替换上场的抵触，既是对体育课的抵触，冥冥中也是对青鸟的角色替换的抵触。</span><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-riuZcT3cSqo-f0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-7ogcZ1gT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><br><span style="font-size:150%;line-height:183%">自闭的久石奏</span><br><br>当希美和霙经过低音声部的时候，她们正在玩南中流行的“最喜欢的抱抱”。<br>此时的久石奏正一个人自闭地对着窗外，是唯一没有看向镜头(希美和霙)的人，<br><span style="font-weight:bold">也是唯一没有向希美和霙点头问好的一二年级学妹。</span><br>(这个点你们倒是可以用吹学来讨论讨论了hhh)<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-5ur6Z18T3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><br><span style="font-size:150%;line-height:183%">变色龙效应</span><br>“心理学家巴奇(Bargh)和查特朗(Chartrand)识别了他们叫做“变色龙效应”的部分肢体语言，发现，如果有人模仿了你的手势或者身体姿势，你往往会更喜欢他们。“<br>霙在影片一开始就变现出了对希美动作的不自觉的模仿。<br>比如希美摸了一下鞋柜，她经过时也摸了一下(注意这个鞋柜的号码250835，也都是斐波那契数列里的数字)<br>希美经过水池打开喝了一口时，霙经过时不喝水也打开了一下水龙头。<br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-38c5ZrT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-6vcbZjT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-btm5ZrT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:903px;min-height:507.9375px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-iq99ZqT3cS1hc-u0.jpg" alt="" onerror="ubbcode.imgError(this)"><br><br><br><h4 class="subtitle">小番外</h4>比起京吹整个系列的故事，我最喜欢的还是利兹与青鸟的故事，因此正片看的不多。但是有一个镜头让我印象非常深刻，和大家分享一下青学视角下的本篇。<br>伞哥哥和霙重归旧好时的画面。注意看背后的窗户框架的造型和桌椅的摆放 是不是很有即视感？<br><img style="max-width:903px;min-width:903px;min-height:558.3722627737227px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-hexzZ1zT3cSqn-gh.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:854px;min-height:482px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-a9l1Z1hT3cSnq-de.png" alt="" onerror="ubbcode.imgError(this)"><br><br><img style="max-width:903px;min-width:585px;min-height:381px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-7db9Z10T1kSg9-al.png" alt="" onerror="ubbcode.imgError(this)"><br><img style="max-width:903px;min-width:438px;min-height:587px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-iaepZvT1kSc6-gb.png" alt="" onerror="ubbcode.imgError(this)"><br><br><br>最后引用我最爱的山田监督的一段话<br><br>山田:的确如此，<span style="font-weight:bold">开头部分看到的两人之间的关系，天真烂漫的希美与喜欢希美到不行，眼中除希美并无他人的霙，每次和希美说话她都会告诉自己这是最后一次。每天都怀揣着“这是与希美在一起的最后一天"的感情生活着.....</span><br>吉田:因为坠入爱河都是一瞬间，不会像爱情那样一直持续下去。<br>山田:<span style="font-weight:bold">与其说是爱不如说是“依恋”呢。爱情的话 就算两人稍稍分离，一段时间之后也会和好，会有一定的安心感。依恋却不会呢....这次的作品可以看出爱情与依恋的区别。</span><br>吉田:但依恋还是会有结束的一天呢。<br>山田: ....迄今为止的作品中，大部分对爱情的解读都是两人无偿地、不需确认双方感情地留在彼此身边。我想《声之形》与《利兹》和那种题材的作品是不同的。霙一直是怀着最终回的心态,.对一直描绘彼此没有交集的事物抱有“ 恐惧感"吧.....<br>吉田:一直付出，但看不到回报是很辛苦的呢。<br>山田:啊....是吉田桑说的这样....即便如此还是很想描写互相理解的 两人一起前进的故事。就算现在不向彼此给出答案也没关系。<br>吉田: 10年后的两人会怎么样呢。<br>山田:<span style="font-size:120%;line-height:183%"><span style="font-weight:bold">还是希望两人能从对彼此的依恋进化为爱情吧。虽然现在还没到 那个程度，但还是希望最终能成功。</span></span><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent0&quot;)"></p>
+				<br>
+			</span><h4 class="silver subtitle">附件</h4><span id="postattach0"><button style="clear:both;margin:0.8em 0.8em 0.8em 2.3em;float:left" type="button" onclick="this.style.display='none';ubbcode.attach.disp('0',1)">显示全部附件</button></span><script>ubbcode.attach.load('postattach0','postcontent0',[ {aid:'',url:'mon_202003/05/-9lddQ5-6f6gZ1dT3cSjl-bt.png',name:'-9lddQ5-6f6gZ1dT3cSjl-bt.png',type:'img',thumb:'120',dscp:'',size:'494',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200305023817%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-imxiZ16T3cSlr-c4.png',name:'-9lddQ5-imxiZ16T3cSlr-c4.png',type:'img',thumb:'120',dscp:'',size:'418',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200305023800%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-3855XiZ4xT3cS1hc-u0.png',name:'-9lddQ5-3855XiZ4xT3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1772',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200304230949%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-f6lpZpT3cS1hc-u0.jpg',name:'-9lddQ5-f6lpZpT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'251',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200305%5f010204%2e525%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-fawxZrT3cS1hc-u0.jpg',name:'-9lddQ5-fawxZrT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'268',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f225906%2e600%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-aytlZcT3cS1hc-u0.jpg',name:'-9lddQ5-aytlZcT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'119',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f192452%2e233%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-3fciZiT3cS1hc-u0.jpg',name:'-9lddQ5-3fciZiT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'181',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200305%5f000537%2e907%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-kxntZtT3cS1hc-u0.jpg',name:'-9lddQ5-kxntZtT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'288',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f235720%2e290%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-675uXfZ42T3cS1hc-u0.png',name:'-9lddQ5-675uXfZ42T3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1456',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200305024557%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-djt7XfZ44T3cS1hc-u0.png',name:'-9lddQ5-djt7XfZ44T3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1475',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200305024543%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-laawXfZ43T3cS1hc-u0.png',name:'-9lddQ5-laawXfZ43T3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1473',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200304231815%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-7489XfZ42T3cS1hc-u0.png',name:'-9lddQ5-7489XfZ42T3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1457',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200304231800%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-j28rXhZ4rT3cS1hc-u0.png',name:'-9lddQ5-j28rXhZ4rT3cS1hc-u0.png',type:'img',thumb:'120',dscp:'',size:'1715',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200304231751%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-jxdxZnT3cS1hc-u0.jpg',name:'-9lddQ5-jxdxZnT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'234',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232150%2e776%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-exq5ZwT3cS1hc-u0.jpg',name:'-9lddQ5-exq5ZwT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'319',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232139%2e488%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-kg5kZ1tT3cSt3-gm.png',name:'-9lddQ5-kg5kZ1tT3cSt3-gm.png',type:'img',thumb:'120',dscp:'',size:'653',url_utf8_org_name:'QQ%E6%88%AA%E5%9B%BE20200305024854%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-auq9Z1aT3cS1hc-u0.jpg',name:'-9lddQ5-auq9Z1aT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'456',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200305%5f024956%2e201%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-5mmfZrT3cS1hc-u0.jpg',name:'-9lddQ5-5mmfZrT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'267',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200305%5f024945%2e159%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-4l4pZfT3cS1hc-u0.jpg',name:'-9lddQ5-4l4pZfT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'151',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232349%2e897%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-j0z3ZiT3cS1hc-u0.jpg',name:'-9lddQ5-j0z3ZiT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'175',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232347%2e289%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-cst5ZjT3cS1hc-u0.jpg',name:'-9lddQ5-cst5ZjT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'185',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232340%2e162%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-63d1ZhT3cS1hc-u0.jpg',name:'-9lddQ5-63d1ZhT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'174',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f232331%2e578%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-938yZmT3cS1hc-u0.jpg',name:'-9lddQ5-938yZmT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'220',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200305%5f002355%2e163%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-riuZcT3cSqo-f0.jpg',name:'-9lddQ5-riuZcT3cSqo-f0.jpg',type:'img',thumb:'120',dscp:'',size:'117',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f193329%2e489%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-7ogcZ1gT3cS1hc-u0.jpg',name:'-9lddQ5-7ogcZ1gT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'515',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f192344%2e602%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-5ur6Z18T3cS1hc-u0.jpg',name:'-9lddQ5-5ur6Z18T3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'440',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f191859%2e065%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-iq99ZqT3cS1hc-u0.jpg',name:'-9lddQ5-iq99ZqT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'256',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f230440%2e360%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-btm5ZrT3cS1hc-u0.jpg',name:'-9lddQ5-btm5ZrT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'275',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f230437%2e544%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-6vcbZjT3cS1hc-u0.jpg',name:'-9lddQ5-6vcbZjT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'188',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f230352%2e488%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-38c5ZrT3cS1hc-u0.jpg',name:'-9lddQ5-38c5ZrT3cS1hc-u0.jpg',type:'img',thumb:'120',dscp:'',size:'274',url_utf8_org_name:'%5bAirota%26LoliHouse%5d%20Liz%20and%20the%20Blue%20Bird%20%2d%20Movie%20%5bBDRip%201080p%20HEVC%2dyuv420p10%20FLACx2%5d%2emkv%5f20200304%5f230333%2e225%2ejpg'},{aid:'',url:'mon_202003/05/-9lddQ5-iaepZvT1kSc6-gb.png',name:'-9lddQ5-iaepZvT1kSc6-gb.png',type:'img',thumb:'56',dscp:'',size:'306',url_utf8_org_name:'QQ%E5%9B%BE%E7%89%8720200305030943%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-7db9Z10T1kSg9-al.png',name:'-9lddQ5-7db9Z10T1kSg9-al.png',type:'img',thumb:'56',dscp:'',size:'356',url_utf8_org_name:'QQ%E5%9B%BE%E7%89%8720200305030939%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-hexzZ1zT3cSqn-gh.png',name:'-9lddQ5-hexzZ1zT3cSqn-gh.png',type:'img',thumb:'120',dscp:'',size:'714',url_utf8_org_name:'QQ%E5%9B%BE%E7%89%8720200305030934%2epng'},{aid:'',url:'mon_202003/05/-9lddQ5-a9l1Z1hT3cSnq-de.png',name:'-9lddQ5-a9l1Z1hT3cSnq-de.png',type:'img',thumb:'120',dscp:'',size:'534',url_utf8_org_name:'QQ%E5%9B%BE%E7%89%8720200305033216%2epng'}],'0','20664912','60534847','1583350440','0')</script><div class="clear"></div><h4 class="silver subtitle">改动</h4><span id="alertc0"><span class="block_txt block_txt_c3" style="margin-bottom:0.25em">在2020-03-05 03:39修改</span> <span class="block_txt block_txt_c2" style="margin-bottom:0.25em"><span class="block_txt block_txt_c0" style="margin-left:-0.4em">✓</span> 150声望 0威望 0G</span> </span><script>commonui.loadAlertInfo('[E1583350762 0 0]		[A150 0 0 24824900]','alertc0')</script><br class="clear"><span id="hightlight_for_0"><h4 class="silver subtitle">热点回复</h4>
+<div style="width:47%" class="comment_c left">
+	<span id="commentposterinfo__402136308" class="posterinfo" style="display: block;"><a href="nuke.php?func=ucp&amp;uid=42707402" id="postauthor__402136308" class="author b nobr">UID:4270<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#b49582;color:#ffffff">7402</b></a><br></span>
+	<table class="comment_c_0"><tbody><tr><td class="comment_c_1"></td><td class="comment_c_2 c3">
+	<span id="postcommentcontentandsubject__402136308" class="comment_c_3"><div><span></span><span id="postcommentsubject__402136308" style="line-height: inherit; vertical-align: -0.15em;"></span></div>
+		<a href="javascript:void(0)" onclick="commonui.sw(this,1,13)" class="small_colored_text_btn stxt white right">+</a><span class="c1 postInfo" id="commentInfo__402136308" style="line-height: inherit; color: rgb(136, 136, 136); display: none;"><span id="postdate__402136308" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:31</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">92</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></span>
+		
+		<span id="postcomment__402136308" class=" ubbcode">吹学有救了！<button alt="https://img4.nga.178.com/ngabbs/post/smile/ac13.png" onclick="var tmp = _$(&quot;/img&quot;,&quot;className&quot;,&quot;smile_ac&quot;,&quot;src&quot;,&quot;https://img4.nga.178.com/ngabbs/post/smile/ac13.png&quot;);this.parentNode.replaceChild(tmp,this)">哭</button><br><br>《利兹与青鸟》这部作品的特点之一就是大量的内容被隐藏在画面之中，并没有用台词来体现(尤其是伞哥哥在心态上的转变)<br><br>小肥宅的心思比较好懂，但是想要读懂完整的蓝小鸟，就必须捋清伞哥哥的纠结；如果不弄清伞哥哥每一声”谢谢“的含义，就不能算作是看懂了蓝小鸟(这也许就是伞哥哥的魅力，以及她惨遭迫害的原因罢)<br><br>也许相比成天玩梗的吹学史观，像这种扎根于原作，画面解读与数字论证相得益彰的分析才配得上”正统“二字<button alt="https://img4.nga.178.com/ngabbs/post/smile/ac42.png" onclick="var tmp = _$(&quot;/img&quot;,&quot;className&quot;,&quot;smile_ac&quot;,&quot;src&quot;,&quot;https://img4.nga.178.com/ngabbs/post/smile/ac42.png&quot;);this.parentNode.replaceChild(tmp,this)">赞同</button><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcomment__402136308&quot;)">…… <a href="/read.php?tid=20664912&amp;pid=402136308&amp;to=1" target="_blank" class="silver">[原帖]</a></span>
+	</span>
+	</td></tr></tbody></table>
+<script>
+commonui.postArg.proc( '__402136308',
+$('postcommentcontainer__402136308'),$('postcommentsubject__402136308'),$('postcomment__402136308'),null,$('commentposterinfo__402136308'),$('commentInfo__402136308'),null,
+null,null,402136308,0,
+null,'42707402',1583364714,'0,92,0',null,
+'','',null,'',null,0,1 )
+</script>
+</div>
+<br>
+<div style="width:47%" class="comment_c left">
+	<span id="commentposterinfo__402135289" class="posterinfo" style="display: block;"><a href="nuke.php?func=ucp&amp;uid=38966267" id="postauthor__402135289" class="author b nobr">UID:3896<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#24402b;color:#ffffff">6267</b></a><br></span>
+	<table class="comment_c_0"><tbody><tr><td class="comment_c_1"></td><td class="comment_c_2 c3">
+	<span id="postcommentcontentandsubject__402135289" class="comment_c_3"><div><span></span><span id="postcommentsubject__402135289" style="line-height: inherit; vertical-align: -0.15em;"></span></div>
+		<a href="javascript:void(0)" onclick="commonui.sw(this,1,13)" class="small_colored_text_btn stxt white right">+</a><span class="c1 postInfo" id="commentInfo__402135289" style="line-height: inherit; color: rgb(136, 136, 136); display: none;"><span id="postdate__402135289" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:17</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">30</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></span>
+		
+		<span id="postcomment__402135289" class=" ubbcode">吹 学 已 死<br>青 学 当 立<br><button type="button" onclick="this.nextSibling.innerHTML=ubbcode.manualLoadCache[&quot;manualLoadImg9400&quot;];this.nextSibling.style.display=&quot;&quot;;this.style.display=&quot;none&quot;">显示图片</button><span style="display:none"></span><button type="button" onclick="this.nextSibling.innerHTML=ubbcode.manualLoadCache[&quot;manualLoadImg2523&quot;];this.nextSibling.style.display=&quot;&quot;;this.style.display=&quot;none&quot;">显示图片</button><span style="display:none"></span><button type="button" onclick="this.nextSibling.innerHTML=ubbcode.manualLoadCache[&quot;manualLoadImg7859&quot;];this.nextSibling.style.display=&quot;&quot;;this.style.display=&quot;none&quot;">显示图片</button><span style="display:none"></span>[img]./mon_202003/05/-9lddQ5-7……<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcomment__402135289&quot;)"> <a href="/read.php?tid=20664912&amp;pid=402135289&amp;to=1" target="_blank" class="silver">[全部]</a></span>
+	</span>
+	</td></tr></tbody></table>
+<script>
+commonui.postArg.proc( '__402135289',
+$('postcommentcontainer__402135289'),$('postcommentsubject__402135289'),$('postcomment__402135289'),null,$('commentposterinfo__402135289'),$('commentInfo__402135289'),null,
+null,null,402135289,8192,
+null,'38966267',1583363875,'0,30,0',null,
+'','',null,'',null,0,1 )
+</script>
+</div>
+<div class="clear"></div>
+<div style="width:47%" class="comment_c left">
+	<span id="commentposterinfo__402154007" class="posterinfo" style="display: block;"><a href="nuke.php?func=ucp&amp;uid=60834008" id="postauthor__402154007" class="author b nobr">UID:6083<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#be324d;color:#ffffff">4008</b></a><br></span>
+	<table class="comment_c_0"><tbody><tr><td class="comment_c_1"></td><td class="comment_c_2 c3">
+	<span id="postcommentcontentandsubject__402154007" class="comment_c_3"><div><span></span><span id="postcommentsubject__402154007" style="line-height: inherit; vertical-align: -0.15em;"></span></div>
+		<a href="javascript:void(0)" onclick="commonui.sw(this,1,13)" class="small_colored_text_btn stxt white right">+</a><span class="c1 postInfo" id="commentInfo__402154007" style="line-height: inherit; color: rgb(136, 136, 136); display: none;"><span id="postdate__402154007" style="margin-left: 0.7em;" class=" stxt">2020-03-05 09:22</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">29</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></span>
+		
+		<span id="postcomment__402154007" class=" ubbcode"><button type="button" onclick="this.nextSibling.innerHTML=ubbcode.manualLoadCache[&quot;manualLoadImg7723&quot;];this.nextSibling.style.display=&quot;&quot;;this.style.display=&quot;none&quot;">显示图片</button><span style="display:none"></span><br>来了来了<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcomment__402154007&quot;)">…… <a href="/read.php?tid=20664912&amp;pid=402154007&amp;to=1" target="_blank" class="silver">[原帖]</a></span>
+	</span>
+	</td></tr></tbody></table>
+<script>
+commonui.postArg.proc( '__402154007',
+$('postcommentcontainer__402154007'),$('postcommentsubject__402154007'),$('postcomment__402154007'),null,$('commentposterinfo__402154007'),$('commentInfo__402154007'),null,
+null,null,402154007,8192,
+null,'60834008',1583371323,'0,29,0',null,
+'','',null,'',null,0,1 )
+</script>
+</div>
+<br></span>			<div class="clear"></div>
+			<div id="postsign0" class="x"></div>			</td><td class="null" style="background: rgb(68, 68, 68) none repeat scroll 0% 0%; box-shadow: rgb(34, 34, 34) 0px 0px 5px 0px inset; padding: 0.416em; width: 122px; text-align: center; vertical-align: top;"><a href="https://g1.tagtic.cn/don/cl?encode_nyg=cmVxaWQ9WEUtWHlodmVjMlNRQ2duam9yMTkwJmNvbz0zODU3YjY4NDYyODIwY2UzMmFhYTZjMmQ2Y2Y1OTEwMGQxNWQ3Y2UyMmUxZmMyZWUyNGQ5MmIzNzNjMDRjYTliJm9zPTMmcmVmPWh0dHBzJTNBJTJGJTJGYmJzLm5nYS5jbiUyRnJlYWQucGhwJTNGdGlkJTNEMjA2NjQ5MTIlMjZyYW5kJTNENjU0JmFkdmVydXNlcmlkPTYzNCZvcmRlcmlkPTU4MzQmYWlkPTY5MjEmcHJvdmluY2VJZD0xNyZwYXltZW50PWNwdCZhZF9mcm9tPTAmbWlkPTY5MjExJmdyb3VwX2lkPTY5MjExJnBvc2l0aW9uPTgxNyZ3PTEyMCZoPTYwMCZjb3N0PTEwMCZjb2VmZmljaWVudD0xJnNsb3RCaW5kaW5nPXNpbmdsZSZpc1VuaW9uPTEmbmV4dHVybD1odHRwcyUzQSUyRiUyRmdhbWUuc3RhcmdhbWUuY29tJTJGcGxheSUyRnN0YXJ0Z2FtZSUzRmlkJTNENjM0&amp;v_y=f2e52777997f209946ed6488e6ae9ea891f46c98d3df0ca922e4ca2829e0e2df" target="_blank" style="display:block;border:1px solid #000000;width:120px;height:600px;margin:auto;text-align:center;overflow:hidden;" title=""><img src="https://ad-static-xg.tagtic.cn/ad-material/images/nq80GWGDcElPXSPD2Yzz7iJtFgzTDb5RyzLxUgFP.gif" title="" style="width:120px;height:600px;margin:auto;" onload="__INSECTOB.add(this,function(){ngaAds[&quot;bbs_ads45&quot;].onload.apply(this)})"><br><img src="https://img4.nga.178.com/ngabbs/nga_classic/admark.png" style="border:none;transform:scale(1);margin:-18px 0 auto calc(100% - 48px)"></a></td>
+	</tr>
+</tbody></table><span><div style="background:#444;box-shadow: 0 0 5px 0 #222 inset;vertical-align:top;padding:5px 0;text-align:center;;border:1px solid #fffcee;border-top:none;border-bottom:none"><a href="https://g1.tagtic.cn/don/cl?encode_nyg=cmVxaWQ9andOQmE2b2lsWW1EV3FhY3doeVZZJmNvbz0zODU3YjY4NDYyODIwY2UzMmFhYTZjMmQ2Y2Y1OTEwMGQxNWQ3Y2UyMmUxZmMyZWUyNGQ5MmIzNzNjMDRjYTliJm9zPTMmcmVmPWh0dHBzJTNBJTJGJTJGYmJzLm5nYS5jbiUyRnJlYWQucGhwJTNGdGlkJTNEMjA2NjQ5MTIlMjZyYW5kJTNENjU0JmFkdmVydXNlcmlkPTYzNCZvcmRlcmlkPTU4MzUmYWlkPTY5NzkmcHJvdmluY2VJZD0xNyZwYXltZW50PWNwdCZhZF9mcm9tPTAmbWlkPTY5NzkxJmdyb3VwX2lkPTY5NzkxJnBvc2l0aW9uPTY2MyZ3PTk3MCZoPTkwJmNvc3Q9MTAwJmNvZWZmaWNpZW50PTEmc2xvdEJpbmRpbmc9c2luZ2xlJmlzVW5pb249MSZuZXh0dXJsPWh0dHAlM0ElMkYlMkZnYW1lLnN0YXJnYW1lLmNvbSUyRnBsYXklMkZzdGFydGdhbWUlM0ZpZCUzRDYxNA&amp;v_y=7c99e6541cac83b774723506758eac77a98c5b3edd98382d83f0656d57771d97" target="_blank" style="display:block;border:1px solid #000000;width:970px;height:90px;margin:auto;text-align:center;overflow:hidden;" title=""><img src="https://ad-static-xg.tagtic.cn/ad-material/images/F4qy99LK7XdnC05ajfCKN4l4FvAGPbV69ujzjSrH.jpeg" title="" style="width:970px;height:90px;margin:auto;" onload="__INSECTOB.add(this,function(){ngaAds[&quot;bbs_ads1&quot;].onload.apply(this)})"><br><img src="https://img4.nga.178.com/ngabbs/nga_classic/admark.png" style="border:none;transform:scale(1);margin:-18px 0 auto calc(100% - 48px)"></a><div class="clear"></div></div></span><script>
+ngaAds.bbs_ads8_load_new($('postsign0').parentNode.nextSibling,0,'-447601')
+commonui.postArg.proc( 0,
+$('postcontainer0'),$('postsubject0'),$('postcontent0'),$('postsign0'),$('posterinfo0'),$('postInfo0'),$('postBtnPos0'),
+null,null,0,33562624,
+null,'60534847',1583350440,'10,194,0','8976',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow0')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow1" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo1" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l1" href="/read.php?tid=20664912&amp;page=1#pid402135208Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#1</a></span><a href="nuke.php?func=ucp&amp;uid=150823" id="postauthor1" class="author b nobr">UID:15<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#9c7575;color:#ffffff">0823</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,150823)">150823</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2005-08-14 19:50 
+ 最后登陆: 2020-03-20 10:45 ">注册: <span class="numeric silver" name="regdate">05-08-14</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer1"><a id="pid402135208Anchor"></a><a name="l1"></a>
+			<div class="postBtnPos" id="postBtnPos1"></div>
+			<div class="postInfo" id="postInfo1" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate1" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:16</span><a title="发送自 MI 9" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: opacity(0.6); background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject1" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">11</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject1" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent1" class="postcontent ubbcode">原创的么？<br>写的很棒很细腻！<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent1&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign1" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign1').parentNode.nextSibling,1,'-447601')
+commonui.postArg.proc( 1,
+$('postcontainer1'),$('postsubject1'),$('postcontent1'),$('postsign1'),$('posterinfo1'),$('postInfo1'),$('postBtnPos1'),
+null,null,402135208,0,
+null,'150823',1583363790,'0,11,0','26',
+'','','100 MI 9','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow1')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow2" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo2" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l2" href="/read.php?tid=20664912&amp;page=1#pid402135289Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#2</a></span><a href="nuke.php?func=ucp&amp;uid=38966267" id="postauthor2" class="author b nobr">UID:3896<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#24402b;color:#ffffff">6267</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,38966267)">38966267</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2016-09-06 07:36 
+ 最后登陆: 2020-03-20 07:00 ">注册: <span class="numeric silver" name="regdate">16-09-06</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="display:none">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/385.gif" title="猪年大吉:
+猪年大吉" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/260.gif" title="一周年:
+连续签到一年" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/377.gif" title="狗年大吉:
+狗年大吉" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer2"><a id="pid402135289Anchor"></a><a name="l2"></a>
+			<div class="postBtnPos" id="postBtnPos2"></div>
+			<div class="postInfo" id="postInfo2" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate2" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:17</span><a title="发送自 vivo V1824A(Android 9) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject2" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">30</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject2" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent2" class="postcontent ubbcode">吹 学 已 死<br>青 学 当 立<br><img style="max-width:1036px;max-width:1036px;min-width:640px;min-height:640px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-cay9ZoT3cSgo-go.jpg.medium.jpg" data-srcorg="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-cay9ZoT3cSgo-go.jpg" alt="" onerror="ubbcode.imgError(this)"><img style="max-width:1036px;max-width:1036px;min-width:640px;min-height:905.4909819639279px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-kblpXcZ3bT3cSrq-138.png.medium.jpg" data-srcorg="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-kblpXcZ3bT3cSrq-138.png" alt="" onerror="ubbcode.imgError(this)"><img style="max-width:1036px;max-width:1036px;min-width:640px;min-height:581.8402120408937px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-5c10XrZ7gT3cS21d-1up.jpg.medium.jpg" data-srcorg="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-5c10XrZ7gT3cS21d-1up.jpg" alt="" onerror="ubbcode.imgError(this)"><img style="max-width:1036px;max-width:1036px;min-width:640px;min-height:1336.888888888889px;" onload="ubbcode.adjImgSize(this);" src="about:blank" data-srclazy="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-77m9Z19T3cSk0-15s.jpg.medium.jpg" data-srcorg="https://img.nga.178.com/attachments/mon_202003/05/-9lddQ5-77m9Z19T3cSk0-15s.jpg" alt="" onerror="ubbcode.imgError(this)"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent2&quot;)"></span>
+				<br>
+			</span><h4 class="silver subtitle">附件</h4><span id="postattach2"><button style="clear:both;margin:0.8em 0.8em 0.8em 2.3em;float:left" type="button" onclick="this.style.display='none';ubbcode.attach.disp('2',1)">显示全部附件</button></span><script>ubbcode.attach.load('postattach2','postcontent2',[ {aid:'',url:'mon_202003/05/-9lddQ5-cay9ZoT3cSgo-go.jpg',name:'-9lddQ5-cay9ZoT3cSgo-go.jpg',type:'img',thumb:'120',dscp:'',size:'241',url_utf8_org_name:'illust_73818152_20200302_071308.jpg'},{aid:'',url:'mon_202003/05/-9lddQ5-kblpXcZ3bT3cSrq-138.png',name:'-9lddQ5-kblpXcZ3bT3cSrq-138.png',type:'img',thumb:'120',dscp:'',size:'1185',url_utf8_org_name:'illust_78359854_20200303_235421.png'},{aid:'',url:'mon_202003/05/-9lddQ5-5c10XrZ7gT3cS21d-1up.jpg',name:'-9lddQ5-5c10XrZ7gT3cS21d-1up.jpg',type:'img',thumb:'120',dscp:'',size:'2682',url_utf8_org_name:'illust_71967086_20200302_071329.jpg'},{aid:'',url:'mon_202003/05/-9lddQ5-77m9Z19T3cSk0-15s.jpg',name:'-9lddQ5-77m9Z19T3cSk0-15s.jpg',type:'img',thumb:'120',dscp:'',size:'450',url_utf8_org_name:'IMG_20200304_123239.jpg'}],'402135289','20664912','38966267','1583363875','2')</script><div class="clear"></div>			<div class="clear"></div>
+			<div id="postsign2" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign2').parentNode.nextSibling,2,'-447601')
+commonui.postArg.proc( 2,
+$('postcontainer2'),$('postsubject2'),$('postcontent2'),$('postsign2'),$('posterinfo2'),$('postInfo2'),$('postBtnPos2'),
+null,null,402135289,8192,
+null,'38966267',1583363875,'0,30,0','227',
+'','','8 vivo V1824A(Android 9)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow2')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow3" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo3" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l3" href="/read.php?tid=20664912&amp;page=1#pid402135339Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#3</a></span><a href="nuke.php?func=ucp&amp;uid=42781671" id="postauthor3" class="author b nobr">UID:4278<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#386d72;color:#ffffff">1671</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,42781671)">42781671</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  -300"><table class="red" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:30%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">-300(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2018-03-27 19:33 
+ 最后登陆: 2020-03-19 13:52 ">注册: <span class="numeric silver" name="regdate">18-03-27</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer3"><a id="pid402135339Anchor"></a><a name="l3"></a>
+			<div class="postBtnPos" id="postBtnPos3"></div>
+			<div class="postInfo" id="postInfo3" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate3" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:18</span><a title="发送自 HUAWEI BKL-AL20(Android 9) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject3" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title=""></span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject3" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent3" class="postcontent ubbcode">推特上基本都刷到过<img class="smile_a2" src="https://img4.nga.178.com/ngabbs/post/smile/a2_30.png" alt="偷吃"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent3&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign3" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign3').parentNode.nextSibling,3,'-447601')
+commonui.postArg.proc( 3,
+$('postcontainer3'),$('postsubject3'),$('postcontent3'),$('postsign3'),$('posterinfo3'),$('postInfo3'),$('postBtnPos3'),
+null,null,402135339,0,
+null,'42781671',1583363937,'0,0,0','16',
+'','','8 HUAWEI BKL-AL20(Android 9)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow3')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow4" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo4" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l4" href="/read.php?tid=20664912&amp;page=1#pid402136308Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#4</a></span><a href="nuke.php?func=ucp&amp;uid=42707402" id="postauthor4" class="author b nobr">UID:4270<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#b49582;color:#ffffff">7402</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,42707402)">42707402</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2018-03-04 21:24 
+ 最后登陆: 2020-03-20 10:08 ">注册: <span class="numeric silver" name="regdate">18-03-04</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer4"><a id="pid402136308Anchor"></a><a name="l4"></a>
+			<div class="postBtnPos" id="postBtnPos4"></div>
+			<div class="postInfo" id="postInfo4" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate4" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:31</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject4" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">92</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject4" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent4" class="postcontent ubbcode">吹学有救了！<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac13.png" alt="哭"><br><br>《利兹与青鸟》这部作品的特点之一就是大量的内容被隐藏在画面之中，并没有用台词来体现(尤其是伞哥哥在心态上的转变)<br><br>小肥宅的心思比较好懂，但是想要读懂完整的蓝小鸟，就必须捋清伞哥哥的纠结；如果不弄清伞哥哥每一声”谢谢“的含义，就不能算作是看懂了蓝小鸟(这也许就是伞哥哥的魅力，以及她惨遭迫害的原因罢)<br><br>也许相比成天玩梗的吹学史观，像这种扎根于原作，画面解读与数字论证相得益彰的分析才配得上”正统“二字<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac42.png" alt="赞同"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent4&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign4" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign4').parentNode.nextSibling,4,'-447601')
+commonui.postArg.proc( 4,
+$('postcontainer4'),$('postsubject4'),$('postcontent4'),$('postsign4'),$('posterinfo4'),$('postInfo4'),$('postBtnPos4'),
+null,null,402136308,0,
+null,'42707402',1583364714,'0,92,0','398',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow4')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow5" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo5" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l5" href="/read.php?tid=20664912&amp;page=1#pid402137158Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#5</a></span><a href="nuke.php?func=ucp&amp;uid=43271895" id="postauthor5" class="author b nobr">UID:4327<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#324228;color:#ffffff">1895</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,43271895)">43271895</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  165"><table class="blue" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:16.5%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">Kanon</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">165(lv4)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2018-09-03 11:47 
+ 最后登陆: 2020-03-20 09:33 ">注册: <span class="numeric silver" name="regdate">18-09-03</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">-1</span><span class="silver">(警告1)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer5"><a id="pid402137158Anchor"></a><a name="l5"></a>
+			<div class="postBtnPos" id="postBtnPos5"></div>
+			<div class="postInfo" id="postInfo5" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate5" style="margin-left: 0.7em;" class=" stxt">2020-03-05 07:41</span><a title="发送自 HUAWEI VTR-AL00(Android 9) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject5" class=" pc42"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">19</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject5" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent5" class="postcontent ubbcode">我宣布  京吹正统在蓝小鸟<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac2.png" alt="上"><br><br>我也看了好多遍  有些东西也隐隐有感觉但是就是没法讲出来   感谢楼主分析<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent5&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign5" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign5').parentNode.nextSibling,5,'-447601')
+commonui.postArg.proc( 5,
+$('postcontainer5'),$('postsubject5'),$('postcontent5'),$('postsign5'),$('posterinfo5'),$('postInfo5'),$('postBtnPos5'),
+null,null,402137158,0,
+null,'43271895',1583365312,'0,19,0','84',
+'','','8 HUAWEI VTR-AL00(Android 9)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow5')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow6" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo6" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l6" href="/read.php?tid=20664912&amp;page=1#pid402139402Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#6</a></span><a href="nuke.php?func=ucp&amp;uid=10417353" id="postauthor6" class="author b nobr">UID:1041<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#739c5f;color:#ffffff">7353</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,10417353)">10417353</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  18650"><table class="blue" style="margin-bottom:-1px" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:64.99999999999986%" class="r_bar"></div><table style="width:100%" class="blue" cellspacing="1"><tbody><tr><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td><td class="dot"></td></tr></tbody></table></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">弦音</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numeric">18650(lv21)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2011-02-26 20:06 
+ 最后登陆: 2020-03-19 18:23 ">注册: <span class="numeric silver" name="regdate">11-02-26</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">4</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/377.gif" title="狗年大吉:
+狗年大吉" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/347.gif" title="企鹅帽:
+企鹅帽" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/321.gif" title="鸡年大吉:
+鸡年大吉" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/174.gif" title="(堕落的)猴子:
+猴子是人类的朋友，你是猴子的朋友" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/175.gif" title="(堕落的)猴子-:
+猴子是人类的朋友，你是猴子的朋友" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/176.gif" title="(堕落的)猴子--:
+猴子是人类的朋友，你是猴子的朋友" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/260.gif" title="一周年:
+连续签到一年" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/66.gif" title="心之所在:
+参与召集战友活动的纪念" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/262.gif" title="猴年大吉:
+猴年大吉" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/261.gif" title="神秘礼盒:
+(空的)" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer6"><a id="pid402139402Anchor"></a><a name="l6"></a>
+			<div class="postBtnPos" id="postBtnPos6"></div>
+			<div class="postInfo" id="postInfo6" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate6" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:02</span><a title="发送自 HUAWEI HMA-AL00(Android 10) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject6" class=" pc73"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">6</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject6" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent6" class="postcontent ubbcode">小虫。那个x,y是道证明题，单纯关于互质数。<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent6&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign6" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign6').parentNode.nextSibling,6,'-447601')
+commonui.postArg.proc( 6,
+$('postcontainer6'),$('postsubject6'),$('postcontent6'),$('postsign6'),$('posterinfo6'),$('postInfo6'),$('postBtnPos6'),
+null,null,402139402,0,
+null,'10417353',1583366556,'0,6,0','41',
+'','','8 HUAWEI HMA-AL00(Android 10)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow6')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow7" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo7" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l7" href="/read.php?tid=20664912&amp;page=1#pid402140239Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#7</a></span><a href="nuke.php?func=ucp&amp;uid=40670080" id="postauthor7" class="author b nobr">UID:4067<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#8c6b68;color:#ffffff">0080</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,40670080)">40670080</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2017-02-24 11:22 
+ 最后登陆: 2020-03-19 17:36 ">注册: <span class="numeric silver" name="regdate">17-02-24</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer7"><a id="pid402140239Anchor"></a><a name="l7"></a>
+			<div class="postBtnPos" id="postBtnPos7"></div>
+			<div class="postInfo" id="postInfo7" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate7" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:09</span><a title="发送自 Xiaomi Redmi K20 Pro(Android 10) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject7" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">8</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject7" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent7" class="postcontent ubbcode">青鸟的镜头语言太丰富了，我已经看了好多好多的解读，当初看完的时候真的第一次有剧场版能让我有立刻再看一遍的冲动，看完两遍后再疯狂到贴吧论坛找帖子解析看。能看到利兹与青鸟真的太好了<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac17.png" alt="喘"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent7&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign7" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign7').parentNode.nextSibling,7,'-447601')
+commonui.postArg.proc( 7,
+$('postcontainer7'),$('postsubject7'),$('postcontent7'),$('postsign7'),$('posterinfo7'),$('postInfo7'),$('postBtnPos7'),
+null,null,402140239,0,
+null,'40670080',1583366961,'0,8,0','174',
+'','','8 Xiaomi Redmi K20 Pro(Android 10)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow7')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow8" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo8" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l8" href="/read.php?tid=20664912&amp;page=1#pid402140258Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#8</a></span><a href="nuke.php?func=ucp&amp;uid=40720953" id="postauthor8" class="author b nobr">UID:4072<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#5446ac;color:#ffffff">0953</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,40720953)">40720953</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  60"><table class="blue" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:6%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">AIR</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">60(lv2)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2017-03-02 12:55 
+ 最后登陆: 2020-03-19 20:06 ">注册: <span class="numeric silver" name="regdate">17-03-02</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer8"><a id="pid402140258Anchor"></a><a name="l8"></a>
+			<div class="postBtnPos" id="postBtnPos8"></div>
+			<div class="postInfo" id="postInfo8" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate8" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:09</span><a title="发送自 HUAWEI ALP-AL00(Android 10) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject8" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">1</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject8" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent8" class="postcontent ubbcode">写的好棒<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac42.png" alt="赞同">这部电影真的没有一个镜头是无意义的<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent8&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign8" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign8').parentNode.nextSibling,8,'-447601')
+commonui.postArg.proc( 8,
+$('postcontainer8'),$('postsubject8'),$('postcontent8'),$('postsign8'),$('posterinfo8'),$('postInfo8'),$('postBtnPos8'),
+null,null,402140258,0,
+null,'40720953',1583366974,'0,1,0','40',
+'','','8 HUAWEI ALP-AL00(Android 10)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow8')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow9" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo9" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l9" href="/read.php?tid=20664912&amp;page=1#pid402141242Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#9</a></span><a href="nuke.php?func=ucp&amp;uid=41702354" id="postauthor9" class="author b nobr">UID:4170<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#4c1526;color:#ffffff">2354</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,41702354)">41702354</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2017-07-29 12:40 
+ 最后登陆: 2020-03-19 16:19 ">注册: <span class="numeric silver" name="regdate">17-07-29</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer9"><a id="pid402141242Anchor"></a><a name="l9"></a>
+			<div class="postBtnPos" id="postBtnPos9"></div>
+			<div class="postInfo" id="postInfo9" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate9" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:16</span><a title="发送自 samsung SM-G9700(Android 10) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject9" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title=""></span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject9" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent9" class="postcontent ubbcode">太细了太细了太细了<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac8.png" alt="吓"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent9&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign9" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign9').parentNode.nextSibling,9,'-447601')
+commonui.postArg.proc( 9,
+$('postcontainer9'),$('postsubject9'),$('postcontent9'),$('postsign9'),$('posterinfo9'),$('postInfo9'),$('postBtnPos9'),
+null,null,402141242,0,
+null,'41702354',1583367388,'0,0,0','16',
+'','','8 samsung SM-G9700(Android 10)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow9')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow10" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo10" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l10" href="/read.php?tid=20664912&amp;page=1#pid402142858Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#10</a></span><a href="nuke.php?func=ucp&amp;uid=60254380" id="postauthor10" class="author b nobr">UID:6025<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#923398;color:#ffffff">4380</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,60254380)">60254380</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2019-02-20 08:51 
+ 最后登陆: 2020-03-19 22:59 ">注册: <span class="numeric silver" name="regdate">19-02-20</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/385.gif" title="猪年大吉:
+猪年大吉" style="margin-bottom:-4px"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/273.gif" title="咸鱼:
+不拿第一和咸鱼有什么区别~" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer10"><a id="pid402142858Anchor"></a><a name="l10"></a>
+			<div class="postBtnPos" id="postBtnPos10"></div>
+			<div class="postInfo" id="postInfo10" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate10" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:26</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject10" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">5</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject10" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent10" class="postcontent ubbcode">优秀的电影解读啊<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac42.png" alt="赞同">《利兹与青鸟》这部影片越看越有味道<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent10&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign10" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign10').parentNode.nextSibling,10,'-447601')
+commonui.postArg.proc( 10,
+$('postcontainer10'),$('postsubject10'),$('postcontent10'),$('postsign10'),$('posterinfo10'),$('postInfo10'),$('postBtnPos10'),
+null,null,402142858,0,
+null,'60254380',1583368001,'0,5,0','48',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow10')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow11" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo11" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l11" href="/read.php?tid=20664912&amp;page=1#pid402143159Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#11</a></span><a href="nuke.php?func=ucp&amp;uid=9948353" id="postauthor11" class="author b nobr">UID:994<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#42499d;color:#ffffff">8353</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,9948353)">9948353</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2011-01-19 23:36 
+ 最后登陆: 2020-03-19 16:40 ">注册: <span class="numeric silver" name="regdate">11-01-19</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="display:none">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/207.gif" title="爆竹声中旧岁除:
+一支红杏出墙来" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer11"><a id="pid402143159Anchor"></a><a name="l11"></a>
+			<div class="postBtnPos" id="postBtnPos11"></div>
+			<div class="postInfo" id="postInfo11" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate11" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:28</span><a title="发送自 iPhone11,8(iOS 13.3.1) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -22px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject11" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title=""></span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject11" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent11" class="postcontent ubbcode">文艺复兴了嘛？最近全是吹学<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent11&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign11" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign11').parentNode.nextSibling,11,'-447601')
+commonui.postArg.proc( 11,
+$('postcontainer11'),$('postsubject11'),$('postcontent11'),$('postsign11'),$('posterinfo11'),$('postInfo11'),$('postBtnPos11'),
+null,null,402143159,0,
+null,'9948353',1583368107,'0,0,0','26',
+'','','7 iPhone11,8(iOS 13.3.1)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow11')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow12" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo12" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l12" href="/read.php?tid=20664912&amp;page=1#pid402144418Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#12</a></span><a href="nuke.php?func=ucp&amp;uid=20412030" id="postauthor12" class="author b nobr">UID:2041<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#4f95a1;color:#ffffff">2030</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,20412030)">20412030</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2012-12-05 21:04 
+ 最后登陆: 2020-03-20 07:06 ">注册: <span class="numeric silver" name="regdate">12-12-05</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/207.gif" title="爆竹声中旧岁除:
+一支红杏出墙来" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer12"><a id="pid402144418Anchor"></a><a name="l12"></a>
+			<div class="postBtnPos" id="postBtnPos12"></div>
+			<div class="postInfo" id="postInfo12" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate12" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:35</span><a title="发送自 iPhone11,8(iOS 13.3.1) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -22px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject12" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">7</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject12" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent12" class="postcontent ubbcode">我宣布，吹学正统在蓝鸟  <br>篮球课这个真的是，一个两季tv都没有出现过的体育课，却在时间相对紧张的剧场版中有叙述，肯定不会是京阿尼单纯填补日常内容。可为什么刷了那么多遍却都忽略掉了这个场景的意义<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac27.png" alt="惊"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent12&quot;)"></span>
+				<br>
+			</span><h4 class="silver subtitle">改动</h4><span id="alertc12"><span class="block_txt block_txt_c3" style="margin-bottom:0.25em">在2020-03-05 12:35修改</span> </span><script>commonui.loadAlertInfo('[E1583382938 0 0]	','alertc12')</script><br class="clear">			<div class="clear"></div>
+			<div id="postsign12" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign12').parentNode.nextSibling,12,'-447601')
+commonui.postArg.proc( 12,
+$('postcontainer12'),$('postsubject12'),$('postcontent12'),$('postsign12'),$('posterinfo12'),$('postInfo12'),$('postBtnPos12'),
+null,null,402144418,0,
+null,'20412030',1583368549,'0,7,0','184',
+'','','7 iPhone11,8(iOS 13.3.1)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow12')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow14" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo14" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l14" href="/read.php?tid=20664912&amp;page=1#pid402145244Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#14</a></span><a href="nuke.php?func=ucp&amp;uid=38731302" id="postauthor14" class="author b nobr">UID:3873<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#546b42;color:#ffffff">1302</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,38731302)">38731302</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2016-07-27 19:21 
+ 最后登陆: 2020-03-20 10:33 ">注册: <span class="numeric silver" name="regdate">16-07-27</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer14"><a id="pid402145244Anchor"></a><a name="l14"></a>
+			<div class="postBtnPos" id="postBtnPos14"></div>
+			<div class="postInfo" id="postInfo14" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate14" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:40</span><a title="发送自 Xiaomi MI 8(Android 9) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject14" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title=""></span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject14" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent14" class="postcontent ubbcode">这就是青学家吗<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent14&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign14" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign14').parentNode.nextSibling,14,'-447601')
+commonui.postArg.proc( 14,
+$('postcontainer14'),$('postsubject14'),$('postcontent14'),$('postsign14'),$('posterinfo14'),$('postInfo14'),$('postBtnPos14'),
+null,null,402145244,0,
+null,'38731302',1583368824,'0,0,0','14',
+'','','8 Xiaomi MI 8(Android 9)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow14')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow15" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo15" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l15" href="/read.php?tid=20664912&amp;page=1#pid402145324Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#15</a></span><a href="nuke.php?func=ucp&amp;uid=40747113" id="postauthor15" class="author b nobr">UID:4074<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#525538;color:#ffffff">7113</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,40747113)">40747113</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  15"><table class="blue" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:1.5%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">全金属狂潮</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">15(lv1)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2017-03-06 18:37 
+ 最后登陆: 2020-03-20 00:07 ">注册: <span class="numeric silver" name="regdate">17-03-06</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer15"><a id="pid402145324Anchor"></a><a name="l15"></a>
+			<div class="postBtnPos" id="postBtnPos15"></div>
+			<div class="postInfo" id="postInfo15" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate15" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:40</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject15" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">1</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject15" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent15" class="postcontent ubbcode">关于质数的解读确实很早就看到人提过，但是没想过山田居然还藏的有这么多质数的暗示<br>太强了<br>山田，永远滴神<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent15&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign15" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign15').parentNode.nextSibling,15,'-447601')
+commonui.postArg.proc( 15,
+$('postcontainer15'),$('postsubject15'),$('postcontent15'),$('postsign15'),$('posterinfo15'),$('postInfo15'),$('postBtnPos15'),
+null,null,402145324,0,
+null,'40747113',1583368850,'0,1,0','98',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow15')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow16" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo16" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l16" href="/read.php?tid=20664912&amp;page=1#pid402145624Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#16</a></span><a href="nuke.php?func=ucp&amp;uid=35237063" id="postauthor16" class="author b nobr">UID:3523<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#8c2e87;color:#ffffff">7063</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,35237063)">35237063</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2015-04-20 08:13 
+ 最后登陆: 2020-03-19 23:17 ">注册: <span class="numeric silver" name="regdate">15-04-20</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer16"><a id="pid402145624Anchor"></a><a name="l16"></a>
+			<div class="postBtnPos" id="postBtnPos16"></div>
+			<div class="postInfo" id="postInfo16" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate16" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:42</span><a title="发送自 Xiaomi MIX 2S(Android 10) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject16" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">5</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject16" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent16" class="postcontent ubbcode">第一遍没看懂青鸟。又看了一遍台本版以为自己看懂了，结果我还是太天真了<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac15.png" alt="哭笑"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent16&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign16" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign16').parentNode.nextSibling,16,'-447601')
+commonui.postArg.proc( 16,
+$('postcontainer16'),$('postsubject16'),$('postcontent16'),$('postsign16'),$('posterinfo16'),$('postInfo16'),$('postBtnPos16'),
+null,null,402145624,0,
+null,'35237063',1583368949,'0,5,0','66',
+'','','8 Xiaomi MIX 2S(Android 10)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow16')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow17" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo17" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l17" href="/read.php?tid=20664912&amp;page=1#pid402146422Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#17</a></span><a href="nuke.php?func=ucp&amp;uid=34841524" id="postauthor17" class="author b nobr">UID:3484<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#364028;color:#ffffff">1524</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,34841524)">34841524</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div><div class="r_container" style="margin:2px 0 1px 0" title="用户墮落的猴子(447601)的声望  20"><table class="blue" cellspacing="1"><tbody><tr><td class="r_barc"><div style="width:2%" class="r_bar"></div></td></tr></tbody></table></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">全金属狂潮</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">20(lv1)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2015-03-02 11:28 
+ 最后登陆: 2020-03-19 23:47 ">注册: <span class="numeric silver" name="regdate">15-03-02</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer17"><a id="pid402146422Anchor"></a><a name="l17"></a>
+			<div class="postBtnPos" id="postBtnPos17"></div>
+			<div class="postInfo" id="postInfo17" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate17" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:46</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject17" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">3</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject17" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent17" class="postcontent ubbcode">初看蓝小鸟时只觉得伞哥哥是个大猪蹄子，但是刷的越多就越能感受到那个开朗的外表下藏着的少女心，这个角色真是太有魅力了<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac42.png" alt="赞同"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent17&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign17" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign17').parentNode.nextSibling,17,'-447601')
+commonui.postArg.proc( 17,
+$('postcontainer17'),$('postsubject17'),$('postcontent17'),$('postsign17'),$('posterinfo17'),$('postInfo17'),$('postBtnPos17'),
+null,null,402146422,0,
+null,'34841524',1583369199,'0,3,0','112',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow17')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow18" class="postrow row1">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo18" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l18" href="/read.php?tid=20664912&amp;page=1#pid402146963Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#18</a></span><a href="nuke.php?func=ucp&amp;uid=9948353" id="postauthor18" class="author b nobr">UID:994<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#42499d;color:#ffffff">8353</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,9948353)">9948353</a></div><div class="stat" style="margin:2px 0 0 0"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2011-01-19 23:36 
+ 最后登陆: 2020-03-19 16:40 ">注册: <span class="numeric silver" name="regdate">11-01-19</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style="">徽章:<span name="medal"> <img class="medalimg" src="https://img4.nga.178.com/ngabbs/medal/207.gif" title="爆竹声中旧岁除:
+一支红杏出墙来" style="margin-bottom:-4px"></span><br><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer18"><a id="pid402146963Anchor"></a><a name="l18"></a>
+			<div class="postBtnPos" id="postBtnPos18"></div>
+			<div class="postInfo" id="postInfo18" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate18" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:49</span><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject18" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">3</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject18" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent18" class="postcontent ubbcode">比起京吹我也更加喜欢利兹与青鸟，镜头语言更加丰富，表达上更加细腻，细节更多。山田尚子是神！<img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent18&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign18" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign18').parentNode.nextSibling,18,'-447601')
+commonui.postArg.proc( 18,
+$('postcontainer18'),$('postsubject18'),$('postcontent18'),$('postsign18'),$('posterinfo18'),$('postInfo18'),$('postBtnPos18'),
+null,null,402146963,0,
+null,'9948353',1583369377,'0,3,0','90',
+'','','','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow18')
+</script>
+
+<table class="forumbox postbox" cellspacing="1px">
+	<tbody><tr id="post1strow19" class="postrow row2">
+		<td class="c1" style="vertical-align:top;text-align:center">
+			<span id="posterinfo19" class="posterinfo" style="display: block;"><div style="text-align:left;line-height:1.5em"><span class="right">&nbsp;<a name="l19" href="/read.php?tid=20664912&amp;page=1#pid402147501Anchor" class="small_colored_text_btn stxt block_txt_c0 vertmod">#19</a></span><a href="nuke.php?func=ucp&amp;uid=42511859" id="postauthor19" class="author b nobr">UID:4251<b class="block_txt" style="padding-left:0.2em;padding-right:0.2em;min-width:1em;text-align:center;background:#302d6d;color:#ffffff">1859</b></a> <a href="javascript:void(0)" name="uid" class="small_colored_text_btn stxt block_txt_c0 vertmod" style="background:#aaa" onclick="commonui.ucplink(event,42511859)">42511859</a></div><div class="stat" style="margin:2px 0 0 0" onclick="commonui.posterInfo.showAll(this)"><div style="width:100%"><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr>级别: <span class="silver">京阿尼加油</span></nobr></div><div style="float:left;margin-right:3px"><nobr>声望: <span class="silver numericl">0(lv0)</span></nobr></div><div style="float:left;margin-right:3px;min-width:49%;*width:49%"><nobr><span title=" 注册时间: 2017-12-30 16:53 
+ 最后登陆: 2020-03-20 08:10 ">注册: <span class="numeric silver" name="regdate">17-12-30</span></span></nobr></div><div style="float:left"><nobr>威望: <span class="numericl silver">1</span><span class="silver">(学徒)</span></nobr></div><div class="clear"></div></div><span class="clickextend" style=""><div class="clear"></div></span></div><div class="stat_spacer"></div></span>
+		</td>
+		<td class="c2" style="vertical-align:top" id="postcontainer19"><a id="pid402147501Anchor"></a><a name="l19"></a>
+			<div class="postBtnPos" id="postBtnPos19"></div>
+			<div class="postInfo" id="postInfo19" style="line-height: inherit; color: rgb(136, 136, 136);"><span id="postdate19" style="margin-left: 0.7em;" class=" stxt">2020-03-05 08:52</span><a title="发送自 Sony G8342(Android 8.0.0) 上的 NGA官方客户端" class="  inlineBlock stxt" style="width: 16px; height: 16px; vertical-align: middle; filter: none; background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAABVCAMAAACcjy+PAAAAD1BMVEUAAADgwZ7gwZ7gwZ7gwZ54CaA+AAAABXRSTlMAOspz/+jVyFoAAAD6SURBVDjLzVRLdsQwCJPA9z9xjLqIA7Zn5rVpuwgL50XmKwzAr4R5nOKQ4QDQzmsTgpdCGwejDOyN059iHxMyAIjzvOIagEBit+J2xYw5AEAKgOLpb8vC8Qyh+UtttHhV48wfSLCTYOjCPLscyV81XleMgiIxe8PpnoIvSXLiOT2SGioqu8xFCUplRYIQ2PFQ8Sp0zAwgs+Rn1DHYV59o0vzxU3lcURz+6D1b612jH7Y87zuzENW5yLiSZdOV5QgMMWL2J0IC9TFGDg5j2RNPkXpX9ejamvpRtXExa7PC+PvL/ruLzcu67Xx/6+84Ng7atA6y58Q2oP8oX22US3uf0QSiAAAAAElFTkSuQmCC&quot;) no-repeat scroll -2px -43px; margin-left: 0.7em;" href="http://app.nga.cn"></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="收藏"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">★</span>&nbsp;</span></a><a style="margin-left: 0.7em;" class=" small_colored_text_btn block_txt_c0 stxt" href="javascript:void(0)" title="操作菜单"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⚙</span>&nbsp;</span></a></div>
+			<span id="postcontentandsubject19" class=" pc39"><div><span class=" small_colored_text_btn block_txt_c2 stxt"><span class=" urltip nobr" style="font-size: 1.2em; margin-top: -1.8em; color: rgb(88, 105, 123);"></span><a class=" white" href="javascript:void(0)" title="支持"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯅</span>&nbsp;</span></a><span class=" white" title="">7</span><a class=" white" href="javascript:void(0)" title="反对"><span>&nbsp;<span style="font-family: &quot;comm_glyphs&quot;; line-height: 1em;">⯆</span>&nbsp;</span></a></span><span></span><h3 id="postsubject19" style="line-height: inherit; vertical-align: -0.15em;"></h3></div>
+				<br>
+				<span id="postcontent19" class="postcontent ubbcode">我宣布山田尚子是最懂京吹的人<img class="smile_ac" src="https://img4.nga.178.com/ngabbs/post/smile/ac2.png" alt="上"><img src="about:blank" style="display:none" onerror="ubbcode.copyChk(this.parentNode,&quot;postcontent19&quot;)"></span>
+				<br>
+			</span>			<div class="clear"></div>
+			<div id="postsign19" class="x"></div>			</td><td class="adshid"></td>
+	</tr>
+</tbody></table><script>
+ngaAds.bbs_ads8_load_new($('postsign19').parentNode.nextSibling,19,'-447601')
+commonui.postArg.proc( 19,
+$('postcontainer19'),$('postsubject19'),$('postcontent19'),$('postsign19'),$('posterinfo19'),$('postInfo19'),$('postBtnPos19'),
+null,null,402147501,0,
+null,'42511859',1583369542,'0,7,0','26',
+'','','8 Sony G8342(Android 8.0.0)','',null,0 )
+if(ngaAds.bbs_ads31_gen)ngaAds.bbs_ads31_gen('post1strow19')
+</script>
+<!--postlistend-->
+</div>
+</div>
+
+
+<div id="m_pbtnbtm" class="module_wrap"><div class="w100">
+<div class="right_" id="postbbtm"></div><div class="left" name="pageball" id="pagebbtm"><table class=" stdbtn" cellspacing="0"><tbody><tr><td><a href="/read.php?tid=20664912&amp;page=2" title="下一页" class=" uitxt1">后页</a></td><td><a href="/read.php?tid=20664912" class=" invert" title="">&nbsp;1&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=2" title="加载下一页" class=" uitxt1">&gt;</a></td><td><a href="/read.php?tid=20664912&amp;page=2" class=" uitxt1" title="">&nbsp;2&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=3" class=" uitxt1" title="">&nbsp;3&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=4" class=" uitxt1" title="">&nbsp;4&nbsp;</a></td><td><a href="/read.php?tid=20664912&amp;page=5" class=" uitxt1" title="最后页">&nbsp;5.</a></td><td><a href="javascript:void(0)" name="topage" title="到指定的页数" class=" uitxt1">到</a></td></tr></tbody></table></div><div class="clear"></div>
+</div></div>
+
+<div style="position: absolute; float: left; background: rgb(255, 248, 231) none repeat scroll 0% 0%; border: 0.0769em solid rgb(189, 126, 109); padding: 0px 0.3em; text-align: left; margin-top: 0px; font-size: 1.083em; line-height: 1.8em; z-index: 1; display: none;"></div><div id="b_nav" class="module_wrap">
+<div class="nav"><div class=" nav_root_c"><a href="/" class="nav_root">N&nbsp;G&nbsp;A</a></div><span class="nav_spr"> <span>»</span></span><a href="/thread.php?fid=-447601" class="nav_link" data-fb="8424">二次元国家地理</a><span class="nav_spr"> <span>»</span></span><a href="/read.php?tid=20664912" class="nav_link" data-fb="">[讨论] 摒弃吹学史观，用青学的视角来解构《利兹与青鸟》</a><div class="clear"></div><div class=" clear"></div></div>
+</div>
+
+<span id="fast_post_c"></span>
+<script type="text/javascript">
+commonui.advNav($('b_nav'));
+ngaAds.bbs_ads14_gen()
+if(commonui.fastPostUi)commonui.fastPostUi(-447601,20664912)
+</script>
+
+<br class="clear">
+<br>
+<br>
+<script>//everypage
+add_pv_count()
+;(function(){
+var w = window,v,l=location.pathname+location.search,fr=w.__fromUrl?w.__fromUrl:null
+if(!w._czc){
+	v=1
+	w._czc=[]
+	}
+if(w.__CURRENT_FID || w.__CURRENT_STID)
+	_czc.push(['_setCustomVar','forum',(w.__CURRENT_STID && (w.__CURRENT_FID==541 || w.__CURRENT_FID==534)) ? 'stid'+__CURRENT_STID : 'fid'+w.__CURRENT_FID,0])
+if(v)
+	__SCRIPTS.asyncLoad(location.protocol+'//w.cnzz.com/c.php?id=30043604',2)
+else
+	setTimeout( function(){_czc.push(['_trackPageview',l,fr])} )//wait location change on ajax
+
+if(!window.BI_SDK)
+	__SCRIPTS.asyncLoad('stat',function(){BI_SDK.report('webngaweb','xy-log2',false,true,'startup')})
+else
+	BI_SDK.report('webngaweb','xy-log2',false,true,'startup')
+})();
+</script>
+<script>//everypage
+if(ngaAds && ngaAds.syncAfterload)ngaAds.syncAfterload()</script>
+<div id="footer" class="cpinfo"><div class="xtxt silver">商务市场合作：BD@donews.com 内容合作：wangchuang@donews.com QQ：972310705<br><a href="http://beian.miit.gov.cn">京ICP备16021487号-5</a> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802027588">京公网安备11010802027588号</a>
+<a key="5652d13cefbfb049451503f9" logo_size="32x12" logo_type="" href="http://www.anquan.org" style="display:none"><script>document.write('<scr'+'ipt src="'+location.protocol+'//static.anquan.org/static/outer/js/aq_auth.js" type="text/javasc'+'ript"></scr'+'ipt>')</script><script src="https://static.anquan.org/static/outer/js/aq_auth.js" type="text/javascript"></script><b id="aqLogoCQPLG" style="display: none;"></b></a>
+ <span style="display:inline-block;vertical-align:middle;"><script>document.write('<scr'+'ipt src="'+location.protocol+'//kxlogo.knet.cn/seallogo.dll?sn=e18122811010876513vpap000000&size=1" type="text/javasc'+'ript"></scr'+'ipt>')</script><script src="https://kxlogo.knet.cn/seallogo.dll?sn=e18122811010876513vpap000000&amp;size=1" type="text/javascript"></script></span></div></div></div></div><iframe style="display: none;" src="//bdtj.tagtic.cn/crossdomain/index.html?timestamp=2020-03-20T04%3A46%3A13.417Z&amp;suuid=1ca382659deeb449c055ba5a6a5473e2&amp;appkey=webngaweb&amp;platform=pc&amp;ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A74.0%29%20Gecko%2F20100101%20Firefox%2F74.0&amp;url=https%3A%2F%2Fbbs.nga.cn%2Fread.php%3Ftid%3D20664912%26rand%3D654&amp;referer=https%3A%2F%2Fbbs.nga.cn%2Fread.php%3Ftid%3D20664912&amp;request_method=get&amp;page_id=a01d61c6ae87a3ca96add671372157ce&amp;short_cookie=19b896b046eeec7fe3ed9d70eac82e72&amp;event=startup&amp;urlKey=xy-log2&amp;autoSend=false&amp;handle=true" id="cookieId"></iframe></body>
