@@ -5,6 +5,7 @@ import html2text
 from utils import parser
 from utils import upload_img
 from utils import generator
+import sys
 
 
 def lz_only(url):
@@ -47,7 +48,10 @@ def get_meta(url):
 def get_date(url):
     return parser(url).find_all(class_='authi')[1].find('em').text[4:13]
 
-if __name__ == '__main__':
-    url = 'https://bbs.saraba1st.com/2b/thread-' + input('请输入帖子 ID：') +'-1-1.html'
+def s1_spider(id):
+    url = f'https://bbs.saraba1st.com/2b/thread-{id}-1-1.html'
     lz_url = lz_only(url)
     generator('Stage1', get_meta(lz_url), get_posts(lz_url), get_date(lz_url))
+
+if __name__ == '__main__':
+    s1_spider(sys.argv[1])

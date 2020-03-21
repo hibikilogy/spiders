@@ -5,6 +5,7 @@ import html2text
 from utils import parser
 from utils import upload_img
 from utils import generator
+import sys
 
 
 def get_meta(url):
@@ -39,6 +40,9 @@ def get_posts(url):
     post = html2text.html2text(post)
     return post
 
-if __name__ == '__main__':
-    url = 'https://bbs.hupu.com/' + input('请输入帖子 ID：') + '.html'
+def hupu_spider(id):
+    url = f'https://bbs.hupu.com/{id}.html'
     generator('虎扑', get_meta(url), get_posts(url), get_date(url))
+
+if __name__ == '__main__':
+    hupu_spider(sys.argv[1])

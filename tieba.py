@@ -5,6 +5,7 @@ import html2text
 from utils import parser
 from utils import upload_img
 from utils import generator
+import sys
 
 
 def get_posts(url):
@@ -37,6 +38,9 @@ def get_meta(url):
 def get_date(url):
     return parser(url).find_all(class_='tail-info')[2].text[:10]
 
-if __name__ == '__main__':
-    url = 'https://tieba.baidu.com/p/' + input('请输入帖子 ID：') + '?see_lz=1'
+def tieba_spider(id):
+    url = f'https://tieba.baidu.com/p/{id}?see_lz=1'
     generator('贴吧', get_meta(url), get_posts(url), get_date(url))
+
+if __name__ == '__main__':
+    tieba_spider(sys.argv[1])

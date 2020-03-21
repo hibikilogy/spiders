@@ -6,6 +6,7 @@ import time
 from utils import parser
 from utils import upload_img
 from utils import generator
+import sys
 
 
 def get_meta(url):
@@ -33,6 +34,9 @@ def get_posts(url):
     post = html2text.html2text(post)
     return post
 
-if __name__ == '__main__':
-    url = 'https://www.bilibili.com/read/cv' + input('请输入文章 cv 号：')
+def bilibili_spider(id):
+    url = f'https://www.bilibili.com/read/cv{id}'
     generator('bilibili', get_meta(url), get_posts(url), get_date(url))
+
+if __name__ == '__main__':
+    bilibili_spider(sys.argv[1])

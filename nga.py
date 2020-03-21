@@ -7,6 +7,7 @@ from time import sleep
 from bs4 import BeautifulSoup
 # from utils import upload_img
 from utils import generator
+import sys
 
 
 """ 使用 selenium 无需用 headers
@@ -66,8 +67,8 @@ def get_posts(html):
     post = html2text.html2text(post)
     return post
 
-if __name__ == '__main__':
-    url = 'https://bbs.nga.cn/read.php?tid=' + input('请输入帖子 ID：')
+def nga_spider(id):
+    url = f'https://bbs.nga.cn/read.php?tid={id}'
     try:
         options = webdriver.FirefoxOptions()
         options.add_argument('-headless')
@@ -81,3 +82,6 @@ if __name__ == '__main__':
     content = browser.execute_script('return document.querySelector("html").innerHTML;')
     browser.close()
     generator('NGA', get_meta(content), get_posts(content), get_date(content))
+
+if __name__ == '__main__':
+    nga_spider(sys.argv[1])
