@@ -31,6 +31,7 @@ def get_posts(url):
         post = str(post)
         post = re.sub('<div[^>]*>', '<p>', post)
         post = re.sub('<\/div[^>]*>', '</p>', post)
+        post = post.replace('file="', 'src="')  # 懒加载
         for img in re.findall(img_src, post):
             new_img = upload_img(img)
             post = post.replace(img, new_img)
