@@ -27,8 +27,8 @@ def upload_img(url):
         except KeyError:
             print('图片已存在，无法得知删除链接。')
             return r.json()['images']
-    except requests.exceptions.ConnectionError:
-        print('上传失败，已使用原链接。')
+    except Exception as e:
+        print(f'上传失败（{e}），已使用原链接。')
         return url
 
 

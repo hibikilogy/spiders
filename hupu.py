@@ -23,7 +23,12 @@ def get_posts(url):
     r = parser(url)
     post = str(r.find(class_='quote-content'))
     img_src = r"""\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?"""
+    post = post.replace('data-original', 'src')
+    place_holder = 'https://b1.hoopchina.com.cn/web/sns/bbs/images/placeholder.png'
     for img in re.findall(img_src, post):
+        if img == place_holder:  # 懒加载
+            post = post.replace(f'src="{place_holder}"', '')
+            continue
         try:
             i = img.index('?')
             img_real = img[:i]
