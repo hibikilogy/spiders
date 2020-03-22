@@ -6,8 +6,10 @@ import html2text
 from time import sleep
 from bs4 import BeautifulSoup
 # from utils import upload_img
+from utils import html2markdown
 from utils import generator
 import sys
+import re
 
 
 """ 使用 selenium 无需用 headers
@@ -41,10 +43,12 @@ def get_headers():
     return headers
 """
 
-def get_meta(html):
+def get_meta(html, url):
     r = BeautifulSoup(html, 'html.parser')
     meta = {}
     meta['title'] = r.find(id='postsubject0').text
+    tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
+    meta['title'] = re.sub(tag, '', meta['title'])
     meta['author'] = r.find(id='postauthor0').text
     meta['original'] = url
     return meta
@@ -64,7 +68,7 @@ def get_posts(html):
     # for img in re.findall(img_src, post):
     #     new_img = upload_img(img)
     #     post = post.replace(img, new_img)
-    post = html2text.html2text(post)
+    post = html2markdown(post)
     return post
 
 def nga_spider(id):
@@ -77,11 +81,16 @@ def nga_spider(id):
         options = webdriver.chrome.options()
         options.add_argument('-headless')
         browser = webdriver.Chrome(options=options)
+    # 打开隐藏部分
+    click_button = """
+    document.querySelectorAll(".collapse_btn button").forEach(function(each){each.click()})
+    """
     browser.get(url)
-    sleep(10)
+    sleep(15)  # 让 NGA 自己渲染 bbcode
+    browser.execute_script(click_button)
     content = browser.execute_script('return document.querySelector("html").innerHTML;')
     browser.close()
-    generator('NGA', get_meta(content), get_posts(content), get_date(content))
+    generator('NGA', get_meta(content, url), get_posts(content), get_date(content))
 
 if __name__ == '__main__':
-    nga_spider(sys.argv[1])
+    nga_spider(str(sys.argv[1]))

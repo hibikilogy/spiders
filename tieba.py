@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import re
-import html2text
 from utils import parser
 from utils import upload_img
+from utils import html2markdown
 from utils import generator
 import sys
 
@@ -24,13 +24,15 @@ def get_posts(url):
         for img in re.findall(img_src, post):
             new_img = upload_img(img)
             post = post.replace(img, new_img)
-        content += html2text.html2text(post)
+        content += html2markdown(post)
     return content
 
 def get_meta(url):
     meta = {}
     r = parser(url)
     meta['title'] = r.find(class_='core_title_txt').text
+    tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
+    meta['title'] = re.sub(tag, '', meta['title'])
     meta['author'] = r.find('a', class_='p_author_name').text
     meta['original'] = url
     return meta
@@ -43,4 +45,4 @@ def tieba_spider(id):
     generator('贴吧', get_meta(url), get_posts(url), get_date(url))
 
 if __name__ == '__main__':
-    tieba_spider(sys.argv[1])
+    tieba_spider(str(sys.argv[1]))

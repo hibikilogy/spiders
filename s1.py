@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import re
-import html2text
 from utils import parser
 from utils import upload_img
+from utils import html2markdown
 from utils import generator
 import sys
 
@@ -35,13 +35,15 @@ def get_posts(url):
         for img in re.findall(img_src, post):
             new_img = upload_img(img)
             post = post.replace(img, new_img)
-        content += html2text.html2text(post)
+        content += html2markdown(post)
     return content
 
 def get_meta(url):
     meta = {}
     r = parser(url)
     meta['title'] = r.find(id='thread_subject').text
+    tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
+    meta['title'] = re.sub(tag, '', meta['title'])
     meta['author'] = r.find(class_='authi').find('a', class_='xw1').text
     meta['original'] = url
     return meta
@@ -55,4 +57,4 @@ def s1_spider(id):
     generator('Stage1', get_meta(lz_url), get_posts(lz_url), get_date(lz_url))
 
 if __name__ == '__main__':
-    s1_spider(sys.argv[1])
+    s1_spider(str(sys.argv[1]))
