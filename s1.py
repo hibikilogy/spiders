@@ -16,6 +16,8 @@ def get_posts(url):
     def get_post(page_url):
         return parser(page_url).find_all(class_='t_fsz')
     # page = parser(url).find(id='fj').find('input')['size']
+    # page = parser(url).find_all(class_='.pg')[0].find_all('label')[0].find_all('span')[0].title
+    # page = re.findall(r'共 (.+?) 页', page)[0]
     posts = []
     # for i in range(1, int(page) + 1):
     #    posts += [x for x in get_post(url[:-8] + str(i) + '-1.html')]

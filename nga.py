@@ -49,7 +49,7 @@ def get_meta(html, url):
     meta['title'] = r.find(id='postsubject0').text
     tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
     meta['title'] = re.sub(tag, '', meta['title'])
-    meta['author'] = r.find(id='postauthor0').text
+    meta['author'] = r.find(id='postauthor0').text  # FIXME 似乎会变为 UID
     meta['original'] = url
     return meta
 
@@ -61,6 +61,12 @@ def get_date(html):
 def get_posts(html):
     r = BeautifulSoup(html, 'html.parser')
     post = str(r.find(id='postcontent0'))
+    colors = ('skyblue', 'royalblue', 'blue', 'darkblue',
+            'orange', 'orangered', 'crimson', 'red', 'firebrick', 'darkred',
+            'green', 'limegreen', 'seagreen', 'teal',
+            'deeppink', 'tomato', 'coral', 'purple', 'coral')
+    for color in colors:  # NGA 使用 class 渲染颜色
+        post = post.replace(f'class="{color}"', f'style="color: {color};"')
     post = post.replace('src', 'fake')
     post = post.replace('data-fakelazy', 'src')
     # NGA 图床可以外部引用，无需图床

@@ -6,6 +6,7 @@
 - 虎扑
 - bilibili
 - NGA
+- Stage1
 
 ## 使用方法
 安装 Python 并下载本仓库，在仓库目录输入命令如下：
@@ -30,6 +31,7 @@ python xxx.py id
   - [x] 基本功能实现。
 - NGA
   - [x] 基本功能实现。
+  - [ ] 修复只能找到 UID 的问题（Firefox）。
 - S1
   - [x] 基本功能实现。
 - 贴吧
