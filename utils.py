@@ -33,12 +33,15 @@ def upload_img(url):
         try:
             print(f'使用 sm.ms 上传失败（{e}），使用 GitHub 作为图床……')
             filename = url.split('/')[-1]
-            with open(f'.../hibikilogy.github.io/images/{filename}', 'wb') as f:
+            with open(f'../hibikilogy.github.io/images/{filename}', 'wb') as f:
                 f.write(requests.get(url).content)
-            print('上传成功。')
+            print('上传成功，需提交 hibikilogy.github.io 中的改动方可使用。')
             return f'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images/{filename}'
+        except FileNotFoundError:
+            print(f'上传失败，已使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
+            return url
         except Exception as e:
-            print(f'使用 GitHub 作为图床失败（{e}），已使用原链接。')
+            print(f'上传失败（{e}），已使用原链接。')
             return url
 
 

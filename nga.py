@@ -83,7 +83,7 @@ def nga_spider(id):
         options = webdriver.FirefoxOptions()
         options.add_argument('-headless')
         browser = webdriver.Firefox(options=options)
-    except WebDriverException:
+    except Exception:
         options = webdriver.chrome.options()
         options.add_argument('-headless')
         browser = webdriver.Chrome(options=options)
@@ -95,6 +95,7 @@ def nga_spider(id):
     sleep(15)  # 让 NGA 自己渲染 bbcode
     browser.execute_script(click_button)
     content = browser.execute_script('return document.querySelector("html").innerHTML;')
+    sleep(5)  # 防止报错：Failed to decode response from marionette
     browser.close()
     generator('NGA', get_meta(content, url), get_posts(content), get_date(content))
 

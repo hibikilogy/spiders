@@ -15,6 +15,15 @@ python xxx.py id
 ```
 其中 `xxx.py` 是对应平台的文件名称，`id` 是帖子 ID。
 
+## 注意事项
+如需正常使用以 GitHub 作为图床的功能，请确保目录满足以下条件：
+```
+.
+├─hibikilogy.github.io
+│  └─images
+└─spiders（当前目录）
+```
+图片需要提交 `hibikilogy.github.io` 内的更改后方可查看。如果有更好的解决方法，欢迎贡献。
 
 ## TODO
 咕咕咕
@@ -22,7 +31,7 @@ python xxx.py id
   - [x] 自动上传图床。
   - [x] 模块化。
   - [x] 当 sm.ms 图床不可用时使用 GitHub 图床。
-  - [x] 修改 html2text 使其不自动删除 \<span\> 标签。
+  - [ ] 修改 html2text 使其不自动删除 \<span\> 标签，目前似乎并不完善。
   - [x] 将第一幅图自动设置为头图。
   - [ ] 面向对象。
 - Bilibili
