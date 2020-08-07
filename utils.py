@@ -4,6 +4,7 @@
 ' 上传图片、解析器等 '
 
 import requests
+import os
 from io import BytesIO
 from bs4 import BeautifulSoup
 from html2text import html2text
@@ -51,14 +52,15 @@ def html2markdown(text):
     for index, span in enumerate(spans):
         text = text.replace(span, f'span{index}')
     text = html2text(text)
-    for index, span in enumerate(spans):
-        text = text.replace(f'span{index}', span)
+    for index, span in enumerate(spans[::-1], start=1):
+        text = text.replace(f'span{len(spans) - index}', span)
     return text
-
 
 def generator(tag, meta, posts, date):
     print('生成文件中……')
-    with open(f'{date}-{meta["title"]}.md', 'w', encoding='utf-8') as f:
+    if not os.path.exists('temp'):
+        os.makedirs('temp')
+    with open(f'temp/{date}-{meta["title"]}.md', 'w', encoding='utf-8') as f:
         f.write('---\n')
         f.write('layout: post\n')
         for key in meta:
@@ -74,4 +76,4 @@ def generator(tag, meta, posts, date):
         f.write(f'    - {tag}\n')
         f.write('---\n')
         f.write(posts)
-    print(f'{date}={meta["title"]}.md已生成。')
+    print(f'temp/{date}-{meta["title"]}.md已生成。')
