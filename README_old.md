@@ -2,21 +2,18 @@
 一系列根据各论坛 / 网站帖子 / 文章 ID 生成指定格式 markdown 文件的爬虫。
 
 目前功能较为完善的网站：
+- 贴吧
+- 虎扑
 - bilibili
+- NGA
+- Stage1
 
 ## 使用方法
-安装 Python 并下载本仓库，`pip install -r requirements.txt`安装依赖
-
-下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads) 
-
-在仓库目录输入命令如下：
-```bash
-python xxx.py --id id1 id2 ...
+安装 Python 并下载本仓库，在仓库目录输入命令如下：
+```shell
+python xxx.py id
 ```
-其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID。
-
-其他参数查看`python xxx.py -h`或`config.py`文件
-
+其中 `xxx.py` 是对应平台的文件名称，`id` 是帖子 ID。
 
 ## 注意事项
 如需正常使用以 GitHub 作为图床的功能，请确保目录满足以下条件：

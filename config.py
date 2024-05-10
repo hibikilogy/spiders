@@ -3,11 +3,12 @@ import argparse, os
 
 class CrawlerConfig():
     def __init__(self):
+        self.ids = [4856222]
         self.driver_path = r'E:\software\common\webBrowser\chrome\chromedriver.exe'
-        self.upload_url = 'https://sm.ms/api/v2/upload'
-        self.img_root_url = 'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images'
-        self.img_save_path = '../hibikilogy.github.io/images'
-        self.post_save_path = './temp'
+        self.upload_url = 'https://sm.ms/api/v2/upload' #第三方图床
+        self.img_root_url = 'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images'    #github图像路径
+        self.img_save_path = '../hibikilogy.github.io/images'   #本地图像保存路径
+        self.post_save_path = './temp'  #本地post保存路径
         self.max_retry = 3
         self.max_timeout = 10
         # self.parse_args()
@@ -24,4 +25,6 @@ class CrawlerConfig():
         # if self.args['driver_path'] != parser.get_default('driver_path'):
         if os.path.exists(self.args.driver_path):
             self.driver_path = self.args.driver_path
+        if self.args.id:
+            self.ids = self.args.id
         return self.args
