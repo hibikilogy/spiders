@@ -121,29 +121,34 @@ def generator(tag, meta, date, posts):
     print(f'temp/{date}-{cleaned_title}.md已生成。')
 
 class Crawler():
-    def __init__(self, url=None, headers=None):
-        self.url = url
+    def __init__(self, cfg):
+        # self.url = url
         self.headers = {
             'User-Agent':random.choice(USER_AGENT_LIST)
-        } if headers==None else headers
+        } 
+        self.cfg = cfg
         
-    def static_parser(self, headers=None):
-        content = requests.get(self.url, headers=self.headers, timeout=10).content
+    def static_parser(self, url, headers=None):
+        content = requests.get(
+            url, headers=self.headers if headers==None else headers, timeout=self.cfg.max_timeout
+            ).content
         return BeautifulSoup(content, 'html.parser')
     
-    def dynamic_parser(self, chrome_exe_path):
-        #需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
-        service = Service(chrome_exe_path)
+    def dynamic_parser(self, url):
+        #NOTE: 需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
+        service = Service(self.cfg.driver_path)
         driver = webdriver.Chrome(service=service)  
-        driver.get(self.url)
+        driver.get(url)
         return BeautifulSoup(driver.page_source, 'html.parser')
 
     def upload_img(self, url,date = None):
+        if not self.cfg.args.upload_img:
+            return url
         print('正在使用 sm.ms 上传图片……')
         try:  # sm.ms API v2
             img = BytesIO(requests.get(url).content)
             body = {'smfile': img}
-            r = requests.post('https://sm.ms/api/v2/upload', data=None, files=body, timeout=10)
+            r = requests.post(self.cfg.upload_url, data=None, files=body, timeout=10)
             try:
                 with open('img.txt', 'a') as f:
                     f.write(f'{r.json()["data"]["url"]}（{r.json()["data"]["delete"]}）\n')
@@ -158,13 +163,13 @@ class Crawler():
                 r = requests.get(url,headers=self.headers)
                 r.raise_for_status()
                 filename = url.split('/')[-1]
-                dir = f"../hibikilogy.github.io/images/{date}"
+                dir = f"{self.cfg.img_save_path}/{date}"
                 if not os.path.exists(dir):
                     os.makedirs(dir)
                 with open(f'{dir}/{filename}', 'wb') as f:
                     f.write(r.content)
                 print('本地写入成功，需提交 hibikilogy.github.io 中的改动方可使用。')
-                return f'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images/{date}/{filename}'
+                return f'{self.cfg.img_root_url}/{date}/{filename}'
             except requests.exceptions.RequestException as e:
                 print("无法下载图像:", e)
             except FileNotFoundError:
@@ -176,10 +181,10 @@ class Crawler():
     
     def generator(self, tag, meta, date, posts):
         print('生成文件中……')
-        if not os.path.exists('temp'):
-            os.makedirs('temp')
+        if not os.path.exists(self.cfg.post_save_path):
+            os.makedirs(self.cfg.post_save_path)
         cleaned_title = clean_chars(meta['title'])
-        with open(f'temp/{date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
+        with open(f'{self.cfg.post_save_path}/{date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
             f.write('---\n')
             f.write('layout: post\n')
             for key in meta:
@@ -189,5 +194,5 @@ class Crawler():
             f.write(f'    - {tag}\n')
             f.write('---\n')
             f.write(posts)
-        print(f'temp/{date}-{cleaned_title}.md已生成。')
-
+        print(f'{self.cfg.post_save_path}/{date}-{cleaned_title}.md已生成。')
+    

@@ -1,0 +1,27 @@
+# 爬虫参数&配置文件
+import argparse, os
+
+class CrawlerConfig():
+    def __init__(self):
+        self.driver_path = r'E:\software\common\webBrowser\chrome\chromedriver.exe'
+        self.upload_url = 'https://sm.ms/api/v2/upload'
+        self.img_root_url = 'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images'
+        self.img_save_path = '../hibikilogy.github.io/images'
+        self.post_save_path = './temp'
+        self.max_retry = 3
+        self.max_timeout = 10
+        # self.parse_args()
+            
+    def parse_args(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--static","-s", action="store_true", default=False, help="Whether to use static mode, default False")
+        parser.add_argument("--upload_img","-u", action="store_true", default=False, help="Whether to upload imgs, default False")
+        parser.add_argument("--driver_path", type=str, default="chromedriver.exe", help="Path to chrome driver")
+        parser.add_argument("--id", nargs='+', type=str, default=[], help="List of post ids")
+        
+        self.args = parser.parse_args()
+        
+        # if self.args['driver_path'] != parser.get_default('driver_path'):
+        if os.path.exists(self.args.driver_path):
+            self.driver_path = self.args.driver_path
+        return self.args
