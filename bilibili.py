@@ -23,6 +23,9 @@ def get_meta(spider,url):
     # 解析为 datetime 对象
     date_obj = datetime.strptime(date_string, '%Y年%m月%d日 %H:%M')
     date = date_obj.strftime('%Y-%m-%d')
+
+    # meta
+    meta = {}
     
     # post
     post = str(r.find(class_='article-content'))
@@ -38,7 +41,6 @@ def get_meta(spider,url):
     post = html2markdown(post)
     
     # meta
-    meta = {}
     meta['title'] = r.find('h1', class_='title').text.strip()
     tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
     meta['title'] = re.sub(tag, '', meta['title'])

@@ -136,8 +136,7 @@ class Crawler():
     
     def dynamic_parser(self, url):
         #NOTE: 需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
-        service = Service(self.cfg.driver_path)
-        driver = webdriver.Chrome(service=service)  
+        driver = webdriver.Chrome(self.cfg.driver_path)  
         driver.get(url)
         return BeautifulSoup(driver.page_source, 'html.parser')
 
