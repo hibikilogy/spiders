@@ -3,14 +3,16 @@
 
 ' 上传图片、解析器等 '
 
+import os,random,re
+from io import BytesIO
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-import os,random
-from io import BytesIO
 from bs4 import BeautifulSoup
 from html2text import html2text
-import re
+
+import blurhash
+from base64 import urlsafe_b64encode
 
 USER_AGENT_LIST = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
@@ -88,8 +90,7 @@ def upload_img(url,date = None):
             r.raise_for_status()
             filename = url.split('/')[-1]
             dir = f"../hibikilogy.github.io/images/{date}"
-            if not os.path.exists(dir):
-                os.makedirs(dir)
+            os.makedirs(dir,exist_ok=True)
             with open(f'{dir}/{filename}', 'wb') as f:
                 f.write(r.content)
             print('本地写入成功，需提交 hibikilogy.github.io 中的改动方可使用。')
@@ -105,8 +106,7 @@ def upload_img(url,date = None):
 
 def generator(tag, meta, date, posts):
     print('生成文件中……')
-    if not os.path.exists('temp'):
-        os.makedirs('temp')
+    os.makedirs('temp',exist_ok=True)
     cleaned_title = clean_chars(meta['title'])
     with open(f'temp/{date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
         f.write('---\n')
@@ -122,12 +122,15 @@ def generator(tag, meta, date, posts):
 
 class Crawler():
     def __init__(self, cfg):
-        # self.url = url
         self.headers = {
             'User-Agent':random.choice(USER_AGENT_LIST)
         } 
         self.cfg = cfg
-        
+        self.meta = {}
+        self.date = None
+        self.post = None
+        self.isDownload = False
+    
     def static_parser(self, url, headers=None):
         content = requests.get(
             url, headers=self.headers if headers==None else headers, timeout=self.cfg.max_timeout
@@ -136,62 +139,86 @@ class Crawler():
     
     def dynamic_parser(self, url):
         #NOTE: 需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
-        driver = webdriver.Chrome(self.cfg.driver_path)  
+        driver = webdriver.Chrome(service=Service(self.cfg.driver_path))  
         driver.get(url)
         return BeautifulSoup(driver.page_source, 'html.parser')
 
-    def upload_img(self, url,date = None):
-        if not self.cfg.args.upload_img:
+    def download_img(self, url, w, h):
+        try:
+            r = requests.get(url,headers=self.headers)
+            r.raise_for_status()
+            img_stream = BytesIO(r.content)
+            hash = blurhash.encode(img_stream, x_components=3, y_components=2)
+            hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
+            filename = f"{hash64}.w{w}.h{h}.jpg"
+            dir = f"{self.cfg.project_path}/images/{self.date}"
+            os.makedirs(dir,exist_ok=True)
+            with open(f'{dir}/{filename}', 'wb') as f: 
+                f.write(r.content)
+            print('本地写入成功,需提交hibikilogy.github.io中的改动上传。')
+            self.isDownload = True
+            return f'../images/{self.date}/{filename}'
+        except requests.exceptions.RequestException as e:
+            print("网络错误，无法下载图像:", e)
             return url
-        print('正在使用 sm.ms 上传图片……')
-        try:  # sm.ms API v2
-            img = BytesIO(requests.get(url).content)
-            body = {'smfile': img}
-            r = requests.post(self.cfg.upload_url, data=None, files=body, timeout=10)
-            try:
-                with open('img.txt', 'a') as f:
-                    f.write(f'{r.json()["data"]["url"]}（{r.json()["data"]["delete"]}）\n')
-                print('上传成功，地址和删除链接已写入 img.txt。')
-                return r.json()['data']['url']
-            except KeyError:
-                print('上传成功。')
-                return r.json()['images']
+        except FileNotFoundError:
+            print(f'创建文件失败，使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
+            return url
         except Exception as e:
-            try:
-                print(f'使用 sm.ms 上传失败（{e}），使用 GitHub 作为图床……')
-                r = requests.get(url,headers=self.headers)
-                r.raise_for_status()
-                filename = url.split('/')[-1]
-                dir = f"{self.cfg.img_save_path}/{date}"
-                if not os.path.exists(dir):
-                    os.makedirs(dir)
-                with open(f'{dir}/{filename}', 'wb') as f:
-                    f.write(r.content)
-                print('本地写入成功，需提交 hibikilogy.github.io 中的改动方可使用。')
-                return f'{self.cfg.img_root_url}/{date}/{filename}'
-            except requests.exceptions.RequestException as e:
-                print("无法下载图像:", e)
-            except FileNotFoundError:
-                print(f'上传失败，已使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
-                return url
-            except Exception as e:
-                print(f'上传失败（{e}），已使用原链接。')
-                return url
+            print(f'下载失败（{e}），使用原链接。')
+            return url
     
-    def generator(self, tag, meta, date, posts):
+    def handle_img(self, url, w, h):
+        '''可配置使用原链接,上传三方图床,默认下载到本地'''
+        if self.cfg.origin_img:     # 使用原图床
+            return url
+        if self.cfg.upload_img:     # 尝试上传
+            print(f'正在使用{self.cfg.upload_url}上传图片……')
+            try:  # TODO: 弃用
+                img = BytesIO(requests.get(url).content)
+                body = {'smfile': img}
+                r = requests.post(self.cfg.upload_url, data=None, files=body, timeout=10)
+                try:
+                    with open('img.txt', 'a') as f:
+                        f.write(f'{r.json()["data"]["url"]}（{r.json()["data"]["delete"]}）\n')
+                    print('上传成功，地址和删除链接已写入 img.txt。')
+                    return r.json()['data']['url']
+                except KeyError:
+                    print('上传成功。')
+                    return r.json()['images']
+            except Exception as e:
+                print(f'上传失败（{e}），使用 GitHub 作为图床……')
+        return self.download_img(url, w, h)
+    
+    def html2markdown(self):
+        pattern = re.compile(r'<span.*?>.*?</span>')
+        spans = pattern.findall(self.post)
+        for index, span in enumerate(spans):
+            self.post = self.post.replace(span, f'span{index}')
+        self.post = html2text(self.post)
+        for index, span in enumerate(spans[::-1], start=1):
+            self.post = self.post.replace(f'span{len(spans) - index}', span)
+        return self.post            
+
+    def generator(self, tag):
         print('生成文件中……')
-        if not os.path.exists(self.cfg.post_save_path):
-            os.makedirs(self.cfg.post_save_path)
-        cleaned_title = clean_chars(meta['title'])
-        with open(f'{self.cfg.post_save_path}/{date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
+        dir = f"{self.cfg.project_path}/temp"
+        os.makedirs(dir,exist_ok=True)
+        cleaned_title = clean_chars(self.meta['title'])
+        with open(f'{dir}/{self.date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
             f.write('---\n')
             f.write('layout: post\n')
-            for key in meta:
-                f.write(f'{key}: {meta[key]}\n')
+            for key in self.meta:
+                f.write(f'{key}: {self.meta[key]}\n')
             f.write('catalog: true\n')
             f.write('tags:\n')
             f.write(f'    - {tag}\n')
             f.write('---\n')
-            f.write(posts)
-        print(f'{self.cfg.post_save_path}/{date}-{cleaned_title}.md已生成。')
+            f.write(self.post)
+        print(
+            f'{dir}/{self.date}-{cleaned_title}.md 已生成,\n\t需将文件移至_post提交'
+            # +f'{", 提交时message需添加 _path2url 关键字" if self.isDownload else ""}'
+            )
     
+if __name__ == '__main__':
+    ...
