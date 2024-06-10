@@ -9,24 +9,35 @@
 
 下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads) 
 
-在仓库目录输入命令如下：
+在本仓库目录输入命令：
 ```bash
 python xxx.py --id id1 id2 ...
 ```
 其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID。默认配置为动态渲染并下载原帖图像到本地
 
-其他参数查看`python xxx.py -h`或`config.py`文件
+其他参数详情请查看`python xxx.py -h`或`config.py`文件
+
+也可以使用`config.py`中的配置直接运行`xxx.py`
 
 
 ## 注意事项
-如需正常使用以 GitHub 作为图床的功能，请确保目录满足以下条件：
+
+参数查找顺序为命令行参数传入>config值>命令行参数默认值
+
+如需正常使用脚本功能，请确保目录满足以下条件：
 ```
 .
 ├─hibikilogy.github.io
-│  └─images
+│  │─images
+│  │─temp
+│  └─_post
 └─spiders（当前目录）
 ```
-图片需要提交 `hibikilogy.github.io` 内的更改后方可查看。如果有更好的解决方法，欢迎贡献。
+
+文章会生成在`hibikilogy.github.io/temp`，需校验后手动移至`_post`提交
+
+
+图片可在本地查看/编辑。在提交到 `hibikilogy.github.io` 时自动转换图片路径。
 
 ## TODO
 咕咕咕
