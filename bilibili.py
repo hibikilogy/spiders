@@ -62,7 +62,7 @@ def bilibili_spider(cfg):
     for id in cfg.ids:
         if id == '':
             continue
-        url = f'https://www.bilibili.com/read/cv{id}'
+        url = f'https://www.bilibili.com/read/{id}'
         spider = Crawler(cfg)
         get_meta(spider,url)
         spider.generator('bilibili')
