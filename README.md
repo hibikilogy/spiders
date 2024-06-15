@@ -13,7 +13,7 @@
 ```bash
 python xxx.py --id id1 id2 ...
 ```
-其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID。默认配置为动态渲染并下载原帖图像到本地
+其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持cv+数字或只有数字。默认配置为动态渲染并下载原帖图像到本地
 
 其他参数详情请查看`python xxx.py -h`或`config.py`文件
 

@@ -93,7 +93,7 @@ def upload_img(url,date = None):
             os.makedirs(dir,exist_ok=True)
             with open(f'{dir}/{filename}', 'wb') as f:
                 f.write(r.content)
-            print('本地写入成功，需提交 hibikilogy.github.io 中的改动方可使用。')
+            print('本地图像下载成功，需提交 hibikilogy.github.io 中的改动方可使用。')
             return f'https://cdn.jsdelivr.net/gh/hibikilogy/hibikilogy.github.io/images/{filename}'
         except requests.exceptions.RequestException as e:
             print("无法下载图像:", e)

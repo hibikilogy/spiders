@@ -5,6 +5,20 @@ import re
 from utils import Crawler
 from config import CrawlerConfig
 
+def format_cv(x):
+    if isinstance(x, int):  
+        return f"cv{x}"
+    elif isinstance(x, str): 
+        if x.startswith('cv') and x[2:].isdigit():  
+            return f"{x}"
+        elif x.isdigit():  
+            return f"cv{x}"
+        else:
+            print(f"Invalid string format: {x}" )
+            return ""
+    else:
+        print(f"Invalid input type: {type(x)}" )
+        return ""
 
 def extract_image_url(html_content):
     pattern = r'url\("?(.*?)(?:.avif)'    #匹配url("到.avif的字符
@@ -59,8 +73,9 @@ def get_meta(spider,url):
         spider.meta['header-img'] = spider.handle_img(head_img,*extract_wh(head_img))
 
 def bilibili_spider(cfg):
-    for id in cfg.ids:
-        if id == '':
+    for id in cfg.ids:    
+        id = format_cv(id)        
+        if id == "":
             continue
         url = f'https://www.bilibili.com/read/{id}'
         spider = Crawler(cfg)
