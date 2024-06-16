@@ -9,15 +9,16 @@
 
 下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads) 
 
-在本仓库目录输入命令：
-```bash
-python xxx.py --id id1 id2 ...
-```
-其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持cv+数字或只有数字。默认配置为动态渲染并下载原帖图像到本地
-
-其他参数详情请查看`python xxx.py -h`或`config.py`文件
-
-也可以使用`config.py`中的配置直接运行`xxx.py`
+两种使用方式：
+1. 在本仓库目录输入命令：
+  ```bash
+  python xxx.py --id id1 id2 ...
+  ```
+  其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持cv+数字或只有数字。
+  
+2. 修改使用`config.json`中的配置直接运行`xxx.py`，id列表支持数字id和cv字符串
+  
+默认配置为动态渲染并下载原帖图像到本地，其他参数详情请查看`python xxx.py -h`或`config.py`文件
 
 
 ## 注意事项
@@ -35,7 +36,6 @@ python xxx.py --id id1 id2 ...
 ```
 
 文章会生成在`hibikilogy.github.io/temp`，需校验后手动移至`_post`提交
-
 
 图片可在本地查看/编辑。在提交到 `hibikilogy.github.io` 时自动转换图片路径。
 
