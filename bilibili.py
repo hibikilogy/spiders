@@ -83,6 +83,5 @@ def bilibili_spider(cfg):
         spider.generator('bilibili')
 
 if __name__ == '__main__':
-    cfg = CrawlerConfig()
-    cfg.parse_args()
+    cfg = CrawlerConfig('config.json')
     bilibili_spider(cfg)

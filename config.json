@@ -1,0 +1,14 @@
+{
+    "driver_path": "path to chromedriver.exe",
+    "project_path": "../hibikilogy.github.io",
+    "upload_url": "https://sm.ms/api/v2/upload",
+    "max_retry": 3,
+    "max_timeout": 10,
+
+    "upload_img": false,
+    "origin_img": false,
+    "origin_quality": false,
+    "static": false,
+
+    "id": [4856222]
+}

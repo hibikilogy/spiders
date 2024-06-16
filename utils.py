@@ -155,7 +155,7 @@ class Crawler():
             os.makedirs(dir,exist_ok=True)
             with open(f'{dir}/{filename}', 'wb') as f: 
                 f.write(r.content)
-            print('本地写入成功,需提交hibikilogy.github.io中的改动上传。')
+            print('本地图像下载成功,需提交hibikilogy.github.io中的改动上传。')
             self.isDownload = True
             return f'../images/{self.date}/{filename}'
         except requests.exceptions.RequestException as e:
