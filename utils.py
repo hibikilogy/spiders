@@ -143,6 +143,12 @@ class Crawler():
         driver.get(url)
         return BeautifulSoup(driver.page_source, 'html.parser')
 
+    def parser(self,url):
+        if self.cfg.static:
+            return self.static_parser(url)
+        else:
+            return self.dynamic_parser(url)
+    
     def download_img(self, url, w, h):
         try:
             r = requests.get(url,headers=self.headers)

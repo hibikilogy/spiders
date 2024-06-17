@@ -8,7 +8,13 @@
     "upload_img": false,
     "origin_img": false,
     "origin_quality": false,
-    "static": false,
 
-    "id": [4856222]
+    "bili":{
+        "static": false,
+        "id": [4856222]
+    },
+    "tieba":{
+        "static": true,
+        "id": [6504037963]
+    }
 }

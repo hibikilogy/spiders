@@ -37,10 +37,7 @@ def extract_wh(text):
         return None, None
 
 def get_meta(spider,url):
-    if spider.cfg.static:
-        r = spider.static_parser(url)
-    else:
-        r = spider.dynamic_parser(url) #头图为动态渲染
+    r = spider.parser(url) 
     
     # date
     date_string = r.find(class_='publish-text').text
@@ -83,5 +80,5 @@ def bilibili_spider(cfg):
         spider.generator('bilibili')
 
 if __name__ == '__main__':
-    cfg = CrawlerConfig('config.json')
+    cfg = CrawlerConfig('config.json','bili')
     bilibili_spider(cfg)
