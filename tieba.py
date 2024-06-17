@@ -4,9 +4,12 @@ import re
 from utils import parser
 from utils import upload_img
 from utils import html2markdown
-from utils import generator
-import sys
+from config import CrawlerConfig
+from utils import Crawler
 
+def id_check(id):
+    return id != "" and (isinstance(id, int) or id.isdigit())
+     
 
 def get_posts(url):
     def get_post(page_url):
@@ -20,29 +23,47 @@ def get_posts(url):
     for post in posts:
         post = str(post)
         post = re.sub('<div[^>]*>', '<p>', post)
-        post = re.sub('<\/div[^>]*>', '</p>', post)
+        post = re.sub('</div[^>]*>', '</p>', post)
+        # upload img
+        # TODO: 改为保存到本地
         for img in re.findall(img_src, post):
             new_img = upload_img(img)
             post = post.replace(img, new_img)
         content += html2markdown(post)
     return content
 
-def get_meta(url):
-    meta = {}
-    r = parser(url)
-    meta['title'] = r.find(class_='core_title_txt').text
+
+def get_meta(spider,url):
+    if spider.cfg.static:
+        r = spider.static_parser(url)
+    else:
+        r = spider.dynamic_parser(url) #头图为动态渲染
+    
+    # date
+    date_string = r.find_all(class_='tail-info')[3].text[:10]
+    spider.date = date_string
+    
+    # post
+    spider.post = get_posts(url)
+    spider.html2markdown()
+    
+    # meta
+    spider.meta['title'] = r.find(class_='core_title_txt').text.strip()
     tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
-    meta['title'] = re.sub(tag, '', meta['title'])
-    meta['author'] = r.find('a', class_='p_author_name').text
-    meta['original'] = url
-    return meta
+    spider.meta['title'] = re.sub(tag, '', spider.meta['title'])
+    spider.meta['author'] = r.find('a', class_='p_author_name').text.strip()
+    spider.meta['original'] = url
 
-def get_date(url):
-    return parser(url).find_all(class_='tail-info')[2].text[:10]
+def tieba_spider(cfg):
+    for id in cfg.ids:          
+        if not id_check(id):
+            continue
+        url = f'https://tieba.baidu.com/p/{id}?see_lz=1'
 
-def tieba_spider(id):
-    url = f'https://tieba.baidu.com/p/{id}?see_lz=1'
-    generator('贴吧', get_meta(url), get_posts(url), get_date(url))
+        spider = Crawler(cfg)
+        get_meta(spider,url)
+        spider.generator('贴吧')
 
 if __name__ == '__main__':
-    tieba_spider(str(sys.argv[1]))
+    cfg = CrawlerConfig('config.json')
+    tieba_spider(cfg)
