@@ -5,3 +5,4 @@ __pycache__/
 img.txt
 .vscode/
 temp
+config.json
