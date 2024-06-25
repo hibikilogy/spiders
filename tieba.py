@@ -1,30 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import re
-from utils import parser
-from utils import upload_img
-from utils import html2markdown
+from utils import extract_wh_from
 from config import CrawlerConfig
 from utils import Crawler
 
 def id_check(id):
     return id != "" and (isinstance(id, int) or id.isdigit())
-     
-def extract_wh(text):
-    pattern = r'width="(\d+)".*?height="(\d+)"|height="(\d+)".*?width="(\d+)"'
-    match = re.search(pattern, text)
-
-    if match:
-        # 由于正则表达式中有多个捕获组，需要检查哪个捕获组匹配到了值
-        if match.group(1) and match.group(2):
-            width = match.group(1)
-            height = match.group(2)
-        elif match.group(3) and match.group(4):
-            width = match.group(4)
-            height = match.group(3)
-        return width, height
-    else:
-        return None, None
 
 
 def get_meta(spider,url):
@@ -48,7 +30,7 @@ def get_meta(spider,url):
         i+=1
         posts += [str(x) for x in r.find_all(class_='d_post_content')]
     
-    img_prtn = r"""<img\s*[^>]*?>"""   
+    img_prtn = r"<img\s*[^>]*?>"  
     img_src = r'src\s*="([^"]*?)"'
     spider.post = ''
     for i,post in enumerate(posts):
@@ -57,7 +39,7 @@ def get_meta(spider,url):
         # upload img
         for j,img in enumerate(re.findall(img_prtn, post)):
             for origin_img in re.findall(img_src, img):
-                new_img = spider.handle_img(origin_img, *extract_wh(img))
+                new_img = spider.handle_img(origin_img, *extract_wh_from(img, 'attr'))
             if i+j == 0:
                 spider.meta['header-img'] = new_img
             post = post.replace(origin_img, new_img)
