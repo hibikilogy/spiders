@@ -6,11 +6,16 @@
 - tieba
 
 ## 使用方法
+
+### 准备
+
 安装 Python 并下载本仓库，`pip install -r requirements.txt`安装依赖
 
 下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads)，修改配置中的driver路径 
 
-两种使用方式：
+将模板配置文件`config.template.json`复制一份重命名为`config.json`, 作为实际使用的配置文件，填入自己的配置
+
+### 两种运行方式：
 1. 在本仓库目录输入命令：
   ```bash
   python xxx.py --id id1 id2 ...
