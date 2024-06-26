@@ -19,7 +19,7 @@ def get_meta(spider,url):
         if posts == []:
             page = int(r.find_all('li', class_='l_reply_num')[0].find_all('span')[1].text)
             # date
-            date_string = r.find_all(class_='tail-info')[3].text[:10]
+            date_string = r.find_all(class_='tail-info')[-1].text[:10]
             spider.date = date_string
             # meta
             spider.meta['title'] = r.find(class_='core_title_txt').text.strip()
