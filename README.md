@@ -3,20 +3,21 @@
 
 目前功能较为完善的网站：
 - bilibili
+- tieba
 
 ## 使用方法
 安装 Python 并下载本仓库，`pip install -r requirements.txt`安装依赖
 
-下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads) 
+下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads)，修改配置中的driver路径 
 
 两种使用方式：
 1. 在本仓库目录输入命令：
   ```bash
   python xxx.py --id id1 id2 ...
   ```
-  其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持cv+数字或只有数字。
+  其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持前缀+数字(eg.cv123)或只有数字。
   
-2. 修改使用`config.json`中的配置直接运行`xxx.py`，id列表支持数字id和cv字符串
+2. 修改使用`config.json`中的配置直接运行`xxx.py`，id列表支持前缀+数字字符串和纯数字id
   
 默认配置为动态渲染并下载原帖图像到本地，其他参数详情请查看`python xxx.py -h`或`config.py`文件
 
@@ -35,9 +36,13 @@
 └─spiders（当前目录）
 ```
 
-文章会生成在`hibikilogy.github.io/temp`，需校验后手动移至`_post`提交
+文章会生成在`hibikilogy.github.io/temp`，需校验后手动移至`_post`提交。
 
 图片可在本地查看/编辑。在提交到 `hibikilogy.github.io` 时自动转换图片路径。
+
+下载图像文件名为`{hash64}.w{weight}.h{height}.jpg`，其中`hash64=urlsafe_b64encode(blurhash(img_bytes))`
+
+`blurhash`参考https://github.com/woltapp/blurhash
 
 ## TODO
 咕咕咕

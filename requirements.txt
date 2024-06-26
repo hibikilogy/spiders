@@ -3,3 +3,4 @@ selenium>=4.0
 beautifulsoup4
 html2text
 blurhash-python
+pillow>=10.0

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 import re
+from utils import extract_wh_from
 from utils import Crawler
 from config import CrawlerConfig
 
@@ -20,12 +21,12 @@ def format_cv(x):
         print(f"Invalid input type: {type(x)}" )
         return ""
 
-def extract_image_url(html_content):
+def extract_head_imgurl(html_content):
     pattern = r'url\("?(.*?)(?:.avif)'    #匹配url("到.avif的字符
     urls = re.findall(pattern, html_content)
     return f"https:{urls[0]}.jpg" if urls else None
 
-def extract_wh(text):
+def extract_wh_from_url(text):
     pattern = r'@(\d+)w_(\d+)h'
     match = re.search(pattern, text)
 
@@ -36,11 +37,19 @@ def extract_wh(text):
     else:
         return None, None
 
-def get_meta(spider,url):
-    if spider.cfg.static:
-        r = spider.static_parser(url)
+def gen_down_url(url,w,h):
+    if not (w and h):
+        w,h = extract_wh_from_url(url)
+    if w and h:
+        down_url = f"{url.split('@')[0]}@{w}w_{h}h_.webp"
     else:
-        r = spider.dynamic_parser(url) #头图为动态渲染
+        down_url = url
+    if not down_url.startswith('https:'):
+        down_url = f"https:{down_url}"
+    return down_url
+            
+def get_meta(spider,url):
+    r = spider.parser(url) 
     
     # date
     date_string = r.find(class_='publish-text').text
@@ -51,14 +60,23 @@ def get_meta(spider,url):
     # post
     spider.post = str(r.find(class_='article-content'))
     spider.post = spider.post.replace('data-src', 'src')
-    img_src = r"""<img\b[^>]*\bsrc\s*=\s*['"]([^'"]*)['"][^>]*>"""
+    img_prtn = r"<img\s*[^>]*?>"  
+    img_src = r'src\s*="([^"]*?)"'
+    # img_src = r"""<img\b[^>]*\bsrc\s*=\s*['"]([^'"]*)['"][^>]*>"""
     # img_src = r"""<img\b[^>]*\bsrc\s*=\s*['"]([^'"@]*)['"@][^>]*[>]"""    #匹配到@为止
-    for idx,img in enumerate(re.findall(img_src, spider.post)):
-        new_img=f"https:{img.replace('.avif','.jpg')}"
-        new_img = spider.handle_img(new_img, *extract_wh(img))
+    for idx,img in enumerate(re.findall(img_prtn, spider.post)):
+        img = img.replace('data-w="', 'width: ')
+        img = img.replace('data-h="', 'height: ')
+        for origin_img in re.findall(img_src, img)[::-1]:   #倒序
+            w,h = extract_wh_from(img, 'style')
+            down_url = gen_down_url(origin_img,w,h)
+            ext = 'gif' if 'gif' in  down_url else 'jpg'
+            new_img = spider.handle_img(down_url, w,h, ext)
+            break
         if idx == 0:
             spider.meta['header-img'] = new_img
-        spider.post = spider.post.replace(img, new_img)
+        spider.post = spider.post.replace(origin_img, new_img)
+    
     spider.html2markdown()
     
     # meta
@@ -68,9 +86,9 @@ def get_meta(spider,url):
     spider.meta['author'] = r.find(class_='up-name').text.strip()
     spider.meta['original'] = url
     banner = str(r.find(class_='banner-container'))
-    head_img = extract_image_url(banner)
+    head_img = extract_head_imgurl(banner)
     if head_img:
-        spider.meta['header-img'] = spider.handle_img(head_img,*extract_wh(head_img))
+        spider.meta['header-img'] = spider.handle_img(head_img,*extract_wh_from_url(head_img))
 
 def bilibili_spider(cfg):
     for id in cfg.ids:    
@@ -83,5 +101,5 @@ def bilibili_spider(cfg):
         spider.generator('bilibili')
 
 if __name__ == '__main__':
-    cfg = CrawlerConfig('config.json')
+    cfg = CrawlerConfig('config.json','bili')
     bilibili_spider(cfg)

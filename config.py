@@ -3,7 +3,7 @@ import argparse, os, json
 
 class CrawlerConfig():
     # 参数查找顺序：命令行参数传入>config值>命令行参数默认值
-    def __init__(self, config_file):
+    def __init__(self, config_file, site):
         with open(config_file, 'r', encoding='utf-8') as f:
             config = json.load(f)
 
@@ -17,7 +17,18 @@ class CrawlerConfig():
         
         args = parser.parse_args()
         def get_arg(key,default = None):
-            return getattr(args, key) if hasattr(args, key) and getattr(args, key) != parser.get_default(key) else config.get(key, default)
+            key_parts = key.split('.')
+            if hasattr(args, key_parts[-1]) and getattr(args, key_parts[-1]) != parser.get_default(key_parts[-1]):
+                value = getattr(args, key_parts[-1])
+            else:
+                value = config
+                for part in key_parts:
+                    if part in value:
+                        value = value[part]
+                    else:
+                        value = default
+                        break
+            return value
         
         # config        
         self.driver_path = get_arg('driver_path')
@@ -31,7 +42,7 @@ class CrawlerConfig():
         self.upload_img = get_arg('upload_img',False)
         self.origin_img = get_arg('origin_img',False)
         self.origin_quality = get_arg('origin_quality',False)
-        self.static = get_arg('static',False)
+        self.static = get_arg(f'{site}.static',False)
         # self.project_path = os.path.abspath(self.project_path)
         
-        self.ids = get_arg('id')
+        self.ids = get_arg(f'{site}.id')

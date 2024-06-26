@@ -120,6 +120,30 @@ def generator(tag, meta, date, posts):
         f.write(posts)
     print(f'temp/{date}-{cleaned_title}.md已生成。')
 
+
+
+
+
+def extract_wh_from(text, type):
+    if type == "style":
+        pattern = r'width:\s(\d+).*?height:\s(\d+)|height:\s(\d+).*?width:\s(\d+)'
+    elif type == "attr":
+        pattern = r'width="(\d+)".*?height="(\d+)"|height="(\d+)".*?width="(\d+)"'
+    else:
+        raise ValueError("Unknown parttern type for width and height")
+    match = re.search(pattern, text)
+
+    if match:
+        if match.group(1) and match.group(2):
+            width = match.group(1)
+            height = match.group(2)
+        elif match.group(3) and match.group(4):
+            width = match.group(4)
+            height = match.group(3)
+        return width, height
+    else:
+        return None, None
+
 class Crawler():
     def __init__(self, cfg):
         self.headers = {
@@ -143,32 +167,38 @@ class Crawler():
         driver.get(url)
         return BeautifulSoup(driver.page_source, 'html.parser')
 
-    def download_img(self, url, w, h):
+    def parser(self,url):
+        if self.cfg.static:
+            return self.static_parser(url)
+        else:
+            return self.dynamic_parser(url)
+    
+    def download_img(self, url, w, h, ext='jpg'):
         try:
             r = requests.get(url,headers=self.headers)
             r.raise_for_status()
             img_stream = BytesIO(r.content)
             hash = blurhash.encode(img_stream, x_components=3, y_components=2)
             hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
-            filename = f"{hash64}.w{w}.h{h}.jpg"
+            filename = f"{hash64}.w{w}.h{h}.{ext}"
             dir = f"{self.cfg.project_path}/images/{self.date}"
             os.makedirs(dir,exist_ok=True)
             with open(f'{dir}/{filename}', 'wb') as f: 
                 f.write(r.content)
             print('本地图像下载成功,需提交hibikilogy.github.io中的改动上传。')
             self.isDownload = True
+            img_stream.close()
             return f'../images/{self.date}/{filename}'
         except requests.exceptions.RequestException as e:
             print("网络错误，无法下载图像:", e)
-            return url
         except FileNotFoundError:
             print(f'创建文件失败，使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
-            return url
         except Exception as e:
             print(f'下载失败（{e}），使用原链接。')
-            return url
+        img_stream.close()
+        return url
     
-    def handle_img(self, url, w, h):
+    def handle_img(self, url, w, h, ext='jpg'):
         '''可配置使用原链接,上传三方图床,默认下载到本地'''
         if self.cfg.origin_img:     # 使用原图床
             return url
@@ -188,7 +218,7 @@ class Crawler():
                     return r.json()['images']
             except Exception as e:
                 print(f'上传失败（{e}），使用 GitHub 作为图床……')
-        return self.download_img(url, w, h)
+        return self.download_img(url, w, h, ext)
     
     def html2markdown(self):
         pattern = re.compile(r'<span.*?>.*?</span>')
