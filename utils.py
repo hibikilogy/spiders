@@ -126,9 +126,9 @@ def generator(tag, meta, date, posts):
 
 def extract_wh_from(text, type):
     if type == "style":
-        pattern = r'width:\s(\d+).*?height:\s(\d+)|height:\s(\d+).*?width:\s(\d+)'
+        pattern = r'width\s*?:\s*?(\d+)(?:\.\d+)?.*?height\s*?:\s*?(\d+)(?:\.\d+)?|height\s*?:\s*?(\d+)(?:\.\d+)?.*?width\s*?:\s*?(\d+)(?:\.\d+)?'
     elif type == "attr":
-        pattern = r'width="(\d+)".*?height="(\d+)"|height="(\d+)".*?width="(\d+)"'
+        pattern = r'width\s*?=\s*?"(\d+)(?:\.\d+)?".*?height\s*?=\s*?"(\d+)(?:\.\d+)?"|height\s*?=\s*?"(\d+)(?:\.\d+)?".*?width\s*?=\s*?"(\d+)(?:\.\d+)?"'
     else:
         raise ValueError("Unknown parttern type for width and height")
     match = re.search(pattern, text)
@@ -143,6 +143,14 @@ def extract_wh_from(text, type):
         return width, height
     else:
         return None, None
+
+def extract_wh(text):
+    w,h = extract_wh_from(text,'style')
+    if w or h:
+        return w, h
+    w,h = extract_wh_from(text, 'attr')
+    return w, h
+
 
 class Crawler():
     def __init__(self, cfg):
@@ -180,7 +188,7 @@ class Crawler():
             img_stream = BytesIO(r.content)
             hash = blurhash.encode(img_stream, x_components=3, y_components=2)
             hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
-            filename = f"{hash64}.w{w}.h{h}.{ext}"
+            filename = f"{hash64}{f'.w{w}' if w else ''}{f'.h{h}' if h else ''}.{ext}"
             dir = f"{self.cfg.project_path}/images/{self.date}"
             os.makedirs(dir,exist_ok=True)
             with open(f'{dir}/{filename}', 'wb') as f: 
@@ -234,7 +242,10 @@ class Crawler():
         print('生成文件中……')
         dir = f"{self.cfg.project_path}/temp"
         os.makedirs(dir,exist_ok=True)
-        cleaned_title = clean_chars(self.meta['title'])
+        if 'title' in self.meta:
+            cleaned_title = clean_chars(self.meta['title'])
+        else:
+            cleaned_title = self.meta['original'].split('/')[-1]
         with open(f'{dir}/{self.date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
             f.write('---\n')
             f.write('layout: post\n')

@@ -14,12 +14,16 @@ class CrawlerConfig():
         parser.add_argument("--origin_quality","-q", action="store_true", default=False, help="Whether to use/download img of original quality without compression, default False")
         parser.add_argument("--driver_path", type=str, default="chromedriver.exe", help="Path to chrome driver")
         parser.add_argument("--id","-id", nargs='+', type=str, default=[], help="List of post ids")
+        #bili
+        parser.add_argument("--bili.is_dyn","-b.t", action="store_true", default=False, help="Take ids as bilibili dynamic post")
         
         args = parser.parse_args()
         def get_arg(key,default = None):
             key_parts = key.split('.')
             if hasattr(args, key_parts[-1]) and getattr(args, key_parts[-1]) != parser.get_default(key_parts[-1]):
                 value = getattr(args, key_parts[-1])
+            elif hasattr(args, key) and getattr(args, key) != parser.get_default(key):
+                value = getattr(args, key)
             else:
                 value = config
                 for part in key_parts:
@@ -46,3 +50,6 @@ class CrawlerConfig():
         # self.project_path = os.path.abspath(self.project_path)
         
         self.ids = get_arg(f'{site}.id')
+
+        if site=='bili':
+            self.is_dyn = get_arg('bili.is_dyn')
