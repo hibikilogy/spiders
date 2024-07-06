@@ -8,6 +8,8 @@
     "upload_img": false,
     "origin_img": false,
     "origin_quality": false,
+    
+    "fname":["",""],
 
     "bili":{
         "static": false,

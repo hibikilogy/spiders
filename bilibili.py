@@ -136,7 +136,7 @@ def get_meta(spider,url):
         spider.meta['header-img'] = trans_img_url(banner, head_img)
 
 def bilibili_spider(cfg):
-    for id in cfg.ids:    
+    for idx, id in enumerate(cfg.ids):    
         if cfg.is_dyn:
             url = f'https://www.bilibili.com/opus/{id}'
         else:
@@ -146,7 +146,8 @@ def bilibili_spider(cfg):
             continue
         spider = Crawler(cfg)
         get_meta(spider,url)
-        spider.generator('bilibili')
+        custom_fname = cfg.fname[idx] if idx < len(cfg.fname) else ''
+        spider.generator('bilibili', custom_fname)
 
 if __name__ == '__main__':
     cfg = CrawlerConfig('config.json','bili')

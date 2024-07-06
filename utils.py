@@ -47,7 +47,7 @@ def clean_chars(text):
         '：': ':',
     }
     
-    special_chars = r'[<>:"/\\|?*\x00-\x1F\x7F]'    #替换文件系统的特殊字符
+    special_chars = r'[——、<>:"/\\|?*\x00-\x1F\x7F]'    #替换文件系统的特殊字符
     
     pattern = '|'.join(re.escape(p) for p in punctuation_mapping.keys())
     result = re.sub(pattern, lambda m: punctuation_mapping[m.group()], text)
@@ -238,15 +238,23 @@ class Crawler():
             self.post = self.post.replace(f'span{len(spans) - index}', span)
         return self.post            
 
-    def generator(self, tag):
+    def gen_title(self):
+        
+        if 'title' in self.meta:
+            title = clean_chars(self.meta['title'])
+        else:
+            title = self.meta['original'].split('/')[-1]
+        return title
+    
+    def generator(self, tag, custom_fname=''):
         print('生成文件中……')
         dir = f"{self.cfg.project_path}/temp"
         os.makedirs(dir,exist_ok=True)
-        if 'title' in self.meta:
-            cleaned_title = clean_chars(self.meta['title'])
+        if custom_fname == '':  
+            cleaned_fname = self.gen_title()
         else:
-            cleaned_title = self.meta['original'].split('/')[-1]
-        with open(f'{dir}/{self.date}-{cleaned_title}.md', 'w', encoding='utf-8') as f:
+            cleaned_fname = custom_fname
+        with open(f'{dir}/{self.date}-{cleaned_fname}.md', 'w', encoding='utf-8') as f:
             f.write('---\n')
             f.write('layout: post\n')
             for key in self.meta:
@@ -257,7 +265,7 @@ class Crawler():
             f.write('---\n')
             f.write(self.post)
         print(
-            f'{dir}/{self.date}-{cleaned_title}.md 已生成,\n\t需将文件移至_post提交'
+            f'{dir}/{self.date}-{cleaned_fname}.md 已生成,\n\t需将文件移至_post提交'
             # +f'{", 提交时message需添加 _path2url 关键字" if self.isDownload else ""}'
             )
     

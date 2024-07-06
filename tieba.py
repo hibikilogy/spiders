@@ -49,14 +49,15 @@ def get_meta(spider,url):
 
 
 def tieba_spider(cfg):
-    for id in cfg.ids:          
+    for idx, id in enumerate(cfg.ids):   
         if not id_check(id):
             continue
         url = f'https://tieba.baidu.com/p/{id}?see_lz=1'
 
         spider = Crawler(cfg)
         get_meta(spider,url)
-        spider.generator('贴吧')
+        custom_fname = cfg.fname[idx] if idx < len(cfg.fname) else ''
+        spider.generator('贴吧', custom_fname)
 
 if __name__ == '__main__':
     cfg = CrawlerConfig('config.json','tieba')
