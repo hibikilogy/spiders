@@ -2,12 +2,15 @@
 一系列根据各论坛 / 网站帖子 / 文章 ID 生成指定格式 markdown 文件的爬虫。
 
 目前功能较为完善的网站：
-- bilibili
-- tieba
+- bilibili.com/opus/
+- bilibili.com/read/
+- tieba.baidu.com/p/
 
 ## 使用方法
 
 ### 准备
+
+C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-solve-error-microsoft-visual-c-14-0-or-greater-is-required-when-inst)
 
 安装 Python 并下载本仓库，`pip install -r requirements.txt`安装依赖
 
@@ -24,7 +27,9 @@
   
 2. 修改使用`config.json`中的配置直接运行`xxx.py`，id列表支持前缀+数字字符串和纯数字id
   
-默认配置为动态渲染并下载原帖图像到本地，其他参数详情请查看`python xxx.py -h`或`config.py`文件
+默认配置为动态渲染并下载原帖图像到本地，爬取b站动态需要设置`is_dyn`为`true`
+
+ 其他参数详情请查看`python xxx.py -h`或`config.py`文件
 
 
 ## 注意事项

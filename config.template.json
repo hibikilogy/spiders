@@ -8,10 +8,13 @@
     "upload_img": false,
     "origin_img": false,
     "origin_quality": false,
+    
+    "fname":["",""],
 
     "bili":{
         "static": false,
-        "id": [4856222]
+        "id": [4856222,"cv4791285"],
+        "is_dyn": false
     },
     "tieba":{
         "static": true,
