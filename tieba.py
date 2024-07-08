@@ -30,6 +30,9 @@ def get_meta(spider,url):
         i+=1
         posts += [str(x) for x in r.find_all(class_='d_post_content')]
     
+    def trans_img_url(container,url):
+        w,h = extract_wh_from(container,'attr')
+        return spider.handle_img(url, w,h)
     img_prtn = r"<img\s*[^>]*?>"  
     img_src = r'src\s*="([^"]*?)"'
     spider.post = ''
@@ -39,7 +42,8 @@ def get_meta(spider,url):
         # upload img
         for j,img in enumerate(re.findall(img_prtn, post)):
             for origin_img in re.findall(img_src, img):
-                new_img = spider.handle_img(origin_img, *extract_wh_from(img, 'attr'))
+                if origin_img == "": continue
+                new_img = trans_img_url(img, origin_img)
             if i+j == 0:
                 spider.meta['header-img'] = new_img
             post = post.replace(origin_img, new_img)

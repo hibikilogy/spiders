@@ -6,6 +6,7 @@
 import os,random,re
 from io import BytesIO
 import requests
+from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
@@ -129,6 +130,10 @@ def extract_wh_from(text, type):
         pattern = r'width\s*?:\s*?(\d+)(?:\.\d+)?.*?height\s*?:\s*?(\d+)(?:\.\d+)?|height\s*?:\s*?(\d+)(?:\.\d+)?.*?width\s*?:\s*?(\d+)(?:\.\d+)?'
     elif type == "attr":
         pattern = r'width\s*?=\s*?"(\d+)(?:\.\d+)?".*?height\s*?=\s*?"(\d+)(?:\.\d+)?"|height\s*?=\s*?"(\d+)(?:\.\d+)?".*?width\s*?=\s*?"(\d+)(?:\.\d+)?"'
+    elif type == "elem":
+        w = text.size.get('width')
+        h = text.size.get('height')
+        return w,h
     else:
         raise ValueError("Unknown parttern type for width and height")
     match = re.search(pattern, text)
@@ -151,7 +156,12 @@ def extract_wh(text):
     w,h = extract_wh_from(text, 'attr')
     return w, h
 
-
+def get_img_size(img,format):
+    buffer = BytesIO()
+    img.save(buffer, format=format)
+    size_in_kb = buffer.tell()/1024
+    buffer.close()
+    return size_in_kb
 class Crawler():
     def __init__(self, cfg):
         self.headers = {
@@ -161,7 +171,8 @@ class Crawler():
         self.meta = {}
         self.date = None
         self.post = None
-        self.isDownload = False
+        self.driver = None
+        # self.isDownload = False
     
     def static_parser(self, url, headers=None):
         content = requests.get(
@@ -171,31 +182,39 @@ class Crawler():
     
     def dynamic_parser(self, url):
         #NOTE: 需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
-        driver = webdriver.Chrome(service=Service(self.cfg.driver_path))  
-        driver.get(url)
-        return BeautifulSoup(driver.page_source, 'html.parser')
-
+        self.driver = webdriver.Chrome(service=Service(self.cfg.driver_path))  
+        self.driver.get(url)
+        return BeautifulSoup(self.driver.page_source, 'html.parser')
+        
     def parser(self,url):
         if self.cfg.static:
             return self.static_parser(url)
         else:
             return self.dynamic_parser(url)
-    
-    def download_img(self, url, w, h, ext='jpg'):
+        
+    def download_img(self, url, w, h):
         try:
+            ext = 'gif' if 'gif' in url else self.cfg.format
             r = requests.get(url,headers=self.headers)
             r.raise_for_status()
-            img_stream = BytesIO(r.content)
-            hash = blurhash.encode(img_stream, x_components=3, y_components=2)
+            image = Image.open(BytesIO(r.content))
+            if self.cfg.size_thr<=0:
+                ...
+            elif get_img_size(image,ext) > self.cfg.size_thr:
+                w,h = map(min,zip([w*2,h*2],(image.size[0]//2, image.size[1]//2)))
+                image = image.resize((w, h),Image.LANCZOS)
+            w,h = image.size
+            hash = blurhash.encode(image.copy(), x_components=3, y_components=2)
             hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
             filename = f"{hash64}{f'.w{w}' if w else ''}{f'.h{h}' if h else ''}.{ext}"
             dir = f"{self.cfg.project_path}/images/{self.date}"
             os.makedirs(dir,exist_ok=True)
-            with open(f'{dir}/{filename}', 'wb') as f: 
-                f.write(r.content)
-            print('本地图像下载成功,需提交hibikilogy.github.io中的改动上传。')
-            self.isDownload = True
-            img_stream.close()
+            image.save(f'{dir}/{filename}', format=ext)
+            # with open(f'{dir}/{filename}', 'wb') as f: 
+            #     f.write(r.content)
+            print(f'本地图像下载成功({w}_{h}_{get_img_size(image,ext):.2f}KB),需提交hibikilogy.github.io中的改动上传。')
+            # self.isDownload = True
+            image.close()
             return f'../images/{self.date}/{filename}'
         except requests.exceptions.RequestException as e:
             print("网络错误，无法下载图像:", e)
@@ -203,10 +222,10 @@ class Crawler():
             print(f'创建文件失败，使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
         except Exception as e:
             print(f'下载失败（{e}），使用原链接。')
-        img_stream.close()
+        image.close()
         return url
     
-    def handle_img(self, url, w, h, ext='jpg'):
+    def handle_img(self, url, w, h):
         '''可配置使用原链接,上传三方图床,默认下载到本地'''
         if self.cfg.origin_img:     # 使用原图床
             return url
@@ -226,7 +245,7 @@ class Crawler():
                     return r.json()['images']
             except Exception as e:
                 print(f'上传失败（{e}），使用 GitHub 作为图床……')
-        return self.download_img(url, w, h, ext)
+        return self.download_img(url, w, h)
     
     def html2markdown(self):
         pattern = re.compile(r'<span.*?>.*?</span>')

@@ -7,7 +7,8 @@
 
     "upload_img": false,
     "origin_img": false,
-    "origin_quality": false,
+    "size_thr": 85,
+    "format": "webp",
     
     "fname":["",""],
 
@@ -19,5 +20,9 @@
     "tieba":{
         "static": true,
         "id": [9041070872]
+    },
+    "bgm":{
+        "static": false,
+        "id": [340827]
     }
 }

@@ -9,12 +9,14 @@ class CrawlerConfig():
 
         parser = argparse.ArgumentParser()
         parser.add_argument("--static","-s", action="store_true", default=False, help="Whether to use static mode(simpler & faster but easy to be banned), default False")
-        parser.add_argument("--upload_img","-u", action="store_true", default=False, help="Whether to upload imgs via third-party img hosting service, please change your upload_url in config, default False")
-        parser.add_argument("--origin_img","-o", action="store_true", default=False, help="Whether to use original img url directly, default False")
-        parser.add_argument("--origin_quality","-q", action="store_true", default=False, help="Whether to use/download img of original quality without compression, default False")
         parser.add_argument("--driver_path", type=str, default="chromedriver.exe", help="Path to chrome driver")
         parser.add_argument("--id","-id", nargs='+', type=str, default=[], help="List of post ids")
         parser.add_argument("--fname","-n", nargs='+', type=str, default=[], help="List of post custom file names")
+        #img
+        parser.add_argument("--upload_img","-u", action="store_true", default=False, help="Whether to upload imgs via third-party img hosting service, please change your upload_url in config, default False")
+        parser.add_argument("--origin_img","-o", action="store_true", default=False, help="Whether to use original img url directly, default False")
+        parser.add_argument("--size_thr","-t", type=int, default=85, help="Size threshold in kB for not compressing images, '-1' means original quality")
+        parser.add_argument("--format","-f", type=str, default="webp", help="Image saving format")
         #bili
         parser.add_argument("--bili.is_dyn","-b.t", action="store_true", default=False, help="Take ids as bilibili dynamic post")
         
@@ -46,7 +48,8 @@ class CrawlerConfig():
         
         self.upload_img = get_arg('upload_img',False)
         self.origin_img = get_arg('origin_img',False)
-        self.origin_quality = get_arg('origin_quality',False)
+        self.size_thr = get_arg('size_thr')
+        self.format = get_arg('format')
         self.static = get_arg(f'{site}.static',False)
         # self.project_path = os.path.abspath(self.project_path)
         

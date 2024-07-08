@@ -5,7 +5,8 @@
 - bilibili.com/opus/
 - bilibili.com/read/
 - tieba.baidu.com/p/
-
+- bgm.tv/blog/
+  
 ## 使用方法
 
 ### 准备
@@ -50,7 +51,7 @@ C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-s
 
 图片可在本地查看/编辑。在提交到 `hibikilogy.github.io` 时自动转换图片路径。
 
-下载图像文件名为`{hash64}.w{weight}.h{height}.jpg`，其中`hash64=urlsafe_b64encode(blurhash(img_bytes))`
+下载图像文件名为`{hash64}.w{weight}.h{height}.webp`，其中`hash64=urlsafe_b64encode(blurhash(img_bytes))`
 
 `blurhash`参考https://github.com/woltapp/blurhash
 
