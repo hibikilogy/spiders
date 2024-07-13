@@ -23,18 +23,21 @@ class CrawlerConfig():
         args = parser.parse_args()
         def get_arg(key,default = None):
             key_parts = key.split('.')
-            if hasattr(args, key_parts[-1]) and getattr(args, key_parts[-1]) != parser.get_default(key_parts[-1]):
+            value = config
+            for part in key_parts:
+                if part in value:
+                    value = value[part]
+                else:
+                    value = default
+                    break
+            if hasattr(args, key_parts[-1]) and \
+                (getattr(args, key_parts[-1]) != parser.get_default(key_parts[-1]) or value==None):
                 value = getattr(args, key_parts[-1])
-            elif hasattr(args, key) and getattr(args, key) != parser.get_default(key):
+            elif hasattr(args, key) and \
+                (getattr(args, key) != parser.get_default(key) or value==None):
                 value = getattr(args, key)
             else:
-                value = config
-                for part in key_parts:
-                    if part in value:
-                        value = value[part]
-                    else:
-                        value = default
-                        break
+                raise ValueError(f"param {key} not found, please check the config")
             return value
         
         # config        
