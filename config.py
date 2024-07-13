@@ -2,7 +2,7 @@
 import argparse, os, json
 
 class CrawlerConfig():
-    # 参数查找顺序：命令行参数传入>config值>命令行参数默认值
+    # 参数查找顺序：命令行参数传入>config.json值>命令行参数默认值
     def __init__(self, config_file, site):
         with open(config_file, 'r', encoding='utf-8') as f:
             config = json.load(f)
@@ -12,11 +12,12 @@ class CrawlerConfig():
         parser.add_argument("--driver_path", type=str, default="chromedriver.exe", help="Path to chrome driver")
         parser.add_argument("--id","-id", nargs='+', type=str, default=[], help="List of post ids")
         parser.add_argument("--fname","-n", nargs='+', type=str, default=[], help="List of post custom file names")
+        parser.add_argument("--front","-fn", type=str, choices=["jekyll","zola"], default="jekyll", help="Witch front to generate, default jekyll")
         #img
         parser.add_argument("--upload_img","-u", action="store_true", default=False, help="Whether to upload imgs via third-party img hosting service, please change your upload_url in config, default False")
         parser.add_argument("--origin_img","-o", action="store_true", default=False, help="Whether to use original img url directly, default False")
         parser.add_argument("--size_thr","-t", type=int, default=85, help="Size threshold in kB for not compressing images, '-1' means original quality")
-        parser.add_argument("--format","-f", type=str, default="webp", help="Image saving format")
+        parser.add_argument("--format","-fm", type=str, default="webp", help="Image saving format, default webp")
         #bili
         parser.add_argument("--bili.is_dyn","-b.t", action="store_true", default=False, help="Take ids as bilibili dynamic post")
         
@@ -36,7 +37,7 @@ class CrawlerConfig():
             elif hasattr(args, key) and \
                 (getattr(args, key) != parser.get_default(key) or value==None):
                 value = getattr(args, key)
-            else:
+            if value==None:
                 raise ValueError(f"param {key} not found, please check the config")
             return value
         
@@ -48,6 +49,7 @@ class CrawlerConfig():
         self.upload_url = get_arg('upload_url') #第三方图床
         self.max_retry = get_arg('max_retry',3)
         self.max_timeout = get_arg('max_timeout',10)
+        self.front = get_arg('front')
         
         self.upload_img = get_arg('upload_img',False)
         self.origin_img = get_arg('origin_img',False)
