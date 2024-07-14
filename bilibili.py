@@ -78,7 +78,7 @@ def get_meta(spider,url):
     date_string = r.find(cDOM["date"][0], class_=cDOM["date"][1]).text
     # 解析为 datetime 对象
     date_obj = datetime.strptime(date_string, '%Y年%m月%d日 %H:%M')
-    spider.date = date_obj.strftime('%Y-%m-%d')
+    spider.meta['date'] = date_obj.strftime('%Y-%m-%d')
     
     # post
     post_content = r.find(cDOM["content"][0], class_=cDOM["content"][1])

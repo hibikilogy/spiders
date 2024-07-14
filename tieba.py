@@ -18,10 +18,9 @@ def get_meta(spider,url):
         r = spider.parser(f'{url}&pn={i}')  #当前页
         if posts == []:
             page = int(r.find_all('li', class_='l_reply_num')[0].find_all('span')[1].text)
-            # date
-            date_string = r.find_all(class_='tail-info')[-1].text[:10]
-            spider.date = date_string
             # meta
+            date_string = r.find_all(class_='tail-info')[-1].text[:10]
+            spider.meta['date'] = date_string
             spider.meta['title'] = r.find(class_='core_title_txt').text.strip()
             tag = r'\[.*?\]|【.*?】'  # 去除【】[] 包裹的内容
             spider.meta['title'] = re.sub(tag, '', spider.meta['title'])

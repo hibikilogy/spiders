@@ -19,7 +19,8 @@ class CrawlerConfig():
         parser.add_argument("--size_thr","-t", type=int, default=85, help="Size threshold in kB for not compressing images, '-1' means original quality")
         parser.add_argument("--format","-fm", type=str, default="webp", help="Image saving format, default webp")
         #bili
-        parser.add_argument("--bili.is_dyn","-b.t", action="store_true", default=False, help="Take ids as bilibili dynamic post")
+        if site=='bili':
+            parser.add_argument("--bili.is_dyn","-b.d", action="store_true", default=False, help="Take ids as bilibili dynamic post")
         
         args = parser.parse_args()
         def get_arg(key,default = None):

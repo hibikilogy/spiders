@@ -5,6 +5,8 @@
 
 import os,random,re
 from io import BytesIO
+from collections import namedtuple, OrderedDict
+from convert import JekyllFront
 import requests
 from PIL import Image
 from selenium import webdriver
@@ -14,6 +16,23 @@ from html2text import html2text
 
 import blurhash
 from base64 import urlsafe_b64encode
+
+FRONT = namedtuple('front', ['separator', 'definer', 'commenter', 'wrapper'])
+
+SYMBOL = OrderedDict({
+    "jekyll": {
+        "separator": "---",
+        "definer": ":",
+        "commenter": "#",
+        "wrapper": "",
+    },
+    "zola": {
+        "separator": "+++",
+        "definer": "=",
+        "commenter": "#",
+        "wrapper": "\"",
+    }
+})
 
 USER_AGENT_LIST = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
@@ -169,9 +188,14 @@ class Crawler():
         } 
         self.cfg = cfg
         self.meta = {}
-        self.date = None
         self.post = None
         self.driver = None
+        self.frontter = FRONT(
+            separator=SYMBOL[cfg.front]["separator"], 
+            definer=SYMBOL[cfg.front]["definer"],
+            commenter=SYMBOL[cfg.front]["commenter"],
+            wrapper=SYMBOL[cfg.front]["wrapper"],
+            )
         # self.isDownload = False
     
     def static_parser(self, url, headers=None):
@@ -207,7 +231,7 @@ class Crawler():
             hash = blurhash.encode(image.copy(), x_components=3, y_components=2)
             hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
             filename = f"{hash64}{f'.w{w}' if w else ''}{f'.h{h}' if h else ''}.{ext}"
-            dir = f"{self.cfg.project_path}/images/{self.date}"
+            dir = f"{self.cfg.project_path}/images/{self.meta['date']}"
             os.makedirs(dir,exist_ok=True)
             image.save(f'{dir}/{filename}', format=ext)
             # with open(f'{dir}/{filename}', 'wb') as f: 
@@ -215,7 +239,7 @@ class Crawler():
             print(f'本地图像下载成功({w}_{h}_{get_img_size(image,ext):.2f}KB),需提交hibikilogy.github.io中的改动上传。')
             # self.isDownload = True
             image.close()
-            return f'../images/{self.date}/{filename}'
+            return f"../images/{self.meta['date']}/{filename}"
         except requests.exceptions.RequestException as e:
             print("网络错误，无法下载图像:", e)
         except FileNotFoundError:
@@ -265,6 +289,27 @@ class Crawler():
             title = self.meta['original'].split('/')[-1]
         return title
     
+    def jekyll_front(self, tag):
+        sep = self.frontter.separator
+        defi = self.frontter.definer
+        wrap = self.frontter.wrapper
+        res = f'{sep}\n'
+        res += f'layout{defi}post\n'
+        for key in self.meta:
+            res +=f'{key}{defi}{wrap}{self.meta[key]}{wrap}\n'
+        res += f'catalog{defi}{wrap}true{wrap}\n'
+        res += f'tags{defi}\n'
+        res += f'    - {tag}\n'
+        res +=f'{sep}\n'
+        return res
+
+    def zola_front(self, tag):
+        sep = self.frontter.separator
+        res = f'{sep}\n'
+        res += JekyllFront(**self.meta).to_zola_front().to_toml()
+        res += f'{sep}\n'
+        return res
+    
     def generator(self, tag, custom_fname=''):
         print('生成文件中……')
         dir = f"{self.cfg.project_path}/temp"
@@ -273,18 +318,14 @@ class Crawler():
             cleaned_fname = self.gen_title()
         else:
             cleaned_fname = custom_fname
-        with open(f'{dir}/{self.date}-{cleaned_fname}.md', 'w', encoding='utf-8') as f:
-            f.write('---\n')
-            f.write('layout: post\n')
-            for key in self.meta:
-                f.write(f'{key}: {self.meta[key]}\n')
-            f.write('catalog: true\n')
-            f.write('tags:\n')
-            f.write(f'    - {tag}\n')
-            f.write('---\n')
+        with open(f"{dir}/{self.meta['date']}-{cleaned_fname}.md", 'w', encoding='utf-8') as f:
+            if self.cfg.front == 'jekyll':
+                f.write(self.jekyll_front(tag))
+            elif self.cfg.front == 'zola':
+                f.write(self.zola_front(tag))
             f.write(self.post)
         print(
-            f'{dir}/{self.date}-{cleaned_fname}.md 已生成,\n\t需将文件移至_post提交'
+            f"{dir}/{self.meta['date']}-{cleaned_fname}.md 已生成,\n\t需将文件移至_post提交"
             # +f'{", 提交时message需添加 _path2url 关键字" if self.isDownload else ""}'
             )
     

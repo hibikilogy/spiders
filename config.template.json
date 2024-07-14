@@ -4,6 +4,7 @@
     "upload_url": "https://sm.ms/api/v2/upload",
     "max_retry": 3,
     "max_timeout": 10,
+    "front": "jekyll",
 
     "upload_img": false,
     "origin_img": false,
