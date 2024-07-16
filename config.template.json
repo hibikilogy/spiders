@@ -4,10 +4,12 @@
     "upload_url": "https://sm.ms/api/v2/upload",
     "max_retry": 3,
     "max_timeout": 10,
+    "front": "jekyll",
 
     "upload_img": false,
     "origin_img": false,
-    "origin_quality": false,
+    "size_thr": 85,
+    "format": "webp",
     
     "fname":["",""],
 
@@ -19,5 +21,9 @@
     "tieba":{
         "static": true,
         "id": [9041070872]
+    },
+    "bgm":{
+        "static": false,
+        "id": [340827]
     }
 }

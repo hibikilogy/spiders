@@ -5,6 +5,9 @@
 - bilibili.com/opus/
 - bilibili.com/read/
 - tieba.baidu.com/p/
+- bgm.tv/blog/
+  
+文章可选择生成`jekyll`(默认)或`zola`格式
 
 ## 使用方法
 
@@ -20,21 +23,27 @@ C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-s
 
 ### 两种运行方式：
 1. 在本仓库目录输入命令：
-  ```bash
-  python xxx.py --id id1 id2 ...
-  ```
-  其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持前缀+数字(eg.cv123)或只有数字。
+    ```bash
+    python xxx.py --id id1 id2 ...
+    ```
+    其中 `xxx.py` 是对应平台的文件名称，`idx` 是帖子 ID，支持前缀+数字(eg.cv123)或只有数字。
+    `python xxx.py -h`查看参数帮助
   
-2. 修改使用`config.json`中的配置直接运行`xxx.py`，id列表支持前缀+数字字符串和纯数字id
+2. 修改使用`config.json`中的配置直接运行`xxx.py`
+   
+   id列表支持前缀+数字字符串和纯数字id
   
-默认配置为动态渲染并下载原帖图像到本地，爬取b站动态需要设置`is_dyn`为`true`
+默认配置为动态渲染并下载原帖图像到本地webp
+
+爬取b站动态(aka bilibili.com/opus/*)需要设置`is_dyn`为`true`
 
  其他参数详情请查看`python xxx.py -h`或`config.py`文件
 
 
 ## 注意事项
+支持两种配置方法：`config.json`以及命令行参数
 
-参数查找顺序为命令行参数传入>config值>命令行参数默认值
+参数查找顺序为命令行参数传入>config值>命令行参数默认值（config.py）
 
 如需正常使用脚本功能，请确保目录满足以下条件：
 ```
@@ -50,7 +59,7 @@ C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-s
 
 图片可在本地查看/编辑。在提交到 `hibikilogy.github.io` 时自动转换图片路径。
 
-下载图像文件名为`{hash64}.w{weight}.h{height}.jpg`，其中`hash64=urlsafe_b64encode(blurhash(img_bytes))`
+下载图像文件名为`{hash64}.w{weight}.h{height}.webp`，其中`hash64=urlsafe_b64encode(blurhash(img_bytes))`
 
 `blurhash`参考https://github.com/woltapp/blurhash
 

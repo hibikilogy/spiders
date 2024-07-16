@@ -1,6 +1,8 @@
 requests
-selenium>=4.0
+toml
+selenium>=4.20
 beautifulsoup4
 html2text
+pillow
 blurhash-python
 pillow>=10.0
