@@ -59,7 +59,6 @@ def get_meta(spider,url):
         spider.meta['title'] = re.sub(tag, '', spider.meta['title'])
     spider.meta['author'] = r.find(cDOM["author"][0], class_=cDOM["author"][1]).text.strip()
     spider.meta['original'] = url
-    banner = str(r.find(class_='banner-image'))
 
 
 def bgm_spider(cfg):

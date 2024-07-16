@@ -5,6 +5,10 @@
     "max_retry": 3,
     "max_timeout": 10,
     "front": "jekyll",
+    "ua": {
+        "platforms": "pc",
+        "os": "windows"
+    },
 
     "upload_img": false,
     "origin_img": false,
@@ -25,5 +29,14 @@
     "bgm":{
         "static": false,
         "id": [340827]
+    },   
+    "zhihu":{
+        "static": false,
+        "id": [3554515136],
+        "is_qa": true,
+        "ua": {
+            "platforms": "mobile",
+            "os": "android"
+        }
     }
 }
