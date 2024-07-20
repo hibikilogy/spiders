@@ -6,6 +6,8 @@
 - bilibili.com/read/
 - tieba.baidu.com/p/
 - bgm.tv/blog/
+- zhihu.com/answer/
+- zhuanlan.zhihu.com/p/
   
 文章可选择生成`jekyll`(默认)或`zola`格式
 
@@ -36,6 +38,8 @@ C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-s
 默认配置为动态渲染并下载原帖图像到本地webp
 
 爬取b站动态(aka bilibili.com/opus/*)需要设置`is_dyn`为`true`
+
+知乎回答只需输入答案id，专栏/问答通过参数`is_qa`控制
 
  其他参数详情请查看`python xxx.py -h`或`config.py`文件
 
