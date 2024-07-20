@@ -8,6 +8,7 @@
 - bgm.tv/blog/
 - zhihu.com/answer/
 - zhuanlan.zhihu.com/p/
+- douban.com/review/
   
 文章可选择生成`jekyll`(默认)或`zola`格式
 
