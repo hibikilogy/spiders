@@ -57,7 +57,9 @@ class CrawlerConfig():
         self.size_thr = get_arg('size_thr')
         self.format = get_arg('format')
         self.static = get_arg(f'{site}.static',False)
-        # self.project_path = os.path.abspath(self.project_path)
+        self.ua = get_arg(f'ua')
+        self.scroll_delay = get_arg('scroll_delay')
+        self.scroll_increment = get_arg('scroll_increment')
         
         self.ids = get_arg(f'{site}.id')
         self.fname = get_arg(f'fname')

@@ -4,11 +4,13 @@
     "upload_url": "https://sm.ms/api/v2/upload",
     "max_retry": 3,
     "max_timeout": 10,
+    "scroll_increment": 500,
+    "scroll_delay": 0.05,
     "front": "jekyll",
 
     "upload_img": false,
     "origin_img": false,
-    "size_thr": 85,
+    "size_thr": 50,
     "format": "webp",
     
     "fname":["",""],
@@ -25,5 +27,18 @@
     "bgm":{
         "static": false,
         "id": [340827]
+    },   
+    "zhihu":{
+        "static": false,
+        "id": [3554515136],
+        "is_qa": true,
+        "ua": {
+            "platforms": "mobile",
+            "os": "android"
+        }
+    },  
+    "douban":{
+        "static": false,
+        "id": [15966614]
     }
 }

@@ -198,6 +198,33 @@ class Crawler():
             )
         # self.isDownload = False
     
+    def waiting(self, wait=None, msg=None):
+        for i in range(self.cfg.max_retry):
+            try:
+                WebDriverWait(self.driver, self.cfg.max_timeout).until(wait)
+                return True
+            except TimeoutException:
+                print(f"Attempt {i + 1}/{self.cfg.max_retry} failed: Timeout. {msg}")
+        return False
+    
+    def scoll_bottom(self, operation = None):
+        operated = False
+        # 获取页面的总高度
+        last_height = self.driver.execute_script("return document.body.scrollHeight")
+        # 设置每次滑动的距离
+        current_position = 0
+        while current_position < last_height:
+            # 执行 JavaScript 滑动页面
+            self.driver.execute_script(f"window.scrollTo(0, {current_position});")
+            # 等待页面加载
+            time.sleep(self.cfg.scroll_delay)
+            if operation != None and not operated:
+                operated = operation()
+            # 更新当前位置
+            current_position += self.cfg.scroll_increment
+        # 确保滑动到页面的最底部
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    
     def static_parser(self, url, headers=None):
         content = requests.get(
             url, headers=self.headers if headers==None else headers, timeout=self.cfg.max_timeout
