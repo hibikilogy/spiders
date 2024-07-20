@@ -3,19 +3,24 @@
 
 ' 上传图片、解析器等 '
 
-import os,random,re
-from io import BytesIO
+import os,random,re,time,sys
+from io import BytesIO, TextIOWrapper
 from collections import namedtuple, OrderedDict
 from convert import JekyllFront
 import requests
 from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from html2text import html2text
 
 import blurhash
 from base64 import urlsafe_b64encode
+from fake_useragent import UserAgent
+
+sys.stdout = TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
 
 FRONT = namedtuple('front', ['separator', 'definer', 'commenter', 'wrapper'])
 
@@ -34,23 +39,23 @@ SYMBOL = OrderedDict({
     }
 })
 
-USER_AGENT_LIST = [
-    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
-    "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
-    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
-    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
-    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; 360SE)",
-    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
-    "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
-    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
-    "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36",
-    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE'
-]
+# USER_AGENT_LIST = [
+#     'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+#     # "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
+#     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
+#     "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
+#     # "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; 360SE)",
+#     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+#     "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+#     "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
+#     # "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+#     "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+#     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36",
+#     'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE'
+# ]
 
 default_headers = {
-            'User-Agent':random.choice(USER_AGENT_LIST)
+            'User-Agent':UserAgent().chrome
         }
 
 def clean_chars(text):
@@ -184,7 +189,7 @@ def get_img_size(img,format):
 class Crawler():
     def __init__(self, cfg):
         self.headers = {
-            'User-Agent':random.choice(USER_AGENT_LIST)
+            'User-Agent':UserAgent(**cfg.ua).chrome
         } 
         self.cfg = cfg
         self.meta = {}
@@ -198,23 +203,41 @@ class Crawler():
             )
         # self.isDownload = False
     
+    def waiting(self, wait=None, msg=None):
+        for i in range(self.cfg.max_retry):
+            try:
+                WebDriverWait(self.driver, self.cfg.max_timeout).until(wait)
+                return True
+            except TimeoutException:
+                print(f"Attempt {i + 1}/{self.cfg.max_retry} failed: Timeout. {msg}")
+        return False
+    
     def static_parser(self, url, headers=None):
         content = requests.get(
             url, headers=self.headers if headers==None else headers, timeout=self.cfg.max_timeout
             ).content
         return BeautifulSoup(content, 'html.parser')
     
-    def dynamic_parser(self, url):
+    def dynamic_parser(self, url, wait=None, msg=None):
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument(f"--user-agent={self.headers['User-Agent']}")
+        chrome_options.add_argument("--log-level=2")
+        print(f"Using UA: {self.headers['User-Agent']}")
         #NOTE: 需要chromedriver路径,下载：https://googlechromelabs.github.io/chrome-for-testing/#stable
-        self.driver = webdriver.Chrome(service=Service(self.cfg.driver_path))  
+        self.driver = webdriver.Chrome(service=Service(self.cfg.driver_path),options=chrome_options)  
         self.driver.get(url)
+        if wait:
+            time.sleep(1)  # 确保页面完全加载
+            if not self.waiting(wait,msg):
+                raise ValueError(f"Failed to wait {wait}\n{msg}")
         return BeautifulSoup(self.driver.page_source, 'html.parser')
-        
-    def parser(self,url):
+
+            
+    def parser(self,url, wait=None, msg=None):
         if self.cfg.static:
             return self.static_parser(url)
         else:
-            return self.dynamic_parser(url)
+            return self.dynamic_parser(url, wait, msg)
         
     def download_img(self, url, w, h):
         try:
@@ -306,7 +329,7 @@ class Crawler():
     def zola_front(self, tag):
         sep = self.frontter.separator
         res = f'{sep}\n'
-        res += JekyllFront(**self.meta).to_zola_front().to_toml()
+        res += JekyllFront(tags=[tag],**self.meta).to_zola_front().to_toml()
         res += f'{sep}\n'
         return res
     
