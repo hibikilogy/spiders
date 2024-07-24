@@ -1,9 +1,9 @@
 requests
 toml
+pyyaml
 selenium>=4.20
 beautifulsoup4
 html2text
-pillow
 blurhash-python
 pillow>=10.0
 fake_useragent
