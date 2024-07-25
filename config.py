@@ -61,7 +61,7 @@ class CrawlerConfig():
         self.size_thr = get_arg('size_thr')
         self.format = get_arg('format')
         self.static = get_arg(f'{site}.static',False)
-        self.ua = get_arg(f'ua')
+        self.ua = get_arg(f'ua',{})
         self.scroll_delay = get_arg('scroll_delay')
         self.scroll_increment = get_arg('scroll_increment')
         
@@ -74,5 +74,5 @@ class CrawlerConfig():
             self.ua = get_arg('zhihu.ua')
             self.is_qa = get_arg('zhihu.is_qa')
 
-        self.ua["platforms"] = arg_overwrite("ua.platforms", self.ua["platforms"])
-        self.ua["os"] = arg_overwrite("ua.os", self.ua["os"])
+        self.ua["platforms"] = arg_overwrite("ua.platforms", self.ua.get("platforms"))
+        self.ua["os"] = arg_overwrite("ua.os", self.ua.get("os"))
