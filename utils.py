@@ -180,12 +180,13 @@ def extract_wh(text):
     w,h = extract_wh_from(text, 'attr')
     return w, h
 
-def get_img_size(img,format):
+def get_img_size(img,format,quality=80):
     buffer = BytesIO()
-    img.save(buffer, format=format)
+    img.save(buffer, format=format, quality=quality)
     size_in_kb = buffer.tell()/1024
     buffer.close()
     return size_in_kb
+
 class Crawler():
     def __init__(self, cfg):
         self.headers = {
@@ -258,41 +259,40 @@ class Crawler():
             return self.dynamic_parser(url, wait, msg)
         
     def download_img(self, url, w, h):
-        try:
-            ext = 'gif' if 'gif' in url else self.cfg.format
-            r = requests.get(url,headers=self.headers)
-            r.raise_for_status()
-            image = Image.open(BytesIO(r.content))
-            if self.cfg.size_thr<=0:
-                ...
-            elif get_img_size(image,ext) > self.cfg.size_thr:
-                w,h = map(min,zip([w*2,h*2],(image.size[0]//2, image.size[1]//2)))
-                image = image.resize((w, h),Image.LANCZOS)
-            w,h = image.size
-            hash = blurhash.encode(image.copy(), x_components=3, y_components=2)
-            hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
-            filename = f"{hash64}{f'.w{w}' if w else ''}{f'.h{h}' if h else ''}.{ext}"
-            dir = f"{self.cfg.project_path}/images/{self.meta['date']}"
-            os.makedirs(dir,exist_ok=True)
-            image.save(f'{dir}/{filename}', format=ext)
-            # with open(f'{dir}/{filename}', 'wb') as f: 
-            #     f.write(r.content)
-            print(f'本地图像下载成功({w}_{h}_{get_img_size(image,ext):.2f}KB),需提交hibikilogy.github.io中的改动上传。')
-            # self.isDownload = True
-            image.close()
-            return f"../images/{self.meta['date']}/{filename}"
-        except requests.exceptions.RequestException as e:
-            print("网络错误，无法下载图像:", e)
-        except FileNotFoundError:
-            print(f'创建文件失败，使用原链接。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
-        except Exception as e:
-            print(f'下载失败（{e}），使用原链接。')
-        image.close()
+        for i in range(1,self.cfg.max_retry+1):
+            try:
+                ext = 'gif' if 'gif' in url else self.cfg.format
+                r = requests.get(url,headers=self.headers)
+                r.raise_for_status()
+                image = Image.open(BytesIO(r.content))
+                if ext != 'gif':
+                    if not self.cfg.origin_res:
+                        if (w or h) and w < image.size[0]:
+                            image = image.resize((w, h),Image.LANCZOS)
+                w,h = image.size
+                hash = blurhash.encode(image.copy(), x_components=3, y_components=2)
+                hash64 = urlsafe_b64encode(hash.encode('ascii')).decode('ascii')
+                filename = f"{hash64}{f'.w{w}' if w else ''}{f'.h{h}' if h else ''}.{ext}"
+                dir = f"{self.cfg.project_path}/images/{self.meta['date']}"
+                os.makedirs(dir,exist_ok=True)
+                image.save(f'{dir}/{filename}', format=ext, quality=self.cfg.quality, method=6)
+                print(f'本地图像下载成功({w}_{h}_{url})')
+                image.close()
+                return f"../images/{self.meta['date']}/{filename}"
+            except requests.exceptions.RequestException as e:
+                print(f"网络错误({i}/{self.cfg.max_retry})，无法下载图像({url}):", e)
+            except FileNotFoundError:
+                print(f'创建文件失败，使用原链接({url})。请检查是否在上级目录内存在 hibikilogy.github.io 的本地仓库。')
+                break
+            except Exception as e:
+                print(f'下载失败，使用原链接({url}):', e)
+                break
+            # image.close()
         return url
     
     def handle_img(self, url, w, h):
         '''可配置使用原链接,上传三方图床,默认下载到本地'''
-        if self.cfg.origin_img:     # 使用原图床
+        if self.cfg.origin_url:     # 使用原图床
             return url
         if self.cfg.upload_img:     # 尝试上传
             print(f'正在使用{self.cfg.upload_url}上传图片……')
@@ -335,10 +335,10 @@ class Crawler():
         defi = self.frontter.definer
         wrap = self.frontter.wrapper
         res = f'{sep}\n'
-        res += f'layout{defi}post\n'
+        res += f'layout{defi} post\n'
         for key in self.meta:
-            res +=f'{key}{defi}{wrap}{self.meta[key]}{wrap}\n'
-        res += f'catalog{defi}{wrap}true{wrap}\n'
+            res +=f'{key}{defi} {wrap}{self.meta[key]}{wrap}\n'
+        res += f'catalog{defi} {wrap}true{wrap}\n'
         res += f'tags{defi}\n'
         res += f'    - {tag}\n'
         res +=f'{sep}\n'

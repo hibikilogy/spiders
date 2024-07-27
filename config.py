@@ -17,8 +17,9 @@ class CrawlerConfig():
         parser.add_argument("--ua.os","-u.o", type=str, choices=["windows", "macos", "linux"], default="windows", help="Which os for user-agent, default windows")
         #img
         parser.add_argument("--upload_img","-u", action="store_true", default=False, help="Whether to upload imgs via third-party img hosting service, please change your upload_url in config, default False")
-        parser.add_argument("--origin_img","-o", action="store_true", default=False, help="Whether to use original img url directly, default False")
-        parser.add_argument("--size_thr","-t", type=int, default=85, help="Size threshold in kB for not compressing images, '-1' means original quality")
+        parser.add_argument("--origin_url","-ou", action="store_true", default=False, help="Whether to use original img url directly, default False")
+        parser.add_argument("--origin_res","-or", action="store_true", default=False, help="Whether to download img in original resolution from server, default False, images will be resized to resolution actually displayed on browser")
+        parser.add_argument("--quality","-q", type=int, default=80, help="Quality for compression")
         parser.add_argument("--format","-fm", type=str, default="webp", help="Image saving format, default webp")
         if site=='bili':
             parser.add_argument("--bili.is_dyn","-b.d", action="store_true", default=False, help="Take ids as bilibili dynamic post")
@@ -57,8 +58,9 @@ class CrawlerConfig():
         self.front = get_arg('front')
         
         self.upload_img = get_arg('upload_img',False)
-        self.origin_img = get_arg('origin_img',False)
-        self.size_thr = get_arg('size_thr')
+        self.origin_url = get_arg('origin_url',False)
+        self.origin_res = get_arg('origin_res')
+        self.quality = get_arg('quality')
         self.format = get_arg('format')
         self.static = get_arg(f'{site}.static',False)
         self.ua = get_arg(f'ua',{})

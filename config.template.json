@@ -13,8 +13,9 @@
     },
 
     "upload_img": false,
-    "origin_img": false,
-    "size_thr": 50,
+    "origin_url": false,
+    "origin_res": false,
+    "quality": 80,
     "format": "webp",
     
     "fname":["",""],
