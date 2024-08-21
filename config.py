@@ -1,9 +1,18 @@
 # 爬虫参数&配置文件
 import argparse, os, json
 
+def copy2(src,dst):
+    with open(src, 'rb') as src_file:
+        with open(dst, 'wb') as dst_file:
+            # 读取源文件内容并写入目标文件
+            dst_file.write(src_file.read())
+
 class CrawlerConfig():
     # 参数查找顺序：命令行参数传入>config.json值>命令行参数默认值
     def __init__(self, config_file, site):
+        if not os.path.exists(config_file):
+            copy2('config.template.json',config_file)
+            raise ValueError("未找到本地配置文件，已新建默认配置config.json，请检查配置后重新运行")
         with open(config_file, 'r', encoding='utf-8') as f:
             config = json.load(f)
 
@@ -47,7 +56,11 @@ class CrawlerConfig():
                 raise ValueError(f"param {key} not found, please check the config")
             return value
         
-        # config        
+        # config      
+        self.ids = get_arg(f'{site}.id')
+        if len(self.ids)<=0:
+            raise ValueError(f"id is empty, please check the config")
+        self.fname = get_arg(f'fname')  
         self.driver_path = get_arg('driver_path')
         if not os.path.exists(self.driver_path):
             raise ValueError(f"{self.driver_path} not exists")
@@ -66,9 +79,6 @@ class CrawlerConfig():
         self.ua = get_arg(f'ua',{})
         self.scroll_delay = get_arg('scroll_delay')
         self.scroll_increment = get_arg('scroll_increment')
-        
-        self.ids = get_arg(f'{site}.id')
-        self.fname = get_arg(f'fname')
 
         if site=='bili':
             self.is_dyn = get_arg('bili.is_dyn')
