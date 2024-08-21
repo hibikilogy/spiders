@@ -74,6 +74,7 @@ def get_meta(spider,url):
         cDOM = DOM_DYN 
     else:
         cDOM = DOM_CV
+    spider.scoll_bottom()
     # date
     date_string = r.find(cDOM["date"][0], class_=cDOM["date"][1]).text
     # 解析为 datetime 对象

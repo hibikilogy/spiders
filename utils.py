@@ -187,6 +187,9 @@ def get_img_size(img,format,quality=80):
     buffer.close()
     return size_in_kb
 
+def del_single_newline(text:str):
+    text = re.sub(r'(?<!\n)\n(?!\n)', '', text)
+    return text
 class Crawler():
     def __init__(self, cfg):
         self.headers = {
@@ -364,6 +367,7 @@ class Crawler():
                 f.write(self.jekyll_front(tag))
             elif self.cfg.front == 'zola':
                 f.write(self.zola_front(tag))
+            self.post = del_single_newline(self.post)
             f.write(self.post)
         print(
             f"{dir}/{self.meta['date']}-{cleaned_fname}.md 已生成,\n\t需将文件移至_post提交"
