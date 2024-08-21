@@ -65,7 +65,7 @@ def get_meta(spider,url):
     def trans_img_url(container,url):
         w,h = extract_wh(container)
         down_url,w,h = gen_down_url(url,w,h)
-        return spider.handle_img(down_url, int(w),int(h))
+        return spider.handle_img(down_url, int(w) if w else None,int(h) if h else None)
     r = spider.parser(url) 
     opus_top = ''
     if spider.cfg.is_dyn: 

@@ -258,7 +258,7 @@ class Crawler():
         else:
             return self.dynamic_parser(url, wait, msg)
         
-    def download_img(self, url:str, w:int, h:int):
+    def download_img(self, url:str, w:int|None, h:int|None):
         for i in range(1,self.cfg.max_retry+1):
             try:
                 ext = 'gif' if 'gif' in url else self.cfg.format
@@ -290,7 +290,7 @@ class Crawler():
             # image.close()
         return url
     
-    def handle_img(self, url:str, w:int, h:int):
+    def handle_img(self, url:str, w:int|None, h:int|None):
         '''可配置使用原链接,上传三方图床,默认下载到本地'''
         if self.cfg.origin_url:     # 使用原图床
             return url
