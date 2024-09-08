@@ -40,12 +40,16 @@ def extract_head_imgurl(html_content):
     return f"https:{urls[0]}.jpg" if urls else None
 
 def extract_wh_from_url(text):
-    pattern = r'@(\d+)w_(\d+)h'
+    pattern = r'@(\d+)w_(\d+)h|@(\d+)w_|@(\d+)h'
     match = re.search(pattern, text)
 
     if match:
         width = match.group(1)
         height = match.group(2)
+        if width or height:
+            return width, height
+        width = match.group(3)
+        height = match.group(4)
         return width, height
     else:
         return None, None
@@ -56,7 +60,7 @@ def gen_down_url(url,w,h):
     if w or h:
         down_url = f"{url.split('@')[0]}@{f'{w}w_' if w else ''}{f'{h}h_' if h else ''}.webp"
     else:
-        down_url = url
+        down_url = f"{url.split('.')[0]}.webp"
     if not down_url.startswith('https:'):
         down_url = f"https:{down_url}"
     return down_url, w, h

@@ -267,7 +267,8 @@ class Crawler():
                 ext = 'gif' if 'gif' in url else self.cfg.format
                 r = requests.get(url,headers=self.headers)
                 r.raise_for_status()
-                image = Image.open(BytesIO(r.content))
+                img_data = BytesIO(r.content)
+                image = Image.open(img_data)
                 if ext != 'gif':
                     if not self.cfg.origin_res:
                         if (w or h) and w < image.size[0]:
