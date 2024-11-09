@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from datetime import datetime
+from dateutil.parser import parse
 import re
 from utils import extract_wh
 from utils import Crawler
@@ -60,7 +60,8 @@ def gen_down_url(url,w,h):
     if w or h:
         down_url = f"{url.split('@')[0]}@{f'{w}w_' if w else ''}{f'{h}h_' if h else ''}.webp"
     else:
-        down_url = f"{url.split('.')[0]}.webp"
+        ext = 'png'if 'png'in url and 'article' in url else 'webp'
+        down_url = f"{url.rsplit('.', 1)[0]}.{ext}"
     if not down_url.startswith('https:'):
         down_url = f"https:{down_url}"
     return down_url, w, h
@@ -82,7 +83,7 @@ def get_meta(spider,url):
     # date
     date_string = r.find(cDOM["date"][0], class_=cDOM["date"][1]).text
     # 解析为 datetime 对象
-    date_obj = datetime.strptime(date_string, '%Y年%m月%d日 %H:%M')
+    date_obj = parse(date_string, fuzzy=True)
     spider.meta['date'] = date_obj.strftime('%Y-%m-%d')
     
     # post
