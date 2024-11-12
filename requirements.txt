@@ -7,3 +7,4 @@ html2text
 blurhash-python
 pillow>=10.0
 fake_useragent
+python-dateutil
