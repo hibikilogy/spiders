@@ -1,6 +1,7 @@
 
 # -*- coding: utf-8 -*-
 import re
+from dateutil.parser import parse
 # from selenium.webdriver.common.by import By
 from utils import extract_wh_from
 from config import CrawlerConfig
@@ -25,7 +26,8 @@ def get_meta(spider,url):
 
     # date
     date_string = r.find(cDOM["date"][0], class_=cDOM["date"][1]).text
-    spider.meta['date'] = date_string.split()[0]
+    date_obj = parse(date_string, fuzzy=True)
+    spider.meta['date'] = date_obj.strftime('%Y-%m-%d')
     
     # post
     post_content = r.find(cDOM["content"][0], class_=cDOM["content"][1])
