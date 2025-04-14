@@ -20,7 +20,7 @@ C++编译环境，[参考](https://stackoverflow.com/questions/64261546/how-to-s
 
 安装 Python 并下载本仓库，`pip install -r requirements.txt`安装依赖
 
-下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://getwebdriver.com/) | [<114](https://chromedriver.chromium.org/downloads)，修改配置中的driver路径 
+下载chrome浏览器版本对应的driver，版本[>=115, 需复制链接下载](https://googlechromelabs.github.io/chrome-for-testing/) | [<114](https://chromedriver.chromium.org/downloads)，修改配置中的driver路径 
 
 将模板配置文件`config.template.json`复制一份重命名为`config.json`, 作为实际使用的配置文件，填入自己的配置
 
